@@ -195,6 +195,7 @@ avec la marche à suivre. Essayez ensuite, par exemple :
 |---|---|
 | « Identifiants absents » | Les variables `INPI_EMAIL` et `INPI_MOT_DE_PASSE` ne sont pas renseignées : vérifiez la configuration, puis redémarrez Claude. |
 | « L'API … refuse l'adresse ou le mot de passe » | Vérifiez vos identifiants sur data.inpi.fr. Pour l'API Propriété industrielle, essayez `INPI_PI_MOT_DE_PASSE` si vous avez défini un mot de passe distinct. |
+| Le RNE fonctionne mais l'API Propriété industrielle répond « [HTTP 401] … refuse l'adresse ou le mot de passe » | Le compte de l'API Propriété industrielle (api-gateway.inpi.fr) a son propre mot de passe, distinct de celui de data.inpi.fr. Essayez de vous connecter sur [api-gateway.inpi.fr](https://api-gateway.inpi.fr) ; si cela échoue, réinitialisez ce mot de passe, puis renseignez-le dans le champ facultatif « Mot de passe de l'API Propriété industrielle » (ou `INPI_PI_MOT_DE_PASSE`) et redémarrez l'extension. |
 | « Accès refusé par l'INPI : l'accès … n'est pas activé » | Activez l'accès indiqué dans votre espace personnel (étape 2). |
 | « … momentanément indisponible » | Panne côté INPI : réessayez plus tard. |
 | « … refuse temporairement les requêtes (code 429) » | Limite de débit ou quota atteint : patientez. |
