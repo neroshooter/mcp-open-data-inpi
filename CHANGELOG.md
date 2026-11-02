@@ -27,6 +27,10 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Les natures et décisions répétées d'un même acte ne sont plus affichées en double.
 - Les dirigeants sont toujours présentés sous la forme « Prénom(s) NOM », quelle que soit la casse fournie par le RNE.
 
+### Modifié
+
+- L'extension s'affiche dans Claude Desktop sous le nom « MCP Data INPI ».
+
 ### Ajouté
 
 - `chiffres_cles_comptes` : nature des comptes (sociaux ou consolidés) indiquée clairement, choix possible par le
