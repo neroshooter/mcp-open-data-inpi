@@ -17,9 +17,14 @@ const BULLETINS: Record<string, string> = {
   WO: 'Gazette OMPI',
 };
 
-/** Lien vers la fiche publique de la marque sur data.inpi.fr. */
+/**
+ * Lien vers la fiche publique de la marque sur data.inpi.fr, qui désigne les
+ * marques de l'Union européenne par le préfixe EM et un numéro à 9 chiffres.
+ */
 export function lienMarque(reference: string): string {
-  return `https://data.inpi.fr/marques/${encodeURIComponent(reference)}`;
+  const m = /^EU(\d+)$/.exec(reference);
+  const id = m?.[1] ? `EM${m[1].padStart(9, '0')}` : reference;
+  return `https://data.inpi.fr/marques/${encodeURIComponent(id)}`;
 }
 
 export function formaterFicheMarque(f: FicheMarque): string {

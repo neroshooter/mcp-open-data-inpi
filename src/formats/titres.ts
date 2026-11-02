@@ -10,8 +10,9 @@ export function lienBrevet(reference: string): string {
   return `https://data.inpi.fr/brevets/${encodeURIComponent(reference)}`;
 }
 
-export function lienModele(reference: string): string {
-  return `https://data.inpi.fr/dessins_modeles/${encodeURIComponent(reference)}`;
+/** data.inpi.fr présente chaque modèle d'un dépôt sous son numéro de séquence (FR20140182-001). */
+export function lienModele(reference: string, sequence = '001'): string {
+  return `https://data.inpi.fr/dessins_modeles/${encodeURIComponent(`${reference}-${sequence.padStart(3, '0')}`)}`;
 }
 
 function refEnLigne(r: ReferenceDocument): string | undefined {

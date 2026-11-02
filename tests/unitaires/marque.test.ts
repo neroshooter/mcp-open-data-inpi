@@ -150,3 +150,16 @@ describe('normalisation des numéros de marque', () => {
     expect(() => normaliserNumeroMarque('WORLDLINE')).toThrow(/non reconnu/);
   });
 });
+
+describe('liens data.inpi.fr', () => {
+  it('emploie le préfixe EM et 9 chiffres pour les marques de l’Union européenne', async () => {
+    const { lienMarque } = await import('../../src/formats/marque.js');
+    expect(lienMarque('EU19023157')).toBe('https://data.inpi.fr/marques/EM019023157');
+    expect(lienMarque('FR4020655')).toBe('https://data.inpi.fr/marques/FR4020655');
+  });
+
+  it('pointe vers le premier modèle d’un dépôt de dessins et modèles', async () => {
+    const { lienModele } = await import('../../src/formats/titres.js');
+    expect(lienModele('FR20140182')).toBe('https://data.inpi.fr/dessins_modeles/FR20140182-001');
+  });
+});
