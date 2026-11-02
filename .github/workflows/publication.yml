@@ -1,0 +1,49 @@
+# Publication : à chaque étiquette de version (v1.2.3), vérifie le projet,
+# publie le paquet sur npm avec la provenance et joint l'extension Claude
+# Desktop (.mcpb) à la version GitHub.
+#
+# La publication utilise la « publication de confiance » de npm (OIDC) : aucun
+# jeton n'est stocké. À défaut, renseignez un secret NPM_TOKEN.
+name: Publication
+
+on:
+  push:
+    tags: ['v*.*.*']
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+          cache: npm
+      - run: npm ci
+      - name: Vérifier que l'étiquette correspond à la version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          test "v$VERSION" = "$GITHUB_REF_NAME" || { echo "Étiquette $GITHUB_REF_NAME ≠ version $VERSION"; exit 1; }
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - name: Publier sur npm (avec provenance)
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Construire l'extension Claude Desktop
+        run: node scripts/construire-mcpb.mjs
+      - name: Créer la version GitHub
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          NOTES=$(awk -v v="$VERSION" '$0 ~ "^## \\["v"\\]" {f=1; next} /^## \[/ {f=0} f' CHANGELOG.md)
+          gh release create "$GITHUB_REF_NAME" "mcp-open-data-inpi-$VERSION.mcpb" \
+            --title "$GITHUB_REF_NAME" --notes "$NOTES"
+        env:
+          GH_TOKEN: ${{ github.token }}

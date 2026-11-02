@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/mcpb/main/dist/mcpb-manifest-v0.3.schema.json",
+  "manifest_version": "0.3",
+  "name": "mcp-open-data-inpi",
+  "display_name": "Données publiques INPI (non officiel)",
+  "version": "0.0.0",
+  "description": "Consultez marques, brevets, dessins et modèles et le Registre national des entreprises de l'INPI avec votre compte data.inpi.fr.",
+  "long_description": "Serveur MCP open source et non officiel de pure consultation des données publiques de l'INPI : recherche et fiches complètes des marques françaises, de l'Union européenne et internationales, des brevets et des dessins et modèles ; fiche, actes, comptes annuels et chiffres clés des entreprises inscrites au Registre national des entreprises. Un seul identifiant : l'adresse et le mot de passe de votre compte data.inpi.fr, enregistrés dans le trousseau de votre système. Ce projet n'est ni affilié à l'INPI ni approuvé par lui ; seuls les documents officiels font foi.",
+  "author": {
+    "name": "Noam Fitoussi",
+    "url": "https://github.com/neroshooter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neroshooter/mcp-open-data-inpi"
+  },
+  "homepage": "https://github.com/neroshooter/mcp-open-data-inpi#readme",
+  "documentation": "https://github.com/neroshooter/mcp-open-data-inpi#readme",
+  "support": "https://github.com/neroshooter/mcp-open-data-inpi/issues",
+  "license": "MIT",
+  "keywords": ["inpi", "marques", "brevets", "dessins et modèles", "rne", "propriété industrielle", "registre national des entreprises"],
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/index.js"],
+      "env": {
+        "INPI_EMAIL": "${user_config.email}",
+        "INPI_MOT_DE_PASSE": "${user_config.mot_de_passe}",
+        "INPI_PI_MOT_DE_PASSE": "${user_config.mot_de_passe_pi}",
+        "INPI_DOSSIER_TELECHARGEMENTS": "${user_config.dossier_telechargements}"
+      }
+    }
+  },
+  "user_config": {
+    "email": {
+      "type": "string",
+      "title": "Adresse électronique du compte data.inpi.fr",
+      "description": "L'adresse avec laquelle vous vous connectez sur data.inpi.fr.",
+      "required": true
+    },
+    "mot_de_passe": {
+      "type": "string",
+      "title": "Mot de passe du compte data.inpi.fr",
+      "description": "Enregistré dans le trousseau de votre système ; il n'est transmis qu'à l'INPI.",
+      "sensitive": true,
+      "required": true
+    },
+    "mot_de_passe_pi": {
+      "type": "string",
+      "title": "Mot de passe de l'API Propriété industrielle (facultatif)",
+      "description": "À remplir uniquement si vous avez créé un mot de passe distinct sur api-gateway.inpi.fr. Sinon, laissez vide.",
+      "sensitive": true,
+      "required": false
+    },
+    "dossier_telechargements": {
+      "type": "directory",
+      "title": "Dossier des documents téléchargés",
+      "description": "Dossier où seront enregistrés les actes et comptes annuels au format PDF.",
+      "default": "${DOWNLOADS}",
+      "required": false
+    }
+  },
+  "tools": [
+    { "name": "verifier_acces", "description": "Indique quels accès INPI fonctionnent avec votre compte." },
+    { "name": "rechercher_marques", "description": "Recherche de marques FR, UE et internationales." },
+    { "name": "fiche_marque", "description": "Fiche complète d'une marque et historique des inscriptions." },
+    { "name": "rechercher_brevets", "description": "Recherche de brevets FR, EP, WO et CCP." },
+    { "name": "fiche_brevet", "description": "Fiche complète d'un brevet." },
+    { "name": "rechercher_modeles", "description": "Recherche de dessins et modèles FR et WO." },
+    { "name": "fiche_modele", "description": "Fiche complète d'un dépôt de dessins et modèles." },
+    { "name": "rechercher_entreprises", "description": "Recherche d'entreprises au RNE." },
+    { "name": "fiche_entreprise", "description": "Fiche d'une entreprise : capital, objet, dirigeants, commissaires aux comptes." },
+    { "name": "lister_documents_entreprise", "description": "Actes (filtre statuts) et comptes annuels déposés." },
+    { "name": "telecharger_document_entreprise", "description": "Téléchargement en PDF d'un acte ou de comptes." },
+    { "name": "chiffres_cles_comptes", "description": "Chiffres clés des comptes, exercice et exercice précédent." }
+  ],
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": { "node": ">=22.12.0" }
+  },
+  "privacy_policies": []
+}

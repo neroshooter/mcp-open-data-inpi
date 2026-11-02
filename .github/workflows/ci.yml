@@ -1,0 +1,45 @@
+# Intégration continue : contrôle des types, linter, tests unitaires, compilation
+# et recherche de secrets, à chaque envoi et à chaque demande de fusion.
+name: Intégration continue
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    name: Vérifications (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - name: Contrôle des types
+        run: npm run typecheck
+      - name: Linter
+        run: npm run lint
+      - name: Tests unitaires
+        run: npm test
+      - name: Compilation
+        run: npm run build
+
+  secrets:
+    name: Recherche de secrets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

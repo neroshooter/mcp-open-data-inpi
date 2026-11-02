@@ -1,0 +1,7 @@
+# Configuration de la recherche de secrets : règles par défaut de gitleaks.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Valeurs factices des tests"
+regexes = ['''jeton-(acces|xsrf|rafraichissement)''', '''motdepasse-test''', '''MotDePasseSecret''', '''AutreSecret123''']
