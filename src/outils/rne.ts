@@ -5,7 +5,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import type { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { z } from 'zod';
-import { lireChiffresCles, natureComptes } from '../analyseurs/comptes.js';
+import { lireChiffresCles, natureComptes, type NatureComptes } from '../analyseurs/comptes.js';
 import { analyserDocuments } from '../analyseurs/documents.js';
 import { analyserEntreprise } from '../analyseurs/entreprise.js';
 import { ErreurINPI, Introuvable, ParametreInvalide } from '../erreurs.js';
@@ -36,6 +36,42 @@ function normaliserIdentifiant(saisie: string): string {
   const id = saisie.trim();
   if (!/^[A-Za-z0-9_-]{8,64}$/.test(id)) throw new ParametreInvalide(`Identifiant de document invalide : « ${saisie} ».`);
   return id;
+}
+
+type ComptesSaisis = Record<string, unknown>;
+
+/**
+ * Choisit, parmi les comptes saisis par l'INPI, ceux demandés : comptes sociaux
+ * ou consolidés (par défaut, les sociaux s'il en existe), de l'exercice indiqué
+ * ou du plus récent. Lève Introuvable en listant les comptes disponibles.
+ */
+export function choisirComptes(
+  bilansSaisis: ComptesSaisis[],
+  demande: { exercice?: number; comptes?: NatureComptes },
+): { choisi: ComptesSaisis; disponibles: string } {
+  const saisis = bilansSaisis
+    .filter((b) => b.deleted !== true)
+    .sort((a, b) => String(b.dateCloture ?? '').localeCompare(String(a.dateCloture ?? '')));
+  const typeDe = (b: ComptesSaisis) =>
+    String(b.typeBilan ?? (b.bilanSaisi as { bilan?: { identite?: { codeTypeBilan?: string } } } | undefined)?.bilan?.identite?.codeTypeBilan ?? '');
+  const decrire = (b: ComptesSaisis) =>
+    `${String(b.dateCloture ?? '').slice(0, 4) || '?'} (${natureComptes(typeDe(b)) === 'consolides' ? 'consolidés' : 'sociaux'})`;
+  const nature = demande.comptes ?? (saisis.some((b) => natureComptes(typeDe(b)) === 'sociaux') ? 'sociaux' : 'consolides');
+  const candidats = saisis.filter((b) => natureComptes(typeDe(b)) === nature);
+  const choisi = demande.exercice
+    ? candidats.find((b) => String(b.dateCloture ?? '').startsWith(String(demande.exercice)))
+    : candidats[0];
+  const disponibles = saisis.map(decrire).join(', ') || 'aucun';
+  if (!choisi) {
+    throw new Introuvable(
+      saisis.length
+        ? `Aucun compte ${nature === 'consolides' ? 'consolidé' : 'social'} saisi${demande.exercice ? ` pour l'exercice ${demande.exercice}` : ''}. ` +
+            `Comptes chiffrés disponibles : ${disponibles}.`
+        : "L'INPI n'a saisi aucun compte annuel chiffré pour cette entreprise (comptes non déposés, confidentiels ou non saisis). " +
+            'Consultez la liste des documents pour télécharger les PDF éventuels.',
+    );
+  }
+  return { choisi, disponibles };
 }
 
 async function attachments(ctx: Contexte, siren: string) {
@@ -197,28 +233,7 @@ export function enregistrerOutilsRNE(serveur: McpServer, ctx: Contexte): void {
       executer({ nom: NOM_SOURCE }, async () => {
         const s = normaliserSiren(args.siren);
         const donnees = (await attachments(ctx, s)) as { bilansSaisis?: Array<Record<string, unknown>> };
-        const saisis = (donnees.bilansSaisis ?? [])
-          .filter((b) => b.deleted !== true)
-          .sort((a, b) => String(b.dateCloture ?? '').localeCompare(String(a.dateCloture ?? '')));
-        const typeDe = (b: Record<string, unknown>) =>
-          String(b.typeBilan ?? (b.bilanSaisi as { bilan?: { identite?: { codeTypeBilan?: string } } } | undefined)?.bilan?.identite?.codeTypeBilan ?? '');
-        const decrire = (b: Record<string, unknown>) =>
-          `${String(b.dateCloture ?? '').slice(0, 4) || '?'} (${natureComptes(typeDe(b)) === 'consolides' ? 'consolidés' : 'sociaux'})`;
-        const nature = args.comptes ?? (saisis.some((b) => natureComptes(typeDe(b)) === 'sociaux') ? 'sociaux' : 'consolides');
-        const candidats = saisis.filter((b) => natureComptes(typeDe(b)) === nature);
-        const choisi = args.exercice
-          ? candidats.find((b) => String(b.dateCloture ?? '').startsWith(String(args.exercice)))
-          : candidats[0];
-        const disponibles = saisis.map(decrire).join(', ') || 'aucun';
-        if (!choisi) {
-          throw new Introuvable(
-            saisis.length
-              ? `Aucun compte ${nature === 'consolides' ? 'consolidé' : 'social'} saisi${args.exercice ? ` pour l'exercice ${args.exercice}` : ''}. ` +
-                  `Comptes chiffrés disponibles : ${disponibles}.`
-              : "L'INPI n'a saisi aucun compte annuel chiffré pour cette entreprise (comptes non déposés, confidentiels ou non saisis). " +
-                  'Consultez la liste des documents pour télécharger les PDF éventuels.',
-          );
-        }
+        const { choisi, disponibles } = choisirComptes(donnees.bilansSaisis ?? [], args);
         // La liste des documents contient en principe les données saisies ; sinon, on les demande.
         const complet = choisi.bilanSaisi
           ? choisi

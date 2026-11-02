@@ -3,7 +3,7 @@ import { lireChiffresCles, montantLiasse } from '../../src/analyseurs/comptes.js
 import { analyserDocuments } from '../../src/analyseurs/documents.js';
 import { analyserEntreprise } from '../../src/analyseurs/entreprise.js';
 import { formaterChiffresCles, formaterDocuments, formaterFicheEntreprise } from '../../src/formats/entreprise.js';
-import { normaliserSiren } from '../../src/outils/rne.js';
+import { choisirComptes, normaliserSiren } from '../../src/outils/rne.js';
 import { jeuJSON } from './aides.js';
 
 describe('fiche entreprise', () => {
@@ -173,6 +173,34 @@ describe('chiffres clés des comptes simplifiés et cas particuliers', () => {
     expect(montantLiasse('-000000002197350')).toBe(-2197350);
     expect(montantLiasse('000000000000000')).toBe(0);
     expect(montantLiasse('n/a')).toBeUndefined();
+  });
+});
+
+describe('choix des comptes', () => {
+  const saisis = [
+    { id: 's23', dateCloture: '2023-12-31', typeBilan: 'C' },
+    { id: 's24', dateCloture: '2024-12-31', typeBilan: 'C' },
+    { id: 'k24', dateCloture: '2024-12-31', typeBilan: 'K' },
+    { id: 'old', dateCloture: '2025-12-31', typeBilan: 'C', deleted: true },
+  ];
+
+  it('prend par défaut les comptes sociaux les plus récents', () => {
+    expect(choisirComptes(saisis, {}).choisi.id).toBe('s24');
+  });
+
+  it('prend les comptes consolidés sur demande', () => {
+    expect(choisirComptes(saisis, { comptes: 'consolides' }).choisi.id).toBe('k24');
+    expect(choisirComptes(saisis, { comptes: 'sociaux', exercice: 2023 }).choisi.id).toBe('s23');
+  });
+
+  it('prend les consolidés par défaut s’il n’existe qu’eux', () => {
+    expect(choisirComptes([{ id: 'k', dateCloture: '2024-12-31', typeBilan: 'K' }], {}).choisi.id).toBe('k');
+  });
+
+  it('liste les comptes disponibles quand la demande ne peut être satisfaite', () => {
+    expect(() => choisirComptes(saisis, { comptes: 'consolides', exercice: 2023 })).toThrow(
+      /Aucun compte consolidé saisi pour l'exercice 2023\. Comptes chiffrés disponibles : 2024 \(sociaux\), 2024 \(consolidés\), 2023 \(sociaux\)/,
+    );
   });
 });
 
