@@ -135,6 +135,7 @@ describe('chiffres clés des comptes simplifiés et cas particuliers', () => {
     expect(c.postes.find((p) => p.libelle.startsWith('Résultat net'))).toMatchObject({ n: -50, n1: 40 });
     expect(c.postes.find((p) => p.libelle === 'Capitaux propres')).toMatchObject({ n: 500, n1: 450 });
     expect(c.postes.find((p) => p.libelle === 'Total du bilan')).toMatchObject({ n: 2000, n1: 1800 });
+    expect(c.avertissement).toMatch(/rapprochez ces montants du PDF/);
   });
 
   it('ne restitue aucun chiffre pour des comptes confidentiels', () => {

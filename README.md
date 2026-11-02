@@ -173,7 +173,8 @@ avec la marche à suivre. Essayez ensuite, par exemple :
   **10 minutes en mémoire** pour éviter les appels répétés. Rien n'est conservé sur le disque, à l'exception des
   PDF que vous demandez explicitement.
 - **Chiffres clés.** Ils proviennent des comptes saisis par l'INPI à partir de la liasse fiscale. Pour les comptes
-  simplifiés, le chiffre d'affaires est la somme des postes 210, 214 et 218 du formulaire 2033-B. Les comptes
+  simplifiés, le chiffre d'affaires est la somme des postes 210, 214 et 218 du formulaire 2033-B ; cette
+  correspondance, tirée de la documentation de l'INPI, est signalée comme à rapprocher du PDF. Les comptes
   déclarés confidentiels ne livrent aucun chiffre ; les comptes de banques et d'assurances ne sont pas lus
   automatiquement (le PDF reste disponible).
 - **Réutilisation des données.** Certaines entreprises s'opposent à la diffusion de leurs données ou à leur

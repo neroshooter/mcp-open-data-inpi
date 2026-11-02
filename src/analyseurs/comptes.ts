@@ -160,9 +160,17 @@ export function lireChiffresCles(bilanSaisi: unknown): ChiffresCles {
     if (poste.note) valeur.note = poste.note;
     if (valeur.n !== undefined || valeur.n1 !== undefined) resultat.postes.push(valeur);
   }
+  const avertissements: string[] = [];
   if (confid === '2' || confid === '4') {
-    resultat.avertissement = 'Le compte de résultat est confidentiel : seuls les postes du bilan sont diffusés.';
+    avertissements.push('Le compte de résultat est confidentiel : seuls les postes du bilan sont diffusés.');
   }
+  if (type === 'S') {
+    avertissements.push(
+      "Comptes simplifiés : la correspondance des postes (formulaires 2033) suit la documentation technique de l'INPI " +
+        "mais n'a pas encore été confrontée à un dépôt réel ; rapprochez ces montants du PDF des comptes.",
+    );
+  }
+  if (avertissements.length) resultat.avertissement = avertissements.join(' ');
   return resultat;
 }
 
