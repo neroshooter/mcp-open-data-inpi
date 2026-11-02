@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DesignApplication operationCode="update">
+                        <RegistrationOfficeCode>IB</RegistrationOfficeCode>
+                        <SealedDepositIndicator>false</SealedDepositIndicator>
+                        <DesignApplicationNumber>DM/071720</DesignApplicationNumber>
+                        <DesignApplicationDate>2009-02-23</DesignApplicationDate>
+                        <TotalDesign>2</TotalDesign>
+                        <DesignatedCountryDetails>
+                            <DesignatedCountry>
+                                <DesignatedCountryCode>CH</DesignatedCountryCode>
+                                <DesignatedUnderCode>Hague Agreement - 1999 Act</DesignatedUnderCode>
+                            </DesignatedCountry>
+                            <DesignatedCountry>
+                                <DesignatedCountryCode>EM</DesignatedCountryCode>
+                                <DesignatedUnderCode>Hague Agreement - 1999 Act</DesignatedUnderCode>
+                            </DesignatedCountry>
+                            <DesignatedCountry>
+                                <DesignatedCountryCode>IS</DesignatedCountryCode>
+                                <DesignatedUnderCode>Hague Agreement - 1999 Act</DesignatedUnderCode>
+                            </DesignatedCountry>
+                            <DesignatedCountry>
+                                <DesignatedCountryCode>LI</DesignatedCountryCode>
+                                <DesignatedUnderCode>Hague Agreement - 1999 Act</DesignatedUnderCode>
+                            </DesignatedCountry>
+                            <DesignatedCountry>
+                                <DesignatedCountryCode>MC</DesignatedCountryCode>
+                                <DesignatedUnderCode>Hague Agreement - 1960 Act</DesignatedUnderCode>
+                            </DesignatedCountry>
+                        </DesignatedCountryDetails>
+                        <DesignDetails>
+                            <Design>
+                                <DesignReference>1</DesignReference>
+                                <RegistrationNumber>DM/071720</RegistrationNumber>
+                                <DesignTitle sequenceNumber="1" languageCode="en">1.-2. Payment terminals </DesignTitle>
+                                <DesignTitle sequenceNumber="2" languageCode="fr">1.-2. Terminaux de paiement </DesignTitle>
+                                <DesignDescription sequenceNumber="1"></DesignDescription>
+                                <ColourIndicator>false</ColourIndicator>
+                                <ExpiryDate>2029-02-23</ExpiryDate>
+                                <IndicationProductDetails>
+                                    <IndicationProduct>
+                                        <ClassificationKindCode>Locarno</ClassificationKindCode>
+                                        <ClassDescriptionDetails>
+                                            <ClassDescription>
+                                                <ClassNumber>1402</ClassNumber>
+                                            </ClassDescription>
+                                        </ClassDescriptionDetails>
+                                    </IndicationProduct>
+                                </IndicationProductDetails>
+                                <DesignerDetails>
+                                    <Designer>
+                                        <DesignerAddressBook>
+                                            <FormattedNameAddress>
+                                                <Name>
+                                                    <FormattedName>
+                                                        <LastName>SOCIETE EXEMPLE 9</LastName>
+                                                        <OrganizationName>SOCIETE EXEMPLE 9</OrganizationName>
+                                                    </FormattedName>
+                                                </Name>
+                                            </FormattedNameAddress>
+                                        </DesignerAddressBook>
+                                    </Designer>
+                                </DesignerDetails>
+                                <DesignRecordDetails>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Registration</BasicRecordKind>
+                                            <RecordPublicationDetails>
+                                                <RecordPublication>
+                                                    <PublicationIdentifier>2009-05</PublicationIdentifier>
+                                                    <PublicationDate>2009-06-30</PublicationDate>
+                                                </RecordPublication>
+                                            </RecordPublicationDetails>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Constitution Mandataire</BasicRecordKind>
+                                            <RecordCurrentStatusDate>2011-07-06</RecordCurrentStatusDate>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Modification Du Titulaire</BasicRecordKind>
+                                            <RecordCurrentStatusDate>2022-04-07</RecordCurrentStatusDate>
+                                            <Comment>Modification du nom et/ou l'adresse du titulaire (BDMI 2022-15)</Comment>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Changement De Titulaire</BasicRecordKind>
+                                            <RecordCurrentStatusDate>2022-06-17</RecordCurrentStatusDate>
+                                            <Comment>Changement de titulaire (BDMI 2022-28)</Comment>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Cession</BasicRecordKind>
+                                            <DesignKeyDetails>
+                                                <DesignKey>
+                                                    <Identifier>All</Identifier>
+                                                </DesignKey>
+                                            </DesignKeyDetails>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Renouvellement</BasicRecordKind>
+                                            <DesignKeyDetails>
+                                                <DesignKey>
+                                                    <Identifier>All</Identifier>
+                                                </DesignKey>
+                                            </DesignKeyDetails>
+                                            <RecordDesignatedCountryDetails>
+                                                <RecordDesignatedCountryCode>CH</RecordDesignatedCountryCode>
+                                                <RecordDesignatedCountryCode>MC</RecordDesignatedCountryCode>
+                                                <RecordDesignatedCountryCode>EM</RecordDesignatedCountryCode>
+                                                <RecordDesignatedCountryCode>IS</RecordDesignatedCountryCode>
+                                                <RecordDesignatedCountryCode>LI</RecordDesignatedCountryCode>
+                                            </RecordDesignatedCountryDetails>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Changement De Titulaire</BasicRecordKind>
+                                            <ClaimantDetails>
+                                                <Claimant>
+                                                    <ClaimantLegalEntity>SOCIETE EXEMPLE 10</ClaimantLegalEntity>
+                                                    <ClaimantAddressBook>
+                                                        <FormattedNameAddress>
+                                                            <Name>
+                                                                <FormattedName>
+                                                                    <LastName>NOM5</LastName>
+                                                                    <OrganizationName>SOCIETE EXEMPLE 10</OrganizationName>
+                                                                </FormattedName>
+                                                            </Name>
+                                                            <Address>
+                                                                <FormattedAddress>
+                                                                    <AddressStreet>12 rue de l'Exemple</AddressStreet>
+                                                                    <AddressCity>Villexemple-12</AddressCity>
+                                                                    <AddressPostcode>10909</AddressPostcode>
+                                                                    <FormattedAddressCountryCode>BE</FormattedAddressCountryCode>
+                                                                </FormattedAddress>
+                                                            </Address>
+                                                        </FormattedNameAddress>
+                                                        <PostalAddress>8 rue de l'Exemple</PostalAddress>
+                                                    </ClaimantAddressBook>
+                                                </Claimant>
+                                            </ClaimantDetails>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                </DesignRecordDetails>
+                            </Design>
+                        </DesignDetails>
+                        <ApplicantDetails>
+                            <Applicant>
+                                <ApplicantSequenceNumber>1</ApplicantSequenceNumber>
+                                <ApplicantLegalEntity>SOCIETE EXEMPLE 11</ApplicantLegalEntity>
+                                <ApplicantAddressBook>
+                                    <FormattedNameAddress>
+                                        <Name>
+                                            <FormattedName>
+                                                <LastName>SOCIETE EXEMPLE 11</LastName>
+                                                <OrganizationName>SOCIETE EXEMPLE 11</OrganizationName>
+                                            </FormattedName>
+                                        </Name>
+                                        <Address>
+                                            <FormattedAddress>
+                                                <AddressStreet>13 rue de l'Exemple</AddressStreet>
+                                                <AddressPostcode>X-0000</AddressPostcode>
+                                                <FormattedAddressCountryCode>BE</FormattedAddressCountryCode>
+                                            </FormattedAddress>
+                                        </Address>
+                                    </FormattedNameAddress>
+                                    <PostalAddress>9 rue de l'Exemple</PostalAddress>
+                                </ApplicantAddressBook>
+                            </Applicant>
+                        </ApplicantDetails>
+                        <RepresentativeDetails>
+                            <Representative>
+                                <RepresentativeLegalEntity>SOCIETE EXEMPLE 12</RepresentativeLegalEntity>
+                                <RepresentativeAddressBook>
+                                    <FormattedNameAddress>
+                                        <Name>
+                                            <FormattedName>
+                                                <LastName>SOCIETE EXEMPLE 12</LastName>
+                                                <OrganizationName>SOCIETE EXEMPLE 12</OrganizationName>
+                                            </FormattedName>
+                                        </Name>
+                                        <Address>
+                                            <FormattedAddress>
+                                                <AddressStreet>14 rue de l'Exemple</AddressStreet>
+                                                <AddressCity>Villexemple-13</AddressCity>
+                                                <AddressPostcode>X-0000</AddressPostcode>
+                                                <FormattedAddressCountryCode>BE</FormattedAddressCountryCode>
+                                            </FormattedAddress>
+                                        </Address>
+                                    </FormattedNameAddress>
+                                    <PostalAddress>10 rue de l'Exemple</PostalAddress>
+                                </RepresentativeAddressBook>
+                            </Representative>
+                            <Representative>
+                                <RepresentativeLegalEntity>SOCIETE EXEMPLE 13</RepresentativeLegalEntity>
+                                <Comment>RIDM : 2011-07-06</Comment>
+                                <RepresentativeAddressBook>
+                                    <FormattedNameAddress>
+                                        <Name>
+                                            <FormattedName>
+                                                <LastName>NOM6</LastName>
+                                                <OrganizationName>SOCIETE EXEMPLE 13</OrganizationName>
+                                            </FormattedName>
+                                        </Name>
+                                        <Address>
+                                            <FormattedAddress>
+                                                <AddressStreet>15 rue de l'Exemple</AddressStreet>
+                                                <AddressCity>Villexemple-14</AddressCity>
+                                                <AddressPostcode>X-0000</AddressPostcode>
+                                                <FormattedAddressCountryCode>BE</FormattedAddressCountryCode>
+                                            </FormattedAddress>
+                                        </Address>
+                                    </FormattedNameAddress>
+                                    <PostalAddress>11 rue de l'Exemple</PostalAddress>
+                                </RepresentativeAddressBook>
+                            </Representative>
+                        </RepresentativeDetails>
+                    </DesignApplication>

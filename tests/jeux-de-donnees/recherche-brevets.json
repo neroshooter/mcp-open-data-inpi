@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "query": "requête anonymisée",
+    "count": 105,
+    "groupCount": 0,
+    "position": 0,
+    "size": 5
+  },
+  "results": [
+    {
+      "documentId": "FR3073063",
+      "self": {
+        "params": {},
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/brevets/notice/FR3073063"
+      },
+      "fields": [
+        {
+          "name": "PUBN",
+          "value": "<country>FR</country><doc-number>3073063</doc-number><kind>A1</kind>"
+        },
+        {
+          "name": "NAT",
+          "value": "Demande française"
+        },
+        {
+          "name": "TIT",
+          "value": "TERMINAL DE PAIEMENT"
+        },
+        {
+          "name": "PUBD",
+          "value": "20190503"
+        },
+        {
+          "name": "PUBD_FOR_RANGE",
+          "value": "20190503"
+        },
+        {
+          "name": "DEPN",
+          "value": "<country>FR</country><doc-number>1760304</doc-number>"
+        },
+        {
+          "name": "DEPD",
+          "value": "20171031"
+        },
+        {
+          "name": "DEPD_FOR_RANGE",
+          "value": "20171031"
+        },
+        {
+          "name": "IPCR",
+          "values": [
+            "G06K   7/01    ",
+            "G07F  19/00    "
+          ]
+        },
+        {
+          "name": "INVNM",
+          "values": [
+            "NOM1",
+            "NOM8",
+            "NOM2",
+            "NOM8"
+          ]
+        },
+        {
+          "name": "INVNE",
+          "values": [
+            "NOM9",
+            "NOM10"
+          ]
+        },
+        {
+          "name": "DENM",
+          "value": "SOCIETE EXEMPLE 1"
+        },
+        {
+          "name": "DENE",
+          "value": "SOCIETE EXEMPLE 1"
+        }
+      ]
+    },
+    {
+      "documentId": "FR3104768",
+      "self": {
+        "params": {},
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/brevets/notice/FR3104768"
+      },
+      "fields": [
+        {
+          "name": "PUBN",
+          "value": "<country>FR</country><doc-number>3104768</doc-number><kind>A1</kind>"
+        },
+        {
+          "name": "NAT",
+          "value": "Demande française"
+        },
+        {
+          "name": "TIT",
+          "value": "SYSTEME ET METHODE D’EXPLOITATION D’UN CONTEXTE D’EVENEMENTS HISTORIQUES POUR L’AMELIORATION DU GESTIONNAIRE DE DIALOGUE D’UN CHATBOT"
+        },
+        {
+          "name": "PUBD",
+          "value": "20210618"
+        },
+        {
+          "name": "PUBD_FOR_RANGE",
+          "value": "20210618"
+        },
+        {
+          "name": "DEPN",
+          "value": "<country>FR</country><doc-number>1914648</doc-number>"
+        },
+        {
+          "name": "DEPD",
+          "value": "20191217"
+        },
+        {
+          "name": "DEPD_FOR_RANGE",
+          "value": "20191217"
+        },
+        {
+          "name": "IPCR",
+          "values": [
+            "G06F  40/35    ",
+            "G06F   3/048   ",
+            "G06N   3/08    ",
+            "G10L  15/22    "
+          ]
+        },
+        {
+          "name": "INVNM",
+          "values": [
+            "NOM11",
+            "NOM12",
+            "NOM13",
+            "NOM14"
+          ]
+        },
+        {
+          "name": "INVNE",
+          "values": [
+            "NOM15",
+            "NOM16"
+          ]
+        },
+        {
+          "name": "DENM",
+          "value": "SOCIETE EXEMPLE 1"
+        },
+        {
+          "name": "DENE",
+          "value": "SOCIETE EXEMPLE 1"
+        }
+      ]
+    },
+    {
+      "documentId": "FR3089730",
+      "self": {
+        "params": {},
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/brevets/notice/FR3089730"
+      },
+      "fields": [
+        {
+          "name": "PUBN",
+          "value": "<country>FR</country><doc-number>3089730</doc-number><kind>A1</kind>"
+        },
+        {
+          "name": "NAT",
+          "value": "Demande française"
+        },
+        {
+          "name": "TIT",
+          "value": "dispositif pour communiquer dans un réseau de passerelles heterogenes par réseau radio avec au moins un nœud et par un réseau longue distance, avec au moins un destinataire"
+        },
+        {
+          "name": "PUBD",
+          "value": "20200612"
+        },
+        {
+          "name": "PUBD_FOR_RANGE",
+          "value": "20200612"
+        },
+        {
+          "name": "DEPN",
+          "value": "<country>FR</country><doc-number>1872436</doc-number>"
+        },
+        {
+          "name": "DEPD",
+          "value": "20181206"
+        },
+        {
+          "name": "DEPD_FOR_RANGE",
+          "value": "20181206"
+        },
+        {
+          "name": "IPCR",
+          "values": [
+            "H04L   9/30    ",
+            "H04L  12/66    "
+          ]
+        },
+        {
+          "name": "INVNM",
+          "values": [
+            "NOM17",
+            "NOM18"
+          ]
+        },
+        {
+          "name": "INVNE",
+          "value": "SOCIETE EXEMPLE 16"
+        },
+        {
+          "name": "DENM",
+          "value": "SOCIETE EXEMPLE 1"
+        },
+        {
+          "name": "DENE",
+          "value": "SOCIETE EXEMPLE 1"
+        }
+      ]
+    },
+    {
+      "documentId": "FR3090952",
+      "self": {
+        "params": {},
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/brevets/notice/FR3090952"
+      },
+      "fields": [
+        {
+          "name": "PUBN",
+          "value": "<country>FR</country><doc-number>3090952</doc-number><kind>A1</kind>"
+        },
+        {
+          "name": "NAT",
+          "value": "Demande française"
+        },
+        {
+          "name": "TIT",
+          "value": "Plateforme et procédé de traçabilité de données et utilisation dans un environnement distribué et ouvert au partage pair à pair"
+        },
+        {
+          "name": "PUBD",
+          "value": "20200626"
+        },
+        {
+          "name": "PUBD_FOR_RANGE",
+          "value": "20200626"
+        },
+        {
+          "name": "DEPN",
+          "value": "<country>FR</country><doc-number>1874021</doc-number>"
+        },
+        {
+          "name": "DEPD",
+          "value": "20181221"
+        },
+        {
+          "name": "DEPD_FOR_RANGE",
+          "value": "20181221"
+        },
+        {
+          "name": "IPCR",
+          "values": [
+            "G06N  20/00    ",
+            "G06F  21/16    "
+          ]
+        },
+        {
+          "name": "INVNM",
+          "values": [
+            "NOM11",
+            "NOM12"
+          ]
+        },
+        {
+          "name": "INVNE",
+          "value": "SOCIETE EXEMPLE 17"
+        },
+        {
+          "name": "DENM",
+          "value": "SOCIETE EXEMPLE 1"
+        },
+        {
+          "name": "DENE",
+          "value": "SOCIETE EXEMPLE 1"
+        }
+      ]
+    },
+    {
+      "documentId": "FR3131965",
+      "self": {
+        "params": {},
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/brevets/notice/FR3131965"
+      },
+      "fields": [
+        {
+          "name": "PUBN",
+          "value": "<country>FR</country><doc-number>3131965</doc-number><kind>A1</kind>"
+        },
+        {
+          "name": "NAT",
+          "value": "Demande française"
+        },
+        {
+          "name": "TIT",
+          "value": "procédé de traitement de transaction, système et programme correspondant"
+        },
+        {
+          "name": "PUBD",
+          "value": "20230721"
+        },
+        {
+          "name": "PUBD_FOR_RANGE",
+          "value": "20230721"
+        },
+        {
+          "name": "DEPN",
+          "value": "<country>FR</country><doc-number>2200281</doc-number>"
+        },
+        {
+          "name": "DEPD",
+          "value": "20220114"
+        },
+        {
+          "name": "DEPD_FOR_RANGE",
+          "value": "20220114"
+        },
+        {
+          "name": "IPCR",
+          "values": [
+            "G06F  21/60    ",
+            "G06F   3/14    ",
+            "G06V  40/16    "
+          ]
+        },
+        {
+          "name": "INVNM",
+          "values": [
+            "NOM19",
+            "NOM20",
+            "NOM21",
+            "NOM22",
+            "NOM23",
+            "NOM24"
+          ]
+        },
+        {
+          "name": "INVNE",
+          "values": [
+            "NOM25",
+            "NOM26",
+            "NOM27"
+          ]
+        },
+        {
+          "name": "DENM",
+          "values": [
+            "NOM28",
+            "NOM5"
+          ]
+        },
+        {
+          "name": "DENE",
+          "values": [
+            "NOM28",
+            "NOM5"
+          ]
+        }
+      ]
+    }
+  ],
+  "facets": []
+}

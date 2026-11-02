@@ -17,8 +17,8 @@ compte [data.inpi.fr](https://data.inpi.fr).
 | Domaine | Ce que le serveur restitue |
 |---|---|
 | **Marques** françaises, de l'Union européenne et internationales | Recherche par nom, classe de Nice, titulaire, déposant, SIREN, statut et dates. Fiche complète : type, statut, dates de dépôt, d'enregistrement et d'expiration, période de renouvellement, nombre d'oppositions, libellés intégraux des produits et services classe par classe, titulaire actuel et déposant avec leur SIREN, mandataire, codes de Vienne, priorités, publications au BOPI, historique complet des inscriptions (cessions, changements de nom, renonciations partielles, libellés après limitation). |
-| **Brevets** (FR, EP, WO, CCP) | Recherche par mots-clés, numéro, déposant, titulaire, SIREN, inventeur, mandataire, CIB/CPC et dates. Fiche : titre, abrégé, numéros et dates, déposants, titulaires, inventeurs, mandataire, priorités, classifications, événements de procédure. |
-| **Dessins et modèles** (FR, WO) | Recherche par objet, déposant, titulaire, SIREN, mandataire, numéro, classe de Locarno et dates. Fiche : modèles du dépôt, produits, classes, déposants, créateurs, priorités, publications, inscriptions. |
+| **Brevets** (FR, EP, WO, CCP) | Recherche par mots-clés, numéro, déposant, titulaire, SIREN, inventeur, mandataire, CIB/CPC et dates. Fiche : titre, abrégé, nature et statut, numéros et dates, titulaires, déposants avec SIREN, inventeurs, mandataire, priorités, classifications CIB et CPC, annuités payées et à venir, délivrance, rejet ou déchéance, inscriptions au Registre national des brevets, documents cités. |
+| **Dessins et modèles** (FR, WO) | Recherche par objet, déposant, titulaire, SIREN, mandataire, numéro, classe de Locarno et dates. Fiche : dépôt, pays désignés, objet, statut, expiration, classe de Locarno, reproductions, créateurs, déposants, mandataires, historique des inscriptions (publications, renouvellements, cessions, changements de titulaire). |
 | **Registre national des entreprises (RNE)** | Recherche par dénomination. Fiche : dénomination, forme juridique, capital social, objet social, durée, date de clôture, siège, dates d'immatriculation, dirigeants, commissaires aux comptes. Liste des actes (avec un filtre « statuts seulement ») et des comptes annuels, téléchargement des PDF, chiffres clés des comptes sur l'exercice et l'exercice précédent. |
 
 Le serveur est un outil de **pure consultation** : il n'analyse pas les données, ne surveille rien et ne modifie
@@ -177,6 +177,8 @@ avec la marche à suivre. Essayez ensuite, par exemple :
   correspondance, tirée de la documentation de l'INPI, est signalée comme à rapprocher du PDF. Les comptes
   déclarés confidentiels ne livrent aucun chiffre ; les comptes de banques et d'assurances ne sont pas lus
   automatiquement (le PDF reste disponible).
+- **Dessins et modèles internationaux.** Lorsqu'un dépôt contient plusieurs modèles, l'API de l'INPI ne restitue
+  que la notice du premier ; la fiche le signale et renvoie vers data.inpi.fr pour les suivants.
 - **Réutilisation des données.** Certaines entreprises s'opposent à la diffusion de leurs données ou à leur
   utilisation commerciale ; le serveur le signale. Respectez les conditions de réutilisation de l'INPI.
 

@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "query": "requête anonymisée",
+    "count": 5,
+    "groupCount": 0,
+    "position": 0,
+    "size": 5
+  },
+  "results": [
+    {
+      "documentId": "WODM/071720-001",
+      "xml": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/notice/WODM071720?ref=001"
+      },
+      "image": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/image/WODM071720?ref=001"
+      },
+      "fields": [
+        {
+          "name": "DesignApplicationNumber",
+          "value": "DM/071720"
+        },
+        {
+          "name": "DesignApplicationDate",
+          "value": "20090223"
+        },
+        {
+          "name": "DesignTitle",
+          "values": [
+            "1.-2. Payment terminals ",
+            "1.-2. Terminaux de paiement "
+          ]
+        },
+        {
+          "name": "ClassNumber",
+          "value": "1402"
+        },
+        {
+          "name": "PublicationDate",
+          "value": "20090630"
+        },
+        {
+          "name": "DEPOSANT",
+          "value": "SOCIETE EXEMPLE 11"
+        },
+        {
+          "name": "DesignReference",
+          "value": "001"
+        }
+      ]
+    },
+    {
+      "documentId": "WODM/071720-002",
+      "xml": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/notice/WODM071720?ref=002"
+      },
+      "image": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/image/WODM071720?ref=002"
+      },
+      "fields": [
+        {
+          "name": "DesignApplicationNumber",
+          "value": "DM/071720"
+        },
+        {
+          "name": "DesignApplicationDate",
+          "value": "20090223"
+        },
+        {
+          "name": "DesignTitle",
+          "values": [
+            "1.-2. Payment terminals ",
+            "1.-2. Terminaux de paiement "
+          ]
+        },
+        {
+          "name": "ClassNumber",
+          "value": "1402"
+        },
+        {
+          "name": "PublicationDate",
+          "value": "20090630"
+        },
+        {
+          "name": "DEPOSANT",
+          "value": "SOCIETE EXEMPLE 11"
+        },
+        {
+          "name": "DesignReference",
+          "value": "002"
+        }
+      ]
+    },
+    {
+      "documentId": "WODM/066995-001",
+      "xml": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/notice/WODM066995?ref=001"
+      },
+      "image": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/image/WODM066995?ref=001"
+      },
+      "fields": [
+        {
+          "name": "DesignApplicationNumber",
+          "value": "DM/066995"
+        },
+        {
+          "name": "DesignApplicationDate",
+          "value": "20050906"
+        },
+        {
+          "name": "DesignTitle",
+          "values": [
+            "Terminal de paiement",
+            "Payment terminal"
+          ]
+        },
+        {
+          "name": "ClassNumber",
+          "value": "1402"
+        },
+        {
+          "name": "PublicationDate",
+          "value": "20060331"
+        },
+        {
+          "name": "DEPOSANT",
+          "value": "SOCIETE EXEMPLE 18"
+        },
+        {
+          "name": "DesignReference",
+          "value": "001"
+        }
+      ]
+    },
+    {
+      "documentId": "WODM/062930-001",
+      "xml": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/notice/WODM062930?ref=001"
+      },
+      "image": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/image/WODM062930?ref=001"
+      },
+      "fields": [
+        {
+          "name": "DesignApplicationNumber",
+          "value": "DM/062930"
+        },
+        {
+          "name": "DesignApplicationDate",
+          "value": "20030225"
+        },
+        {
+          "name": "DesignTitle",
+          "values": [
+            "Payment terminal, payment terminal with printer",
+            "Terminal de paiement, terminal de paiement doté d&apos;une imprimante"
+          ]
+        },
+        {
+          "name": "ClassNumber",
+          "value": "1402"
+        },
+        {
+          "name": "PublicationDate",
+          "value": "20030430"
+        },
+        {
+          "name": "DEPOSANT",
+          "value": "SOCIETE EXEMPLE 18"
+        },
+        {
+          "name": "DesignReference",
+          "value": "001"
+        }
+      ]
+    },
+    {
+      "documentId": "WODM/062930-002",
+      "xml": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/notice/WODM062930?ref=002"
+      },
+      "image": {
+        "href": "https://api-gateway.inpi.fr/services/apidiffusion/api/modeles/image/WODM062930?ref=002"
+      },
+      "fields": [
+        {
+          "name": "DesignApplicationNumber",
+          "value": "DM/062930"
+        },
+        {
+          "name": "DesignApplicationDate",
+          "value": "20030225"
+        },
+        {
+          "name": "DesignTitle",
+          "values": [
+            "Payment terminal, payment terminal with printer",
+            "Terminal de paiement, terminal de paiement doté d&apos;une imprimante"
+          ]
+        },
+        {
+          "name": "ClassNumber",
+          "value": "1402"
+        },
+        {
+          "name": "PublicationDate",
+          "value": "20030430"
+        },
+        {
+          "name": "DEPOSANT",
+          "value": "SOCIETE EXEMPLE 18"
+        },
+        {
+          "name": "DesignReference",
+          "value": "002"
+        }
+      ]
+    }
+  ],
+  "facets": []
+}

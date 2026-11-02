@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DesignApplication operationCode="insert">
+                        <RegistrationOfficeCode>FR</RegistrationOfficeCode>
+                        <DesignApplicationNumber>20140182</DesignApplicationNumber>
+                        <DesignApplicationDate>2014-01-14</DesignApplicationDate>
+                        <FilingPlace>INPI ILE DE FRANCE</FilingPlace>
+                        <TotalDesign>8</TotalDesign>
+                        <DesignDetails>
+                            <Design>
+                                <DesignReference>001</DesignReference>
+                                <RegistrationNumber>20140182</RegistrationNumber>
+                                <DesignTitle>Sac Scott</DesignTitle>
+                                <ImmediatePublicationIndicator>false</ImmediatePublicationIndicator>
+                                <TotalRepresentationSheet>1</TotalRepresentationSheet>
+                                <ExpiryDate>2019-01-14</ExpiryDate>
+                                <DesignCurrentStatusCode>Registered</DesignCurrentStatusCode>
+                                <DesignRepresentationSheetDetails>
+                                    <DesignRepresentationSheet>
+                                        <ViewDetails>
+                                            <View>
+                                                <ViewSequenceNumber>1</ViewSequenceNumber>
+                                                <ViewNumber>955085</ViewNumber>
+                                                <ViewFilename>dmf0000000000955085_001</ViewFilename>
+                                                <ViewTitle>Reproduction 1.1 : . Sac Scott</ViewTitle>
+                                                <ViewColourIndicator>false</ViewColourIndicator>
+                                            </View>
+                                        </ViewDetails>
+                                    </DesignRepresentationSheet>
+                                </DesignRepresentationSheetDetails>
+                                <IndicationProductDetails>
+                                    <IndicationProduct>
+                                        <ClassificationKindCode>Locarno</ClassificationKindCode>
+                                        <ClassDescriptionDetails>
+                                            <ClassDescription>
+                                                <ClassNumber>0301</ClassNumber>
+                                            </ClassDescription>
+                                        </ClassDescriptionDetails>
+                                    </IndicationProduct>
+                                </IndicationProductDetails>
+                                <DesignRecordDetails>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Registration</BasicRecordKind>
+                                            <RecordPublicationDetails>
+                                                <RecordPublication>
+                                                    <PublicationIdentifier>2015-02</PublicationIdentifier>
+                                                    <PublicationDate>2015-01-16</PublicationDate>
+                                                </RecordPublication>
+                                            </RecordPublicationDetails>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                    <DesignRecord>
+                                        <DesignBasicRecord>
+                                            <BasicRecordKind>Type</BasicRecordKind>
+                                            <Comment>Réquisition de publicité 5 ans</Comment>
+                                        </DesignBasicRecord>
+                                    </DesignRecord>
+                                </DesignRecordDetails>
+                            </Design>
+                        </DesignDetails>
+                        <ApplicantDetails>
+                            <Applicant>
+                                <ApplicantIdentifier identifierKindCode="FR">000023757</ApplicantIdentifier>
+                                <ApplicantSequenceNumber>1</ApplicantSequenceNumber>
+                                <ApplicantAddressBook>
+                                    <FormattedNameAddress>
+                                        <Name>
+                                            <FormattedName>
+                                                <LastName>SOCIETE EXEMPLE 14</LastName>
+                                                <OrganizationName>SOCIETE EXEMPLE 14</OrganizationName>
+                                            </FormattedName>
+                                        </Name>
+                                        <Address>
+                                            <FormattedAddress>
+                                                <AddressStreet>18 rue de l'Exemple</AddressStreet>
+                                                <AddressCity>Villexemple-15</AddressCity>
+                                                <AddressPostcode>11010</AddressPostcode>
+                                                <FormattedAddressCountryCode>FR</FormattedAddressCountryCode>
+                                            </FormattedAddress>
+                                        </Address>
+                                    </FormattedNameAddress>
+                                    <PostalAddress>16 rue de l'Exemple</PostalAddress>
+                                </ApplicantAddressBook>
+                            </Applicant>
+                        </ApplicantDetails>
+                        <RepresentativeDetails>
+                            <Representative>
+                                <RepresentativeAddressBook>
+                                    <FormattedNameAddress>
+                                        <Name>
+                                            <FormattedName>
+                                                <LastName>NOM7</LastName>
+                                                <OrganizationName>SOCIETE EXEMPLE 15</OrganizationName>
+                                            </FormattedName>
+                                        </Name>
+                                        <Address>
+                                            <FormattedAddress>
+                                                <AddressStreet>18 rue de l'Exemple</AddressStreet>
+                                                <AddressCity>Villexemple-15</AddressCity>
+                                                <AddressPostcode>11010</AddressPostcode>
+                                                <FormattedAddressCountryCode>FR</FormattedAddressCountryCode>
+                                            </FormattedAddress>
+                                        </Address>
+                                    </FormattedNameAddress>
+                                    <PostalAddress>17 rue de l'Exemple</PostalAddress>
+                                </RepresentativeAddressBook>
+                            </Representative>
+                        </RepresentativeDetails>
+                    </DesignApplication>

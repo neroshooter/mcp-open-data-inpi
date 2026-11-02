@@ -61,6 +61,23 @@ describe.skipIf(!actif)('API de l’INPI (réelles)', () => {
     expect(texte).toContain('WORLDLINE');
   });
 
+  it('fiche_brevet FR3073063 restitue titulaire, inscriptions et annuités', async () => {
+    const { texte, erreur } = await appeler('fiche_brevet', { numero: 'FR3073063' });
+    expect(erreur).toBe(false);
+    expect(texte).toContain('TERMINAL DE PAIEMENT');
+    expect(texte).toContain('Transmission totale de propriété');
+    expect(texte).toContain('Dernière annuité payée');
+  });
+
+  it('rechercher_modeles trouve les modèles WORLDLINE et fiche_modele lit un dépôt français', async () => {
+    const recherche = await appeler('rechercher_modeles', { deposant: 'worldline', taille: 3 });
+    expect(recherche.erreur).toBe(false);
+    expect(recherche.texte).toContain('WODM071720-001');
+    const fiche = await appeler('fiche_modele', { numero: 'FR20140183' });
+    expect(fiche.erreur).toBe(false);
+    expect(fiche.texte).toContain('Classification de Locarno');
+  });
+
   it('fiche_entreprise 403052111 restitue capital, dirigeants et commissaires aux comptes', async () => {
     const { texte, erreur } = await appeler('fiche_entreprise', { siren: '403052111' });
     expect(erreur).toBe(false);

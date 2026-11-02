@@ -42,6 +42,7 @@ export interface ReponseRecherchePI {
   results: Array<{
     documentId: string;
     xml?: { href: string };
+    self?: { href: string };
     fields: Array<{ name: string; value: string | null; values: string[] | null }>;
   }>;
 }

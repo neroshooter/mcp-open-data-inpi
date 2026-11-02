@@ -71,7 +71,8 @@ export function lirePersonne(bloc: unknown): Personne | undefined {
   // Les offices européens indiquent parfois seulement « Legal Entity » : la forme
   // juridique précise figure alors dans LegalForm.
   const formeJuridique = [espaces(texte(parSuffixe(n, 'LegalEntity'))), espaces(texteDe(nomFormate, 'LegalForm'))].find(
-    (f) => f && !GENERIQUES.test(f),
+    // Certains offices placent le nom complet dans …LegalEntity : on l'ignore alors.
+    (f) => f && !GENERIQUES.test(f) && f !== nom,
   );
 
   return {

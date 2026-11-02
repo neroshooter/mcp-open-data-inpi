@@ -23,14 +23,21 @@ export function normaliserNumeroBrevet(saisie: string): string {
   return `${m[1] ?? 'FR'}${m[2]}`;
 }
 
-/** Normalise un numéro de dessin ou modèle (FR20140182, WO…). */
-export function normaliserNumeroModele(saisie: string): string {
-  const n = saisie.toUpperCase().replace(/[\s.\-/]/g, '');
-  const m = /^(FR|WO|DM)?(\d+)$/.exec(n);
+/**
+ * Normalise un numéro de dessin ou modèle : FR20140182, FR20140182-002,
+ * DM/071720, WODM071720-001… Renvoie le numéro du dépôt et le rang du modèle.
+ */
+export function normaliserNumeroModele(saisie: string): { base: string; rang: string } {
+  const n = saisie.toUpperCase().replace(/[\s./]/g, '');
+  const m = /^(FR|WODM|WO|DM)?(\d+)(?:-(\d{1,3}))?$/.exec(n);
   if (!m || !m[2]) {
-    throw new ParametreInvalide(`Numéro de dessin ou modèle non reconnu : « ${saisie} ». Exemple attendu : FR20140182.`);
+    throw new ParametreInvalide(
+      `Numéro de dessin ou modèle non reconnu : « ${saisie} ». Exemples attendus : FR20140182, FR20140182-002, WODM071720-001.`,
+    );
   }
-  return `${m[1] === 'WO' || m[1] === 'DM' ? 'WO' : 'FR'}${m[2]}`;
+  const international = m[1] === 'WODM' || m[1] === 'WO' || m[1] === 'DM';
+  const numero = international ? m[2].padStart(6, '0') : m[2];
+  return { base: `${international ? 'WODM' : 'FR'}${numero}`, rang: (m[3] ?? '1').padStart(3, '0') };
 }
 
 const pagination = {
@@ -102,12 +109,12 @@ export function enregistrerOutilsTitres(serveur: McpServer, ctx: Contexte): void
           titre: 'TIT',
           details: [
             ['NAT', 'nature'],
+            ['PUBN', 'publication'],
             ['PUBD', 'publié le'],
-            ['DEPN', 'dépôt n°'],
+            ['DEPN', 'dépôt'],
             ['DEPD', 'déposé le'],
-            ['DENM', 'déposant'],
             ['DENE', 'déposant'],
-            ['IPRC', 'CIB'],
+            ['IPCR', 'CIB'],
           ],
           outilFiche: 'fiche_brevet',
         });
@@ -216,20 +223,32 @@ export function enregistrerOutilsTitres(serveur: McpServer, ctx: Contexte): void
     {
       title: "Fiche complète d'un dessin ou modèle",
       description:
-        "Fiche d'un dépôt de dessins et modèles d'après la notice officielle de l'INPI : dates, statut, modèles du " +
-        'dépôt avec leur objet et leur classe de Locarno, déposants, titulaires, créateurs, mandataire, priorités, ' +
-        'publications et inscriptions.',
-      inputSchema: { numero: z.string().describe('Numéro de dépôt préfixé, par exemple FR20140182.') },
+        "Fiche d'un dessin ou modèle d'après la notice officielle de l'INPI : dépôt, pays désignés, objet, statut, " +
+        "date d'expiration, classe de Locarno, reproductions, créateurs, déposants, mandataires et historique des " +
+        'inscriptions (publications, renouvellements, cessions, changements de titulaire).',
+      inputSchema: {
+        numero: z
+          .string()
+          .describe('Numéro du modèle : FR20140182 (premier modèle du dépôt), FR20140182-002, ou WODM071720-001 pour un dépôt international.'),
+      },
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
     ({ numero }) =>
       executer({ nom: SOURCE_MODELES }, async () => {
-        const reference = normaliserNumeroModele(numero);
-        const xml = await ctx.pi.xml('modeles', `modeles/notice/${reference}`, `Le dessin ou modèle ${reference}`);
-        return reponse(formaterFicheModele(analyserNoticeModele(xml, reference)), {
-          nom: SOURCE_MODELES,
-          lien: lienModele(reference),
-        });
+        const { base, rang } = normaliserNumeroModele(numero);
+        const reference = `${base}-${rang}`;
+        const xml = await ctx.pi.xml('modeles', `modeles/notice/${base}?ref=${rang}`, `Le dessin ou modèle ${reference}`);
+        const fiche = analyserNoticeModele(xml, reference);
+        let texte = formaterFicheModele(fiche);
+        // L'API ne renvoie que la notice du premier modèle d'un dépôt, quel que soit le rang demandé.
+        const rendu = fiche.modeles[0]?.numero;
+        if (rendu && Number(rendu) !== Number(rang)) {
+          texte =
+            `> ⚠️ Vous avez demandé le modèle n° ${rang}, mais l'API de l'INPI ne restitue que la notice du modèle ` +
+            `n° ${rendu} de ce dépôt. Les données ci-dessous concernent ce modèle n° ${rendu} ; le modèle demandé est ` +
+            `consultable sur ${lienModele(base, rang)}.\n\n${texte}`;
+        }
+        return reponse(texte, { nom: SOURCE_MODELES, lien: lienModele(base, rang) });
       }),
   );
 }

@@ -63,6 +63,27 @@ const REGLES_XML = {
   BasicRegistrationNumber: (v) => substitut('numero', v, (n) => `Z-${chiffres(n, 9)}`),
   RecordReference: (v) => substitut('ref', v, (n, o) => chiffres(n + 100, o.length)),
   MarkDescription: () => "Description d'exemple",
+  // Brevets (format INPI dérivé de ST.36)
+  orgname: (v) => substitut('org', v, ORGANISATIONS),
+  'last-name': (v) => (/[,.]|CORP|SA\b|SAS|GMBH|LTD|LLP|PARTG/i.test(v) ? substitut('org', v, ORGANISATIONS) : substitut('nom', v, PERSONNES)),
+  'first-name': (v) => substitut('prenom', v, PRENOMS),
+  'address-1': (v) => substitut('rue', v, RUES),
+  city: (v) => substitut('ville', v, VILLES),
+  postcode: (v) => substitut('cp', v, (n) => String(10000 + n * 101)),
+  iid: (v) => substitut('id', v, (n, o) => chiffres(n, o.length)),
+  text: (v) => (/\(.*\)/.test(v) ? substitut('citation', v, (n) => `XX ${n} A1 (DEPOSANT EXEMPLE ${n}) 1 janvier 2000 (2000-01-01)`) : v),
+  // Forme juridique, ou parfois nom complet de la personne (selon l'office)
+  ...Object.fromEntries(
+    ['ApplicantLegalEntity', 'ClaimantLegalEntity', 'RepresentativeLegalEntity', 'fr-CurrentHolderLegalEntity'].map((b) => [
+      b,
+      (v) =>
+        /^(soci[ée]t[ée] (par actions|anonyme|civile|en|à)|legal|natural|sarl|sas|sa|eurl|association)/i.test(v) && !/,/.test(v)
+          ? v
+          : substitut('org', v, ORGANISATIONS),
+    ]),
+  ),
+  // Dessins et modèles
+  Comment: (v) => (/BDMI|RIDM|Réquisition/.test(v) ? v : "Commentaire d'exemple"),
 };
 
 function anonymiserXML(xml) {
@@ -168,9 +189,25 @@ for (const fichier of process.argv.slice(2)) {
   let cible;
   let resultat;
   if (nom.endsWith('.xml')) {
-    const prefixe = nom.slice(0, 2).toUpperCase();
-    cible = `marque-${prefixe.toLowerCase()}-${substitut('fichier', nom, (n) => n)}.xml`;
+    const famille = /^brevet/i.test(nom) ? 'brevet' : /^modele/i.test(nom) ? 'modele' : 'marque';
+    const suffixe = famille === 'marque' ? `-${nom.slice(0, 2).toLowerCase()}` : '';
+    cible = `${famille}${suffixe}-${substitut(`fichier-${famille}`, nom, (n) => n)}.xml`;
     resultat = anonymiserXML(contenu);
+  } else if (/search/i.test(nom)) {
+    // Réponse de recherche de l'API PI : on anonymise les noms des personnes et déposants.
+    const NOMS = new Set(['DENM', 'DENE', 'DENMA', 'DENEA', 'INVNM', 'INVNE', 'DEPOSANT', 'DEPOTIT', 'TINM']);
+    const donnees = JSON.parse(contenu);
+    for (const r of donnees.results ?? []) {
+      for (const f of r.fields ?? []) {
+        if (!NOMS.has(f.name)) continue;
+        if (f.value) f.value = substitut('org', f.value, ORGANISATIONS);
+        if (f.values) f.values = f.values.map((v) => substitut('nom', v, PERSONNES));
+      }
+    }
+    if (donnees.facets) donnees.facets = [];
+    if (donnees.metadata?.query) donnees.metadata.query = 'requête anonymisée';
+    cible = `recherche-${/brevet/i.test(nom) ? 'brevets' : 'modeles'}.json`;
+    resultat = `${JSON.stringify(donnees, null, 2)}\n`;
   } else if (nom.endsWith('_attachments.json')) {
     cible = 'rne-documents.json';
     resultat = `${JSON.stringify(anonymiserJSON(JSON.parse(contenu)), null, 2)}\n`;

@@ -29,6 +29,16 @@ export function decoderEntites(texte: string): string {
 /** Préfixe d'office déduit de la clé interne ukey (FMARK|…, CTMARK|…, TMINT|…). */
 const PREFIXES_UKEY: Record<string, string> = { FMARK: 'FR', CTMARK: 'EU', TMINT: 'WO' };
 
+/**
+ * Valeur lisible d'un champ : certains champs des brevets contiennent des
+ * fragments XML (« <country>FR</country><doc-number>3073063</doc-number> »).
+ */
+function valeurLisible(v: string): string {
+  return decoderEntites(v.replace(/<\/country>\s*<doc-number>/g, '').replace(/<[^>]+>/g, ' '))
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function lirePageResultats(reponse: ReponseRecherchePI): PageResultats {
   return {
     total: reponse.metadata.count,
@@ -37,8 +47,8 @@ export function lirePageResultats(reponse: ReponseRecherchePI): PageResultats {
       const champs: Record<string, string | string[]> = {};
       for (const f of r.fields ?? []) {
         if (f.name in champs) continue;
-        if (f.values) champs[f.name] = f.values.map(decoderEntites);
-        else if (f.value !== null && f.value !== undefined) champs[f.name] = decoderEntites(f.value);
+        if (f.values) champs[f.name] = f.values.map(valeurLisible);
+        else if (f.value !== null && f.value !== undefined) champs[f.name] = valeurLisible(f.value);
       }
       return { reference: referenceDe(r, champs), champs };
     }),
@@ -46,10 +56,12 @@ export function lirePageResultats(reponse: ReponseRecherchePI): PageResultats {
 }
 
 function referenceDe(r: ReponseRecherchePI['results'][number], champs: Record<string, string | string[]>): string {
-  // Le lien vers la notice porte le numéro complet attendu par l'API.
-  const href = r.xml?.href;
+  // Dessins et modèles : identifiant du modèle (« WODM/071720-001 », « FR20140182-001 »).
+  if (/^[A-Z]{2}.*-\d{3}$/.test(r.documentId)) return r.documentId.replace(/\//g, '');
+  // Sinon, le lien vers la notice porte le numéro complet attendu par l'API.
+  const href = r.xml?.href ?? r.self?.href;
   if (href) {
-    const dernier = href.split('/').filter(Boolean).pop();
+    const dernier = new URL(href).pathname.split('/').filter(Boolean).pop();
     if (dernier) return decodeURIComponent(dernier);
   }
   const ukey = typeof champs.ukey === 'string' ? champs.ukey : '';
