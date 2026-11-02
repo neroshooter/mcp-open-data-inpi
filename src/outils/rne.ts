@@ -5,7 +5,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import type { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { z } from 'zod';
-import { lireChiffresCles } from '../analyseurs/comptes.js';
+import { lireChiffresCles, natureComptes } from '../analyseurs/comptes.js';
 import { analyserDocuments } from '../analyseurs/documents.js';
 import { analyserEntreprise } from '../analyseurs/entreprise.js';
 import { ErreurINPI, Introuvable, ParametreInvalide } from '../erreurs.js';
@@ -173,7 +173,7 @@ export function enregistrerOutilsRNE(serveur: McpServer, ctx: Contexte): void {
       description:
         "Chiffres clés des comptes annuels saisis par l'INPI (chiffre d'affaires, résultat d'exploitation, résultat net, " +
         "capital, capitaux propres, total des dettes, total du bilan, effectif), pour l'exercice et l'exercice précédent. " +
-        'Comptes complets, simplifiés et consolidés.',
+        'Comptes sociaux (complets ou simplifiés) ou comptes consolidés du groupe, au choix.',
       inputSchema: {
         siren: schemaSiren,
         exercice: z
@@ -183,6 +183,13 @@ export function enregistrerOutilsRNE(serveur: McpServer, ctx: Contexte): void {
           .max(2100)
           .optional()
           .describe("Année de clôture de l'exercice (par défaut, le plus récent disponible)."),
+        comptes: z
+          .enum(['sociaux', 'consolides'])
+          .optional()
+          .describe(
+            'sociaux : comptes de la société seule ; consolides : comptes du groupe. Par défaut, les comptes sociaux, ' +
+              "ou les comptes consolidés s'il n'existe qu'eux.",
+          ),
       },
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
@@ -193,14 +200,21 @@ export function enregistrerOutilsRNE(serveur: McpServer, ctx: Contexte): void {
         const saisis = (donnees.bilansSaisis ?? [])
           .filter((b) => b.deleted !== true)
           .sort((a, b) => String(b.dateCloture ?? '').localeCompare(String(a.dateCloture ?? '')));
+        const typeDe = (b: Record<string, unknown>) =>
+          String(b.typeBilan ?? (b.bilanSaisi as { bilan?: { identite?: { codeTypeBilan?: string } } } | undefined)?.bilan?.identite?.codeTypeBilan ?? '');
+        const decrire = (b: Record<string, unknown>) =>
+          `${String(b.dateCloture ?? '').slice(0, 4) || '?'} (${natureComptes(typeDe(b)) === 'consolides' ? 'consolidés' : 'sociaux'})`;
+        const nature = args.comptes ?? (saisis.some((b) => natureComptes(typeDe(b)) === 'sociaux') ? 'sociaux' : 'consolides');
+        const candidats = saisis.filter((b) => natureComptes(typeDe(b)) === nature);
         const choisi = args.exercice
-          ? saisis.find((b) => String(b.dateCloture ?? '').startsWith(String(args.exercice)))
-          : saisis[0];
+          ? candidats.find((b) => String(b.dateCloture ?? '').startsWith(String(args.exercice)))
+          : candidats[0];
+        const disponibles = saisis.map(decrire).join(', ') || 'aucun';
         if (!choisi) {
-          const disponibles = saisis.map((b) => String(b.dateCloture ?? '').slice(0, 4)).filter(Boolean);
           throw new Introuvable(
-            args.exercice
-              ? `Aucun compte saisi pour l'exercice ${args.exercice}. Exercices disponibles : ${disponibles.join(', ') || 'aucun'}.`
+            saisis.length
+              ? `Aucun compte ${nature === 'consolides' ? 'consolidé' : 'social'} saisi${args.exercice ? ` pour l'exercice ${args.exercice}` : ''}. ` +
+                  `Comptes chiffrés disponibles : ${disponibles}.`
               : "L'INPI n'a saisi aucun compte annuel chiffré pour cette entreprise (comptes non déposés, confidentiels ou non saisis). " +
                   'Consultez la liste des documents pour télécharger les PDF éventuels.',
           );
@@ -209,7 +223,8 @@ export function enregistrerOutilsRNE(serveur: McpServer, ctx: Contexte): void {
         const complet = choisi.bilanSaisi
           ? choisi
           : (await ctx.rne.json<Record<string, unknown>>(`/api/bilans-saisis/${normaliserIdentifiant(String(choisi.id))}`, 'Les comptes saisis')).donnees;
-        return reponse(formaterChiffresCles(s, lireChiffresCles(complet)), { nom: NOM_SOURCE, lien: lienEntreprise(s) });
+        const texte = `${formaterChiffresCles(s, lireChiffresCles(complet))}\n\nComptes chiffrés disponibles pour cette entreprise : ${disponibles}.`;
+        return reponse(texte, { nom: NOM_SOURCE, lien: lienEntreprise(s) });
       }),
   );
 }

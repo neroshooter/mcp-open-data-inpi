@@ -50,15 +50,31 @@ export const POSTES_SIMPLIFIES: Poste[] = [
 ];
 
 export const TYPES_BILAN: Record<string, string> = {
-  C: 'Comptes annuels complets',
-  S: 'Comptes annuels simplifiés',
-  K: 'Comptes consolidés',
-  B: 'Comptes annuels de banque',
-  A: "Comptes annuels d'assurance",
-  AC: "Comptes annuels d'assurance",
-  CA: 'Comptes annuels agricoles complets',
-  SA: 'Comptes annuels agricoles simplifiés',
+  C: 'Comptes sociaux (comptes annuels complets)',
+  S: 'Comptes sociaux (comptes annuels simplifiés)',
+  K: 'Comptes consolidés (groupe)',
+  B: 'Comptes sociaux de banque',
+  A: "Comptes sociaux d'assurance",
+  AC: "Comptes sociaux d'assurance",
+  CA: 'Comptes sociaux agricoles complets',
+  SA: 'Comptes sociaux agricoles simplifiés',
 };
+
+export type NatureComptes = 'sociaux' | 'consolides';
+
+/** Comptes sociaux (de la société elle-même) ou consolidés (du groupe qu'elle contrôle). */
+export function natureComptes(typeBilan: string | undefined): NatureComptes {
+  return typeBilan === 'K' ? 'consolides' : 'sociaux';
+}
+
+/** Année de clôture de l'exercice précédent, déduite si l'INPI ne la fournit pas. */
+function anneePrecedente(cloture?: string, cloturePrecedente?: string, dureeMoisPrecedente?: number): string | undefined {
+  if (cloturePrecedente) return cloturePrecedente.slice(0, 4);
+  const m = cloture ? /^(\d{4})-(\d{2})/.exec(cloture) : null;
+  if (!m) return undefined;
+  const mois = Number(m[1]) * 12 + Number(m[2]) - 1 - (dureeMoisPrecedente ?? 12);
+  return String(Math.floor(mois / 12));
+}
 
 export const CONFIDENTIALITE: Record<string, string> = {
   '0': 'Comptes publics',
@@ -80,6 +96,10 @@ export interface ChiffresCles {
   denomination?: string;
   typeBilan: string;
   libelleType: string;
+  nature: NatureComptes;
+  /** Années de clôture de l'exercice et de l'exercice précédent. */
+  annee?: string;
+  anneePrecedente?: string;
   dateCloture?: string;
   dateCloturePrecedente?: string;
   dureeMois?: number;
@@ -120,6 +140,7 @@ export function lireChiffresCles(bilanSaisi: unknown): ChiffresCles {
     denomination: texte(identite.denomination ?? racine.denomination),
     typeBilan: type,
     libelleType: TYPES_BILAN[type] ?? `Comptes de type ${type || 'inconnu'}`,
+    nature: natureComptes(type),
     dateCloture: texte(identite.dateClotureExercice ?? racine.dateCloture),
     dateCloturePrecedente: texte(identite.dateClotureExerciceNMoins1),
     dureeMois: entier(identite.dureeExerciceN),
@@ -129,6 +150,8 @@ export function lireChiffresCles(bilanSaisi: unknown): ChiffresCles {
     confidentialite: CONFIDENTIALITE[confid] ?? `Indicateur de confidentialité ${confid}`,
     postes: [],
   };
+  resultat.annee = resultat.dateCloture?.slice(0, 4);
+  resultat.anneePrecedente = anneePrecedente(resultat.dateCloture, resultat.dateCloturePrecedente, resultat.dureeMoisPrecedente);
 
   const codeSaisie = String(identite.codeSaisie ?? '00');
   if (confid === '1') {

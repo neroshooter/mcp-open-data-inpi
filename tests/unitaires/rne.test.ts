@@ -74,7 +74,7 @@ describe('documents déposés', () => {
 
   it('rattache les données saisies aux comptes déposés', () => {
     expect(docs.comptes).toHaveLength(2);
-    expect(docs.comptes[0]).toMatchObject({ dateCloture: '2024-12-31', typeBilan: 'C', libelleType: 'Comptes annuels complets' });
+    expect(docs.comptes[0]).toMatchObject({ dateCloture: '2024-12-31', typeBilan: 'C', libelleType: 'Comptes sociaux (comptes annuels complets)' });
     expect(docs.comptes.every((c) => c.idSaisie)).toBe(true);
   });
 
@@ -100,6 +100,11 @@ describe('chiffres clés des comptes complets', () => {
     expect(poste('Total des dettes')).toMatchObject({ n: 8127372, n1: 8611941 }); // EC
     expect(poste('Total du bilan')).toMatchObject({ n: 13740814, n1: 15284938 }); // EE
     expect(poste("Résultat d'exploitation")).toMatchObject({ n: -2570465, n1: -3583210 }); // GG m3 / m4
+  });
+
+  it('indique la nature des comptes et les deux années', () => {
+    expect(c).toMatchObject({ nature: 'sociaux', annee: '2024', anneePrecedente: '2023' });
+    expect(formaterChiffresCles('000007919', c)).toContain('**Nature des comptes** : Comptes sociaux (société seule)');
   });
 
   it('présente un tableau exercice / exercice précédent', () => {
@@ -150,10 +155,46 @@ describe('chiffres clés des comptes simplifiés et cas particuliers', () => {
     expect(c.avertissement).toMatch(/PDF/);
   });
 
+  it('reconnaît les comptes consolidés et déduit l’année précédente si elle manque', () => {
+    const c = lireChiffresCles({
+      id: 'x',
+      bilanSaisi: {
+        bilan: {
+          identite: { codeTypeBilan: 'K', codeConfidentialite: '0', codeSaisie: '00', dateClotureExercice: '2025-03-31', dureeExerciceNMoins1: '12' },
+          detail: { pages: [{ numero: 3, liasses: [{ code: 'FJ', m3: '000000000001000', m4: '000000000000900' }] }] },
+        },
+      },
+    });
+    expect(c).toMatchObject({ nature: 'consolides', libelleType: 'Comptes consolidés (groupe)', annee: '2025', anneePrecedente: '2024' });
+    expect(formaterChiffresCles('000000000', c)).toContain('| Poste | Exercice 2025 | Exercice 2024 |');
+  });
+
   it('convertit les montants signés de la liasse', () => {
     expect(montantLiasse('-000000002197350')).toBe(-2197350);
     expect(montantLiasse('000000000000000')).toBe(0);
     expect(montantLiasse('n/a')).toBeUndefined();
+  });
+});
+
+describe('noms des dirigeants', () => {
+  it('affiche toujours « Prénom(s) NOM », quelle que soit la casse du RNE', () => {
+    const fiche = analyserEntreprise({
+      formality: {
+        siren: '000000000',
+        content: {
+          personneMorale: {
+            identite: { entreprise: { denomination: 'EXEMPLE' } },
+            composition: {
+              pouvoirs: [
+                { roleEntreprise: '65', individu: { descriptionPersonne: { nom: 'Exemple', prenoms: ['MARIE'] } } },
+                { roleEntreprise: '65', individu: { descriptionPersonne: { nom: 'dupont', prenoms: ['jean-baptiste', 'LOUIS'], nomUsage: 'Martin' } } },
+              ],
+            },
+          },
+        },
+      },
+    });
+    expect(fiche.dirigeants.map((d) => d.nom)).toEqual(['Marie EXEMPLE', "Jean-Baptiste Louis DUPONT (nom d'usage : MARTIN)"]);
   });
 });
 

@@ -125,6 +125,7 @@ export function formaterChiffresCles(siren: string, c: ChiffresCles): string {
     `# Chiffres clés — ${c.denomination ?? `SIREN ${siren}`}`,
     '',
     champ('SIREN', siren),
+    champ('Nature des comptes', c.nature === 'consolides' ? 'Comptes consolidés (groupe)' : 'Comptes sociaux (société seule)'),
     champ('Type de comptes', c.libelleType),
     champ('Exercice clos le', dateFr(c.dateCloture)),
     champ("Durée de l'exercice", c.dureeMois !== undefined ? `${c.dureeMois} mois` : undefined),
@@ -136,9 +137,8 @@ export function formaterChiffresCles(siren: string, c: ChiffresCles): string {
   if (!c.postes.length) {
     return `${enTete}\n\n${c.avertissement ?? 'Aucune donnée chiffrée disponible pour ces comptes.'}`;
   }
-  const annee = (d?: string) => (d ? d.slice(0, 4) : '?');
   const tableau = [
-    `| Poste | Exercice ${annee(c.dateCloture)} | Exercice ${annee(c.dateCloturePrecedente)} |`,
+    `| Poste | Exercice ${c.annee ?? '?'} | Exercice ${c.anneePrecedente ?? 'précédent'} |`,
     '|---|---:|---:|',
     ...c.postes.map((p) => {
       const fmt = (v?: number) =>

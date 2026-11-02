@@ -154,13 +154,26 @@ function lireDirigeant(p: Objet): Dirigeant | undefined {
   return undefined;
 }
 
+/**
+ * Nom d'une personne physique, toujours sous la forme « Prénom(s) NOM ». Le RNE
+ * mélange les casses (« VIRGINIE » en prénom, « Birade » en nom) : on les
+ * normalise pour que l'ordre se lise sans ambiguïté.
+ */
 function nomPersonnePhysique(d: Objet): string | undefined {
-  const prenoms = tableau(d.prenoms).map(String).join(' ');
-  const nom = chaine(d.nom);
-  const usage = chaine(d.nomUsage);
+  const prenoms = tableau(d.prenoms).map((p) => cassePropre(String(p))).join(' ');
+  const nom = chaine(d.nom)?.toLocaleUpperCase('fr-FR');
+  const usage = chaine(d.nomUsage)?.toLocaleUpperCase('fr-FR');
   if (!nom && !prenoms) return undefined;
   const base = [prenoms, nom].filter(Boolean).join(' ');
   return usage && usage !== nom ? `${base} (nom d'usage : ${usage})` : base;
+}
+
+/** « JEAN-BAPTISTE » ou « jean-baptiste » devient « Jean-Baptiste ». */
+export function cassePropre(mot: string): string {
+  return mot
+    .trim()
+    .toLocaleLowerCase('fr-FR')
+    .replace(/(^|[\s'’-])(\p{L})/gu, (_t, sep: string, l: string) => sep + l.toLocaleUpperCase('fr-FR'));
 }
 
 function libelleForme(code: string, associeUnique: boolean): string {

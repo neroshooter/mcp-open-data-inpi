@@ -151,7 +151,7 @@ avec la marche à suivre. Essayez ensuite, par exemple :
 | `fiche_entreprise` | Fiche d'une entreprise (RNE). |
 | `lister_documents_entreprise` | Actes et comptes annuels déposés ; filtre « statuts seulement ». |
 | `telecharger_document_entreprise` | Enregistre le PDF d'un acte ou de comptes dans votre dossier de téléchargement. |
-| `chiffres_cles_comptes` | Chiffre d'affaires, résultats, capital, capitaux propres, dettes, total du bilan, effectif. |
+| `chiffres_cles_comptes` | Chiffre d'affaires, résultats, capital, capitaux propres, dettes, total du bilan, effectif, sur l'exercice et l'exercice précédent ; comptes sociaux ou consolidés au choix. |
 
 ## Réglages (variables d'environnement)
 

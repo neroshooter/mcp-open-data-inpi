@@ -18,6 +18,12 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 - Un échec d'écriture du PDF sur le disque produit désormais un message clair indiquant le dossier en cause.
 - La recherche d'entreprises retire les accents, que le RNE ne reconnaît pas (« français » → « francais »).
 - Les natures et décisions répétées d'un même acte ne sont plus affichées en double.
+- Les dirigeants sont toujours présentés sous la forme « Prénom(s) NOM », quelle que soit la casse fournie par le RNE.
+
+### Ajouté
+
+- `chiffres_cles_comptes` : nature des comptes (sociaux ou consolidés) indiquée clairement, choix possible par le
+  paramètre `comptes`, année de l'exercice précédent toujours renseignée et liste des comptes chiffrés disponibles.
 
 ## [0.1.0] - 2026-11-02
 
