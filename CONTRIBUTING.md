@@ -60,8 +60,8 @@ node scripts/anonymiser-jeux.mjs /chemin/vers/reponse-reelle.xml
 2. Déplacez les entrées « Non publié » du `CHANGELOG.md` sous le nouveau numéro.
 3. Créez l'étiquette correspondante : `git tag v0.2.0 && git push origin v0.2.0`.
 
-L'intégration continue publie alors le paquet sur npm avec la provenance et joint l'extension `.mcpb` à la
-version GitHub.
+L'intégration continue publie alors le paquet sur npm par la publication de confiance (sans jeton stocké), avec
+la provenance, et joint l'extension `.mcpb` à la version GitHub.
 
 ## Code de conduite
 

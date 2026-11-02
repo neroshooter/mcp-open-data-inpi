@@ -2,8 +2,10 @@
 # publie le paquet sur npm avec la provenance et joint l'extension Claude
 # Desktop (.mcpb) à la version GitHub.
 #
-# La publication utilise la « publication de confiance » de npm (OIDC) : aucun
-# jeton n'est stocké. À défaut, renseignez un secret NPM_TOKEN.
+# La publication utilise la « publication de confiance » de npm (OIDC) : GitHub
+# prouve à npm l'identité de ce workflow, sans aucun jeton stocké. L'éditeur de
+# confiance est déclaré sur npmjs.com (dépôt neroshooter/mcp-open-data-inpi,
+# workflow publication.yml). La provenance est alors ajoutée automatiquement.
 name: Publication
 
 on:
@@ -33,10 +35,10 @@ jobs:
       - run: npm run lint
       - run: npm test
       - run: npm run build
-      - name: Publier sur npm (avec provenance)
+      - name: Vérifier la version de npm (11.5.1 ou plus récente pour la publication de confiance)
+        run: npx --yes semver@7 -r '>=11.5.1' "$(npm --version)"
+      - name: Publier sur npm (publication de confiance, avec provenance)
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Construire l'extension Claude Desktop
         run: node scripts/construire-mcpb.mjs
       - name: Créer la version GitHub
