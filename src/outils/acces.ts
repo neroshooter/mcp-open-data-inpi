@@ -54,6 +54,16 @@ export function enregistrerOutilAcces(serveur: McpServer, ctx: Contexte): void {
             : "Pour activer un accès manquant : connectez-vous sur data.inpi.fr, ouvrez votre espace personnel, " +
               "rubrique « Mes accès API / SFTP », cochez l'accès concerné et validez. L'activation peut prendre " +
               'quelques minutes.',
+          '',
+          '## Configuration reçue (aucune valeur affichée)',
+          '',
+          `- Mot de passe utilisé pour l'API Propriété industrielle : ${
+            ctx.config.motDePassePIPropre ? 'mot de passe propre (INPI_PI_MOT_DE_PASSE)' : 'mot de passe principal (INPI_MOT_DE_PASSE)'
+          }`,
+          `- Dossier de téléchargement : ${ctx.config.dossierTelechargements}`,
+          ctx.config.modelesIgnores.length
+            ? `- Valeurs reçues sous forme de modèle « \${…} » non remplacé, donc ignorées : ${ctx.config.modelesIgnores.join(', ')}`
+            : '- Aucune valeur reçue sous forme de modèle non remplacé.',
         ].join('\n');
         return reponse(texte, { nom: 'INPI', lien: 'https://data.inpi.fr/espace_personnel/acces' });
       }),

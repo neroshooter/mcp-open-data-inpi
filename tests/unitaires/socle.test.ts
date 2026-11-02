@@ -185,6 +185,8 @@ describe('protection des identifiants', () => {
       INPI_DOSSIER_TELECHARGEMENTS: '${DOWNLOADS}',
     });
     expect(config.identifiantsPI().motDePasse).toBe('commun');
+    expect(config.motDePassePIPropre).toBe(false);
+    expect(config.modelesIgnores).toEqual(['INPI_PI_MOT_DE_PASSE']);
     expect(config.dossierTelechargements).toBe(join(homedir(), 'Downloads'));
     const autre = new Configuration({ INPI_DOSSIER_TELECHARGEMENTS: '${INCONNU}/pdf' });
     expect(autre.dossierTelechargements).toBe(join(homedir(), 'Downloads', 'mcp-open-data-inpi'));

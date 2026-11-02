@@ -17,7 +17,13 @@ export class Configuration {
   /** Dossier où sont enregistrés les PDF téléchargés depuis le RNE. */
   readonly dossierTelechargements: string;
 
+  /** Variables reçues sous forme de modèle « ${…} » non remplacé, donc ignorées (noms seulement). */
+  readonly modelesIgnores: string[];
+
   constructor(env: NodeJS.ProcessEnv = process.env) {
+    this.modelesIgnores = ['INPI_EMAIL', 'INPI_MOT_DE_PASSE', 'INPI_PI_MOT_DE_PASSE', 'INPI_DOSSIER_TELECHARGEMENTS'].filter(
+      (nom) => /\$\{[^}]*\}/.test(developperChemin(env[nom]) ?? ''),
+    );
     this.#email = nettoyer(env.INPI_EMAIL);
     this.#motDePasse = nettoyer(env.INPI_MOT_DE_PASSE);
     this.#motDePassePI = nettoyer(env.INPI_PI_MOT_DE_PASSE);
@@ -33,6 +39,11 @@ export class Configuration {
   /** Indique si l'adresse et le mot de passe sont renseignés. */
   get identifiantsPresents(): boolean {
     return Boolean(this.#email && this.#motDePasse);
+  }
+
+  /** Vrai si un mot de passe propre à l'API Propriété industrielle a été fourni. */
+  get motDePassePIPropre(): boolean {
+    return this.#motDePassePI !== undefined;
   }
 
   /** Identifiants de l'API Propriété industrielle. */
