@@ -7,6 +7,7 @@ import { Configuration } from './config.js';
 import { enregistrerOutilAcces } from './outils/acces.js';
 import { enregistrerOutilsMarques } from './outils/marques.js';
 import { enregistrerOutilsRNE } from './outils/rne.js';
+import { enregistrerOutilsTitres } from './outils/titres.js';
 import type { Contexte } from './outils/commun.js';
 import { VERSION } from './version.js';
 
@@ -25,6 +26,7 @@ export function creerServeur(config = new Configuration()): McpServer {
   );
   enregistrerOutilAcces(serveur, ctx);
   enregistrerOutilsMarques(serveur, ctx);
+  enregistrerOutilsTitres(serveur, ctx);
   enregistrerOutilsRNE(serveur, ctx);
   return serveur;
 }

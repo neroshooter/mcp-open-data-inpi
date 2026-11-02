@@ -84,6 +84,54 @@ export function attribut(noeud: unknown, nom: string): string | undefined {
   return typeof v === 'string' ? v : undefined;
 }
 
+/**
+ * Cherche, à n'importe quelle profondeur, tous les éléments portant l'un des
+ * noms donnés. Utile pour les formats dont l'imbrication varie selon l'office.
+ */
+export function chercherTous(noeud: unknown, ...noms: string[]): unknown[] {
+  const trouves: unknown[] = [];
+  const visiter = (n: unknown) => {
+    if (Array.isArray(n)) {
+      n.forEach(visiter);
+      return;
+    }
+    if (!n || typeof n !== 'object') return;
+    for (const [cle, valeur] of Object.entries(n as Noeud)) {
+      if (cle.startsWith('@')) continue;
+      if (noms.includes(cle)) trouves.push(...liste(valeur));
+      else visiter(valeur);
+    }
+  };
+  visiter(noeud);
+  return trouves;
+}
+
+/** Premier élément trouvé à n'importe quelle profondeur. */
+export function chercher(noeud: unknown, ...noms: string[]): unknown {
+  return chercherTous(noeud, ...noms)[0];
+}
+
+/** Texte de tous les descendants d'un nœud (paragraphes d'un abrégé, par exemple). */
+export function texteComplet(noeud: unknown): string | undefined {
+  const morceaux: string[] = [];
+  const visiter = (n: unknown) => {
+    if (n === undefined || n === null) return;
+    if (typeof n === 'string' || typeof n === 'number') {
+      morceaux.push(String(n));
+      return;
+    }
+    if (Array.isArray(n)) {
+      n.forEach(visiter);
+      return;
+    }
+    if (typeof n === 'object') {
+      for (const [cle, valeur] of Object.entries(n as Noeud)) if (!cle.startsWith('@')) visiter(valeur);
+    }
+  };
+  visiter(noeud);
+  return espaces(morceaux.join(' '));
+}
+
 /** Normalise les espaces (tabulations, retours à la ligne multiples). */
 export function espaces(valeur: string | undefined): string | undefined {
   return valeur?.replace(/\s+/g, ' ').trim() || undefined;
