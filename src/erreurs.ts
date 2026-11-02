@@ -77,12 +77,15 @@ export class IndisponibiliteINPI extends ErreurINPI {
   }
 }
 
-/** Le quota journalier fixé par l'INPI est dépassé. */
+/** Le quota d'appels fixé par l'INPI est dépassé. */
 export class QuotaDepasse extends ErreurINPI {
   constructor(service: string) {
     super(
-      `Le quota journalier de l'INPI pour le service ${service} est dépassé ` +
-        "(pour l'API RNE : 10 000 appels ou 10 000 Mo par jour). Réessayez demain.",
+      `L'INPI indique que le quota d'appels de votre compte pour le service ${service} est épuisé ` +
+        '(code 429). Ce n\'est PAS une absence de résultat. ' +
+        (service === 'API RNE'
+          ? "Le quota de l'API RNE est de 10 000 appels ou 10 000 Mo par jour : réessayez demain."
+          : "L'INPI ne publie ni la valeur de ce quota ni sa durée : patientez avant de réessayer."),
     );
   }
 }

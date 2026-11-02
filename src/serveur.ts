@@ -5,6 +5,7 @@ import { ClientPI } from './api/pi.js';
 import { ClientRNE } from './api/rne.js';
 import { Configuration } from './config.js';
 import { enregistrerOutilAcces } from './outils/acces.js';
+import { enregistrerOutilsMarques } from './outils/marques.js';
 import type { Contexte } from './outils/commun.js';
 import { VERSION } from './version.js';
 
@@ -22,5 +23,6 @@ export function creerServeur(config = new Configuration()): McpServer {
     { instructions: CONSIGNES },
   );
   enregistrerOutilAcces(serveur, ctx);
+  enregistrerOutilsMarques(serveur, ctx);
   return serveur;
 }

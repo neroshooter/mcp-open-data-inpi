@@ -12,4 +12,10 @@ export default tseslint.config(
       'no-console': ['error', { allow: ['error'] }],
     },
   },
+  {
+    // Scripts de développement : environnement Node, sortie console autorisée.
+    files: ['scripts/**/*.mjs'],
+    languageOptions: { globals: { process: 'readonly', console: 'readonly', URL: 'readonly' } },
+    rules: { 'no-console': 'off' },
+  },
 );
