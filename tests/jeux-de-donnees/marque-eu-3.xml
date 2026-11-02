@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TradeMark operationCode="Insert">
+                  <RegistrationOfficeCode>EM</RegistrationOfficeCode>
+                  <ApplicationNumber>000419707</ApplicationNumber>
+                  <ApplicationDate>2024-05-06</ApplicationDate>
+                  <RegistrationDate>2024-09-27</RegistrationDate>
+                  <ApplicationLanguageCode>fr</ApplicationLanguageCode>
+                  <SecondLanguageCode>en</SecondLanguageCode>
+                  <ExpiryDate>2034-05-06</ExpiryDate>
+                  <MarkCurrentStatusCode>Registered</MarkCurrentStatusCode>
+                  <MarkCurrentStatusDate>2024-10-01</MarkCurrentStatusDate>
+                  <KindMark>Individual</KindMark>
+                  <MarkFeature>Figurative</MarkFeature>
+                  <TradeDistinctivenessIndicator>false</TradeDistinctivenessIndicator>
+                  <WordMarkSpecification>
+                     <MarkVerbalElementText>MARQUE EXEMPLE 1</MarkVerbalElementText>
+                  </WordMarkSpecification>
+                  <MarkImageDetails>
+                     <MarkImage>
+                        <MarkImageFilename>IMAGE-EXEMPLE</MarkImageFilename>
+                        <MarkImageFileFormat>JPG</MarkImageFileFormat>
+                        <MarkImageCategory>
+                           <CategoryCodeDetails>
+                              <CategoryCode>26.11.12</CategoryCode>
+                              <CategoryCode>26.11.98</CategoryCode>
+                              <CategoryCode>27.01.25</CategoryCode>
+                              <CategoryCode>27.99.23</CategoryCode>
+                           </CategoryCodeDetails>
+                        </MarkImageCategory>
+                     </MarkImage>
+                  </MarkImageDetails>
+                  <GoodsServicesDetails>
+                     <GoodsServices>
+                        <ClassDescriptionDetails>
+                           <ClassDescription>
+                              <ClassNumber>35</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">Développement, élaboration, préparation et organisation de campagnes de promotion et de campagnes de prévention; Elaboration, préparation, organisation et conduite de manifestations, de concours, d’événements et d’expositions à des fins promotionnelles; Services de promotion liés à des manifestations et événements pour la sensibilisation du public aux questions scientifiques, sociales, d’égalité, d'éducation, de santé et environnementales; Diffusion de matériel promotionnel; Promotion de produits et services par l’intermédiaire du parrainage; Mise en relation de bénévoles avec des organisations à but non lucratif.</GoodsServicesDescription>
+                           </ClassDescription>
+                           <ClassDescription>
+                              <ClassNumber>36</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">Mécénat et parrainage financier; Parrainage financier, à savoir investissement et constitution de capitaux, attribution et mise à disposition de subventions, financements et libéralités pour des œuvres de bienfaisance dans le domaine scientifique, médical, culturel, social, éducatif, humanitaire ou environnemental; Services caritatifs, à savoir services de financement; Services de dotations financières.</GoodsServicesDescription>
+                           </ClassDescription>
+                           <ClassDescription>
+                              <ClassNumber>41</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">Organisation et conduite de manifestations et d’événements culturels et éducatifs à des fins caritatives; Organisation et conduite de colloques, conférences, congrès, galas, séminaires, ateliers ou expositions à des fins culturelles ou éducatives; Services d'œuvres de bienfaisance dans le domaine de l'éducation et de l'enseignement, et notamment services d'aide pour l'accès à la formation et à l'éducation; Tenue de programmes de soutien éducatif, aide à l'enfance et notamment aide à la scolarisation et à l'éducation.</GoodsServicesDescription>
+                           </ClassDescription>
+                           <ClassDescription>
+                              <ClassNumber>42</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">Services d’œuvres de bienfaisance en matière de protection de l’environnement, et notamment services de conseils et d’aide en matière de protection de l’environnement; Fourniture de conseils, de travaux, de rapports et de recherches dans les domaines scientifiques, techniques, biologiques et médicales; Fourniture de conseils, de travaux, de rapports et de recherches scientifiques dans le domaine de la protection de l’environnement.</GoodsServicesDescription>
+                           </ClassDescription>
+                        </ClassDescriptionDetails>
+                     </GoodsServices>
+                  </GoodsServicesDetails>
+                  <PublicationDetails>
+                     <Publication>
+                        <PublicationIdentifier>2024/116</PublicationIdentifier>
+                        <PublicationSection>A.1</PublicationSection>
+                        <PublicationDate>2024-06-20</PublicationDate>
+                        <PublicationPage>0</PublicationPage>
+                     </Publication>
+                     <Publication>
+                        <PublicationIdentifier>2024/187</PublicationIdentifier>
+                        <PublicationSection>B.1</PublicationSection>
+                        <PublicationDate>2024-09-30</PublicationDate>
+                        <PublicationPage>0</PublicationPage>
+                     </Publication>
+                  </PublicationDetails>
+                  <ApplicantDetails>
+                     <Applicant operationCode="Insert">
+                        <ApplicantIdentifier>023757</ApplicantIdentifier>
+                        <ApplicantNationalityCode>FR</ApplicantNationalityCode>
+                        <ApplicantLegalEntity>Legal Entity</ApplicantLegalEntity>
+                        <ApplicantIncorporationCountryCode>FR</ApplicantIncorporationCountryCode>
+                        <ApplicantAddressBook>
+                           <FormattedNameAddress>
+                              <Name>
+                                 <FormattedName>
+                                    <LastName>NOM3</LastName>
+                                    <OrganizationName>SOCIETE EXEMPLE 8</OrganizationName>
+                                    <LegalForm>Société anonyme</LegalForm>
+                                 </FormattedName>
+                              </Name>
+                              <Address>
+                                 <AddressCountryCode>FR</AddressCountryCode>
+                                 <FormattedAddress>
+                                    <AddressStreet>9 rue de l'Exemple</AddressStreet>
+                                    <AddressCity>Villexemple-1</AddressCity>
+                                    <AddressPostcode>10101</AddressPostcode>
+                                 </FormattedAddress>
+                              </Address>
+                           </FormattedNameAddress>
+                           <PostalAddress>7 rue de l'Exemple</PostalAddress>
+                        </ApplicantAddressBook>
+                     </Applicant>
+                  </ApplicantDetails>
+                  <RepresentativeDetails>
+                     <Representative operationCode="Insert">
+                        <RepresentativeIdentifier>31676</RepresentativeIdentifier>
+                        <RepresentativeTypeCode>Association</RepresentativeTypeCode>
+                        <RepresentativeNationalityCode>FR</RepresentativeNationalityCode>
+                        <RepresentativeLegalEntity>Legal Person</RepresentativeLegalEntity>
+                        <RepresentativeIncorporationCountryCode>FR</RepresentativeIncorporationCountryCode>
+                        <RepresentativeAddressBook>
+                           <FormattedNameAddress>
+                              <Name>
+                                 <FormattedName>
+                                    <LastName>SOCIETE EXEMPLE 9</LastName>
+                                 </FormattedName>
+                              </Name>
+                              <Address>
+                                 <AddressCountryCode>FR</AddressCountryCode>
+                                 <FormattedAddress>
+                                    <AddressStreet>10 rue de l'Exemple</AddressStreet>
+                                    <AddressCity>Villexemple-7</AddressCity>
+                                    <AddressPostcode>10202</AddressPostcode>
+                                 </FormattedAddress>
+                              </Address>
+                           </FormattedNameAddress>
+                           <PostalAddress>8 rue de l'Exemple</PostalAddress>
+                        </RepresentativeAddressBook>
+                     </Representative>
+                  </RepresentativeDetails>
+                  <CorrespondenceAddress>
+                     <CorrespondenceAddressBook>
+                        <FormattedNameAddress>
+                           <Name>
+                              <FormattedName>
+                                 <LastName>SOCIETE EXEMPLE 9</LastName>
+                              </FormattedName>
+                           </Name>
+                           <Address>
+                              <AddressCountryCode>FR</AddressCountryCode>
+                              <FormattedAddress>
+                                 <AddressStreet>10 rue de l'Exemple</AddressStreet>
+                                 <AddressCity>Villexemple-7</AddressCity>
+                                 <AddressPostcode>10202</AddressPostcode>
+                              </FormattedAddress>
+                           </Address>
+                        </FormattedNameAddress>
+                     </CorrespondenceAddressBook>
+                  </CorrespondenceAddress>
+                  <MarkRecordDetails>
+                     <MarkRecord>
+                        <BasicRecord>
+                           <BasicRecordKind>Representative - Change of name and professional address</BasicRecordKind>
+                           <RecordCurrentStatusCode>Registered</RecordCurrentStatusCode>
+                           <RecordCurrentStatusDate>2024-07-12</RecordCurrentStatusDate>
+                        </BasicRecord>
+                     </MarkRecord>
+                  </MarkRecordDetails>
+               </TradeMark>

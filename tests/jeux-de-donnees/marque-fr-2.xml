@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TradeMark operationCode="Update" fr-TransactionDetails="Registration" PublicationIdentifier="202620" PublicationDate="2026-05-15">
+            <RegistrationOfficeCode>FR</RegistrationOfficeCode>
+            <ApplicationNumber>0411788</ApplicationNumber>
+            <ApplicationDate>2026-01-27</ApplicationDate>
+            <RegistrationDate>2026-05-15</RegistrationDate>
+            <FilingPlace>92 INPI - Dépôt électronique</FilingPlace>
+            <ApplicationLanguageCode>fr</ApplicationLanguageCode>
+            <ExpiryDate>2036-01-27</ExpiryDate>
+            <MarkCurrentStatusCode>Marque enregistrée</MarkCurrentStatusCode>
+            <MarkFeature>Figurative</MarkFeature>
+            <WordMarkSpecification>
+              <MarkVerbalElementText><![CDATA[la marque exemple 2]]></MarkVerbalElementText>
+              <MarkTranslation/>
+              <MarkTransliteration/>
+            </WordMarkSpecification>
+            <MarkImageDetails>
+              <MarkImage>
+                <MarkImageFilename>IMAGE-EXEMPLE</MarkImageFilename>
+                <MarkImageFileFormat>JPEG</MarkImageFileFormat>
+                <MarkImageCategory>
+                  <CategoryKind>Vienne</CategoryKind>
+                  <CategoryCodeDetails>
+                    <CategoryCode>27.05.01</CategoryCode>
+                    <CategoryCode>29.01.08</CategoryCode>
+                    <CategoryCode>29.01.11</CategoryCode>
+                  </CategoryCodeDetails>
+                </MarkImageCategory>
+              </MarkImage>
+            </MarkImageDetails>
+            <GoodsServicesDetails>
+              <GoodsServices>
+                <ClassificationKindCode>Nice</ClassificationKindCode>
+                <ClassificationVersion>12</ClassificationVersion>
+                <ClassDescriptionDetails>
+                  <ClassDescription>
+                    <ClassNumber>43</ClassNumber>
+                    <GoodsServicesDescription><![CDATA[Services de restauration (alimentation) ; services de cafés ; services de cafétérias ; services de cantine ; services de chefs cuisiniers à domicile ; location d’appareils de cuisson ; informations et conseils en matière de préparation de repas ; services de restaurants ; services de restaurants et de nouilles udon et de nouilles soba ; services de restaurants en libre-service ; services de restaurants washoku ; services de snacks-bars ; services de traiteurs ; restaurants libre-service, restaurants à service rapide et permanent (snack-bars) ; cafés-restaurants, services de bars, salons de thé, préparation de repas et de plats à emporter.]]></GoodsServicesDescription>
+                  </ClassDescription>
+                </ClassDescriptionDetails>
+              </GoodsServices>
+            </GoodsServicesDetails>
+            <ApplicantDetails>
+              <Applicant PersonType="PM">
+                <ApplicantIdentifier identifierKindCode="FR"><![CDATA[000015838]]></ApplicantIdentifier>
+                <ApplicantSequenceNumber>1</ApplicantSequenceNumber>
+                <ApplicantLegalEntity><![CDATA[Société par actions simplifiée]]></ApplicantLegalEntity>
+                <ApplicantAddressBook>
+                  <AddressLanguageCode>fr</AddressLanguageCode>
+                  <FormattedNameAddress>
+                    <Name>
+                      <FormattedName>
+                        <IndividualIdentifier><![CDATA[000015838]]></IndividualIdentifier>
+                        <OrganizationName><![CDATA[SOCIETE EXEMPLE 6]]></OrganizationName>
+                      </FormattedName>
+                    </Name>
+                    <Address>
+                      <AddressCountryCode><![CDATA[FR]]></AddressCountryCode>
+                      <FormattedAddress>
+                        <AddressStreet><![CDATA[5 rue de l'Exemple]]></AddressStreet>
+                        <AddressCity><![CDATA[Villexemple-5]]></AddressCity>
+                        <AddressPostcode><![CDATA[10404]]></AddressPostcode>
+                      </FormattedAddress>
+                    </Address>
+                  </FormattedNameAddress>
+                </ApplicantAddressBook>
+              </Applicant>
+            </ApplicantDetails>
+            <RepresentativeDetails>
+              <Representative PersonType="PP">
+                <RepresentativeSequenceNumber>1</RepresentativeSequenceNumber>
+                <RepresentativeAddressBook>
+                  <AddressLanguageCode>fr</AddressLanguageCode>
+                  <FormattedNameAddress>
+                    <Name>
+                      <FormattedName>
+                        <FirstName><![CDATA[Prenom1]]></FirstName>
+                        <LastName><![CDATA[NOM2]]></LastName>
+                        <OrganizationName><![CDATA[SOCIETE EXEMPLE 7]]></OrganizationName>
+                      </FormattedName>
+                    </Name>
+                    <Address>
+                      <AddressCountryCode><![CDATA[FR]]></AddressCountryCode>
+                      <FormattedAddress>
+                        <AddressStreet><![CDATA[6 rue de l'Exemple]]></AddressStreet>
+                        <AddressCity><![CDATA[Villexemple-6]]></AddressCity>
+                        <AddressPostcode><![CDATA[10505]]></AddressPostcode>
+                      </FormattedAddress>
+                    </Address>
+                  </FormattedNameAddress>
+                </RepresentativeAddressBook>
+              </Representative>
+            </RepresentativeDetails>
+            <fr-CurrentHolderDetails>
+              <fr-CurrentHolder PersonType="PM">
+                <fr-CurrentHolderIdentifier identifierKindCode="FR"><![CDATA[000015838]]></fr-CurrentHolderIdentifier>
+                <fr-CurrentHolderSequenceNumber>1</fr-CurrentHolderSequenceNumber>
+                <fr-CurrentHolderLegalEntity><![CDATA[Société par actions simplifiée]]></fr-CurrentHolderLegalEntity>
+                <fr-CurrentHolderAddressBook>
+                  <AddressLanguageCode>fr</AddressLanguageCode>
+                  <FormattedNameAddress>
+                    <Name>
+                      <FormattedName>
+                        <IndividualIdentifier><![CDATA[000015838]]></IndividualIdentifier>
+                        <OrganizationName><![CDATA[SOCIETE EXEMPLE 6]]></OrganizationName>
+                      </FormattedName>
+                    </Name>
+                    <Address>
+                      <AddressCountryCode><![CDATA[FR]]></AddressCountryCode>
+                      <FormattedAddress>
+                        <AddressStreet><![CDATA[5 rue de l'Exemple]]></AddressStreet>
+                        <AddressCity><![CDATA[Villexemple-5]]></AddressCity>
+                        <AddressPostcode><![CDATA[10404]]></AddressPostcode>
+                      </FormattedAddress>
+                    </Address>
+                  </FormattedNameAddress>
+                </fr-CurrentHolderAddressBook>
+              </fr-CurrentHolder>
+            </fr-CurrentHolderDetails>
+            <fr-RenewalPeriodStartDate>2035-01-27</fr-RenewalPeriodStartDate>
+            <fr-RenewalPeriodEndDate>2036-07-28</fr-RenewalPeriodEndDate>
+            <fr-OppositionCount>0</fr-OppositionCount>
+            <MarkRecordDetails>
+              <MarkRecord>
+                <BasicRecord>
+                  <BasicRecordKind>Publication</BasicRecordKind>
+                  <RecordPublicationDetails>
+                    <RecordPublication>
+                      <PublicationIdentifier>2026-08</PublicationIdentifier>
+                      <PublicationDate>2026-02-20</PublicationDate>
+                    </RecordPublication>
+                  </RecordPublicationDetails>
+                </BasicRecord>
+              </MarkRecord>
+              <MarkRecord>
+                <BasicRecord>
+                  <BasicRecordKind>Enregistrement sans modification</BasicRecordKind>
+                  <RecordPublicationDetails>
+                    <RecordPublication>
+                      <PublicationIdentifier>2026-20</PublicationIdentifier>
+                      <PublicationDate>2026-05-15</PublicationDate>
+                    </RecordPublication>
+                  </RecordPublicationDetails>
+                </BasicRecord>
+              </MarkRecord>
+            </MarkRecordDetails>
+          </TradeMark>

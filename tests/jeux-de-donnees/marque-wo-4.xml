@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TradeMark>
+                  <RegistrationOfficeCode>WO</RegistrationOfficeCode>
+                  <ReceivingOfficeCode>SI</ReceivingOfficeCode>
+                  <ApplicationNumber>0427626</ApplicationNumber>
+                  <ApplicationDate>2014-07-16</ApplicationDate>
+                  <ApplicationLanguageCode>en</ApplicationLanguageCode>
+                  <ExpiryDate>2024-07-16</ExpiryDate>
+                  <DesignatedCountryDetails>
+                     <DesignatedCountry>
+                        <DesignatedCountryCode>EM</DesignatedCountryCode>
+                        <DesignatedUnderCode>Protocol</DesignatedUnderCode>
+                     </DesignatedCountry>
+                     <DesignatedCountry>
+                        <DesignatedCountryCode>BA</DesignatedCountryCode>
+                        <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                     </DesignatedCountry>
+                     <DesignatedCountry>
+                        <DesignatedCountryCode>ME</DesignatedCountryCode>
+                        <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                     </DesignatedCountry>
+                     <DesignatedCountry>
+                        <DesignatedCountryCode>MK</DesignatedCountryCode>
+                        <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                     </DesignatedCountry>
+                     <DesignatedCountry>
+                        <DesignatedCountryCode>RS</DesignatedCountryCode>
+                        <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                     </DesignatedCountry>
+                  </DesignatedCountryDetails>
+                  <BasicRegistrationApplicationDetails>
+                     <BasicRegistrationApplication>
+                        <BasicRegistrationDetails>
+                           <BasicRegistration>
+                              <BasicRegistrationNumber>Z-000039595</BasicRegistrationNumber>
+                              <BasicRegistrationDate>2010-03-08</BasicRegistrationDate>
+                           </BasicRegistration>
+                        </BasicRegistrationDetails>
+                     </BasicRegistrationApplication>
+                  </BasicRegistrationApplicationDetails>
+                  <KindMark>Individual</KindMark>
+                  <MarkFeature>Figurative</MarkFeature>
+                  <WordMarkSpecification>
+                     <MarkVerbalElementText>MARQUE EXEMPLE 3</MarkVerbalElementText>
+                     <MarkVerbalElementSignificantIndicator>true</MarkVerbalElementSignificantIndicator>
+                  </WordMarkSpecification>
+                  <MarkImageDetails>
+                     <MarkImage>
+                        <MarkImageFilename>IMAGE-EXEMPLE</MarkImageFilename>
+                        <MarkImageFileFormat>GIF</MarkImageFileFormat>
+                        <MarkImageColourMode>Not Colour</MarkImageColourMode>
+                        <MarkImageCategory>
+                           <CategoryCodeDetails>
+                              <CategoryCode>27.03.15</CategoryCode>
+                           </CategoryCodeDetails>
+                        </MarkImageCategory>
+                     </MarkImage>
+                  </MarkImageDetails>
+                  <GoodsServicesDetails>
+                     <GoodsServices>
+                        <ClassificationVersion>10-2014</ClassificationVersion>
+                        <ClassDescriptionDetails>
+                           <ClassDescription>
+                              <ClassNumber>35</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">
+Publicité, gestion des affaires commerciales, administration
+ commerciale, représentation, distribution et vente
+ d'équipements d'automatisation industrielle (termes trop
+ vagues de l'avis du Bureau international - règle 13.2)b) du
+ Règlement d'exécution commun); représentation, distribution
+ et vente d'éléments pour installations de commande et de
+ contrôle d'énergie (termes trop vagues de l'avis du Bureau
+ international - règle 13.2)b) du Règlement d'exécution
+ commun); représentation, distribution et vente de robots
+ industriels (termes trop vagues de l'avis du Bureau
+ international - règle 13.2)b) du Règlement d'exécution
+ commun).
+</GoodsServicesDescription>
+                           </ClassDescription>
+                           <ClassDescription>
+                              <ClassNumber>37</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">
+Montage, maintenance et entretien d'équipements et systèmes
+ d'automatisation de la production et des processus.
+</GoodsServicesDescription>
+                           </ClassDescription>
+                           <ClassDescription>
+                              <ClassNumber>41</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">
+Éducation; séminaires et cours dans le domaine de
+ l'automatisation et de la mécatronique.
+</GoodsServicesDescription>
+                           </ClassDescription>
+                           <ClassDescription>
+                              <ClassNumber>42</ClassNumber>
+                              <GoodsServicesDescription languageCode="fr">
+Développement, conception et conseils techniques dans le
+ domaine de l'automatisation de la production et des
+ processus, services d'ingénieurs en automatisation de la
+ production et des processus.
+</GoodsServicesDescription>
+                           </ClassDescription>
+                        </ClassDescriptionDetails>
+                     </GoodsServices>
+                  </GoodsServicesDetails>
+                  <ApplicantDetails>
+                     <Applicant>
+                        <ApplicantIdentifier>039595</ApplicantIdentifier>
+                        <ApplicantAddressBook>
+                           <FormattedNameAddress>
+                              <Name>
+                                 <FreeFormatName>
+                                    <FreeFormatNameDetails>
+                                       <FreeFormatNameLine>SOCIETE EXEMPLE 10</FreeFormatNameLine>
+                                    </FreeFormatNameDetails>
+                                 </FreeFormatName>
+                              </Name>
+                              <Address>
+                                 <AddressCountryCode>SI</AddressCountryCode>
+                                 <FreeFormatAddress>
+                                    <FreeFormatAddressLine>11 rue de l'Exemple</FreeFormatAddressLine>
+                                    <FreeFormatAddressLine>12 rue de l'Exemple</FreeFormatAddressLine>
+                                 </FreeFormatAddress>
+                              </Address>
+                           </FormattedNameAddress>
+                        </ApplicantAddressBook>
+                        <ApplicantEntitlement>
+                           <EntitlementEstablishment>
+                              <EntitlementEstablishmentCode>SI</EntitlementEstablishmentCode>
+                           </EntitlementEstablishment>
+                        </ApplicantEntitlement>
+                     </Applicant>
+                  </ApplicantDetails>
+                  <RepresentativeDetails>
+                     <Representative>
+                        <RepresentativeIdentifier>047514</RepresentativeIdentifier>
+                        <RepresentativeAddressBook>
+                           <FormattedNameAddress>
+                              <Name>
+                                 <FreeFormatName>
+                                    <FreeFormatNameDetails>
+                                       <FreeFormatNameLine>SOCIETE EXEMPLE 11</FreeFormatNameLine>
+                                    </FreeFormatNameDetails>
+                                 </FreeFormatName>
+                              </Name>
+                              <Address>
+                                 <AddressCountryCode>SI</AddressCountryCode>
+                                 <FreeFormatAddress>
+                                    <FreeFormatAddressLine>13 rue de l'Exemple</FreeFormatAddressLine>
+                                    <FreeFormatAddressLine>14 rue de l'Exemple</FreeFormatAddressLine>
+                                 </FreeFormatAddress>
+                              </Address>
+                           </FormattedNameAddress>
+                        </RepresentativeAddressBook>
+                     </Representative>
+                  </RepresentativeDetails>
+                  <CorrespondenceAddress>
+                     <CorrespondenceAddressIdentifier>039595</CorrespondenceAddressIdentifier>
+                     <CorrespondenceAddressParty>Applicant</CorrespondenceAddressParty>
+                     <CorrespondenceAddressBook>
+                        <FormattedNameAddress>
+                           <Name>
+                              <FreeFormatName>
+                                 <FreeFormatNameDetails>
+                                    <FreeFormatNameLine>SOCIETE EXEMPLE 10</FreeFormatNameLine>
+                                 </FreeFormatNameDetails>
+                              </FreeFormatName>
+                           </Name>
+                           <Address>
+                              <AddressCountryCode>SI</AddressCountryCode>
+                              <FreeFormatAddress>
+                                 <FreeFormatAddressLine>11 rue de l'Exemple</FreeFormatAddressLine>
+                                 <FreeFormatAddressLine>12 rue de l'Exemple</FreeFormatAddressLine>
+                              </FreeFormatAddress>
+                           </Address>
+                        </FormattedNameAddress>
+                     </CorrespondenceAddressBook>
+                  </CorrespondenceAddress>
+                  <InternationalRegistrationDuration>10</InternationalRegistrationDuration>
+                  <MarkRecordDetails>
+                     <MarkRecord>
+                        <BasicRecord>
+                           <RecordFilingDate>2015-01-27</RecordFilingDate>
+                           <RecordNotificationDate>2015-02-12</RecordNotificationDate>
+                           <RecordEffectiveDate>2014-07-16</RecordEffectiveDate>
+                           <BasicRecordKind>Registration</BasicRecordKind>
+                           <RecordPublicationDetails>
+                              <RecordPublication>
+                                 <PublicationIdentifier>2015/5 Gaz</PublicationIdentifier>
+                                 <PublicationDate>2015-02-12</PublicationDate>
+                              </RecordPublication>
+                           </RecordPublicationDetails>
+                           <RecordInterestedOfficeCode>SI</RecordInterestedOfficeCode>
+                           <RecordDesignatedCountryDetails>
+                              <DesignatedCountry>
+                                 <DesignatedCountryCode>EM</DesignatedCountryCode>
+                                 <DesignatedUnderCode>Protocol</DesignatedUnderCode>
+                              </DesignatedCountry>
+                              <DesignatedCountry>
+                                 <DesignatedCountryCode>BA</DesignatedCountryCode>
+                                 <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                              </DesignatedCountry>
+                              <DesignatedCountry>
+                                 <DesignatedCountryCode>ME</DesignatedCountryCode>
+                                 <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                              </DesignatedCountry>
+                              <DesignatedCountry>
+                                 <DesignatedCountryCode>MK</DesignatedCountryCode>
+                                 <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                              </DesignatedCountry>
+                              <DesignatedCountry>
+                                 <DesignatedCountryCode>RS</DesignatedCountryCode>
+                                 <DesignatedUnderCode>ProtocolArticle9-6</DesignatedUnderCode>
+                              </DesignatedCountry>
+                           </RecordDesignatedCountryDetails>
+                        </BasicRecord>
+                     </MarkRecord>
+                     <MarkRecord>
+                        <RecordOppositionPeriod>
+                           <RecordFilingDate>2015-02-18</RecordFilingDate>
+                           <RecordNotificationDate>2015-02-19</RecordNotificationDate>
+                           <RecordEffectiveDate>2015-02-17</RecordEffectiveDate>
+                           <RecordOppositionPeriodKind>Rule 18bis(1) Ex Officio examination completed but third parties opposition or observations
+						possible</RecordOppositionPeriodKind>
+                           <RecordReference>0847333</RecordReference>
+                           <RecordPublicationDetails>
+                              <RecordPublication>
+                                 <PublicationIdentifier>2015/8 Gaz</PublicationIdentifier>
+                                 <PublicationDate>2015-03-05</PublicationDate>
+                              </RecordPublication>
+                           </RecordPublicationDetails>
+                           <RecordInterestedOfficeCode>EM</RecordInterestedOfficeCode>
+                           <RecordOppositionPeriodEndDate>2015-11-13</RecordOppositionPeriodEndDate>
+                        </RecordOppositionPeriod>
+                     </MarkRecord>
+                     <MarkRecord>
+                        <BasicRecord>
+                           <RecordFilingDate>2015-12-16</RecordFilingDate>
+                           <RecordNotificationDate>2015-12-18</RecordNotificationDate>
+                           <RecordEffectiveDate>2015-12-15</RecordEffectiveDate>
+                           <BasicRecordKind>Rule 18ter(1) GP without provisional refusal</BasicRecordKind>
+                           <RecordReference>0855252</RecordReference>
+                           <RecordPublicationDetails>
+                              <RecordPublication>
+                                 <PublicationIdentifier>2015/51 Gaz</PublicationIdentifier>
+                                 <PublicationDate>2015-12-31</PublicationDate>
+                              </RecordPublication>
+                           </RecordPublicationDetails>
+                           <RecordInterestedOfficeCode>EM</RecordInterestedOfficeCode>
+                        </BasicRecord>
+                     </MarkRecord>
+                     <MarkRecord>
+                        <BasicRecord>
+                           <RecordFilingDate>2016-02-09</RecordFilingDate>
+                           <RecordNotificationDate>2016-02-10</RecordNotificationDate>
+                           <RecordEffectiveDate>2016-01-27</RecordEffectiveDate>
+                           <BasicRecordKind>Partial Refusal</BasicRecordKind>
+                           <RecordReference>0863171</RecordReference>
+                           <RecordLanguageCode>fr</RecordLanguageCode>
+                           <RecordPublicationDetails>
+                              <RecordPublication>
+                                 <PublicationIdentifier>2016/7 Gaz</PublicationIdentifier>
+                                 <PublicationDate>2016-02-25</PublicationDate>
+                              </RecordPublication>
+                           </RecordPublicationDetails>
+                           <RecordInterestedOfficeCode>RS</RecordInterestedOfficeCode>
+                           <GoodsServicesLimitationDetails>
+                              <GoodsServicesLimitation/>
+                           </GoodsServicesLimitationDetails>
+                        </BasicRecord>
+                     </MarkRecord>
+                     <MarkRecord>
+                        <BasicRecord>
+                           <RecordFilingDate>2016-02-18</RecordFilingDate>
+                           <RecordNotificationDate>2016-02-22</RecordNotificationDate>
+                           <RecordEffectiveDate>2016-02-05</RecordEffectiveDate>
+                           <BasicRecordKind>Rule 18ter(1) GP without provisional refusal</BasicRecordKind>
+                           <RecordPublicationDetails>
+                              <RecordPublication>
+                                 <PublicationIdentifier>2016/8 Gaz</PublicationIdentifier>
+                                 <PublicationDate>2016-03-03</PublicationDate>
+                              </RecordPublication>
+                           </RecordPublicationDetails>
+                           <RecordInterestedOfficeCode>BA</RecordInterestedOfficeCode>
+                        </BasicRecord>
+                     </MarkRecord>
+                     <MarkRecord>
+                        <BasicRecord>
+                           <RecordFilingDate>2016-11-18</RecordFilingDate>
+                           <RecordNotificationDate>2016-12-01</RecordNotificationDate>
+                           <RecordEffectiveDate>2016-09-05</RecordEffectiveDate>
+                           <BasicRecordKind>Rule 18ter(2)(ii) GP following a provisional refusal</BasicRecordKind>
+                           <RecordReference>00871090</RecordReference>
+                           <RecordLanguageCode>fr</RecordLanguageCode>
+                           <RecordPublicationDetails>
+                              <RecordPublication>
+                                 <PublicationIdentifier>2016/47 Gaz</PublicationIdentifier>
+                                 <PublicationDate>2016-12-01</PublicationDate>
+                              </RecordPublication>
+                           </RecordPublicationDetails>
+                           <RecordInterestedOfficeCode>RS</RecordInterestedOfficeCode>
+                           <GoodsServicesLimitationDetails>
+                              <GoodsServicesLimitation>
+                                 <GoodsServicesHeader languageCode="en">
+Accepted for all the services in classes 35 and 42.
+</GoodsServicesHeader>
+                                 <GoodsServicesHeader languageCode="fr">
+Admis pour tous les services des classes 35 et 42.
+</GoodsServicesHeader>
+                                 <GoodsServicesHeader languageCode="es">
+Aceptado para todos los productos de las clases 35 y 42.
+</GoodsServicesHeader>
+                              </GoodsServicesLimitation>
+                           </GoodsServicesLimitationDetails>
+                        </BasicRecord>
+                     </MarkRecord>
+                  </MarkRecordDetails>
+               </TradeMark>

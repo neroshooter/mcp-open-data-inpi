@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TradeMark operationCode="Update">
+  <RegistrationOfficeCode>FR</RegistrationOfficeCode>
+  <ApplicationNumber>0403869</ApplicationNumber>
+  <ApplicationDate>2013-07-18</ApplicationDate>
+  <FilingPlace>92 INPI - Dépôt électronique</FilingPlace>
+  <ApplicationLanguageCode>fr</ApplicationLanguageCode>
+  <ExpiryDate>2033-07-18</ExpiryDate>
+  <MarkCurrentStatusCode>Marque renouvelée</MarkCurrentStatusCode>
+  <MarkFeature>Combined</MarkFeature>
+  <MarkDescriptionDetails>
+    <MarkDescription>Description d'exemple</MarkDescription>
+  </MarkDescriptionDetails>
+  <WordMarkSpecification>
+    <MarkVerbalElementText>MARQUE EXEMPLE 1</MarkVerbalElementText>
+  </WordMarkSpecification>
+  <MarkImageDetails>
+    <MarkImage>
+      <MarkImageFilename>IMAGE-EXEMPLE</MarkImageFilename>
+      <MarkImageFileFormat>JPEG</MarkImageFileFormat>
+      <MarkImageCategory>
+        <CategoryCodeDetails>
+          <CategoryCode>27.05.21</CategoryCode>
+          <CategoryCode>27.99.15</CategoryCode>
+        </CategoryCodeDetails>
+      </MarkImageCategory>
+    </MarkImage>
+  </MarkImageDetails>
+  <GoodsServicesDetails>
+    <GoodsServices>
+      <ClassificationKindCode>Nice</ClassificationKindCode>
+      <ClassDescriptionDetails>
+        <ClassDescription>
+          <ClassNumber>9</ClassNumber>
+          <GoodsServicesDescription languageCode="fr">Appareils, supports pour la production et la reproduction, l'enregistrement, le stockage, la manipulation, la transmission, le traitement de sons, d'images, d'informations et de toutes sortes de données ; appareils pour le traitement des données, systèmes de transmission de données, ordinateurs, logiciels, jeux de circuits imprimés ; périphériques d'ordinateur ; logiciels et applications logicielles pour dispositifs mobiles (téléphone, Smartphone) logiciels pour la sécurisation des transactions financières, terminaux de paiement ;</GoodsServicesDescription>
+        </ClassDescription>
+        <ClassDescription>
+          <ClassNumber>35</ClassNumber>
+          <GoodsServicesDescription languageCode="fr">Conseils en gestion, en matière administrative, commerciale, en management, en organisation, notamment dans le domaine des technologies de l'information, de la télécommunication et des transactions de paiement/financières ; saisie, traitement, archivage et compilation de données ; gestion de fichiers informatiques ; location de fichiers informatiques ; services d'externalisation du traitement des documents et des données d'une entreprise, à savoir services de recueil de données dans un fichier central, de saisie et de traitement de données, d'informations, d'images, de documents, de mise à jour de bases de données et d'image ;</GoodsServicesDescription>
+        </ClassDescription>
+        <ClassDescription>
+          <ClassNumber>36</ClassNumber>
+          <GoodsServicesDescription languageCode="fr">Services de paiement et de transactions financières électroniques ; services de paiement en ligne ; services financiers ; services de traitement de paiement effectués par carte bancaire, carte de paiement, chèque ; gestion des opérations de paiement (débit, crédit et annulation) ; services de cartes de crédit ; consultation et information relatifs aux services précités ; tous les services précités à l'exception des services de paiement transfrontaliers autres que les services passerelles de paiement Internet pour cartes de crédit, cartes de débit et paiements mobiles ;</GoodsServicesDescription>
+        </ClassDescription>
+        <ClassDescription>
+          <ClassNumber>38</ClassNumber>
+          <GoodsServicesDescription languageCode="fr">Services de télécommunication, communication par terminaux d'ordinateurs notamment par réseau de type Internet ; mise à disposition d'accès à des services en ligne ; services de messagerie électronique ; services de fourniture d'accès pour la gestion informatisée de systèmes pour la transmission de données et la télécommunication de traitement de données ; gestion de réseaux de télécommunication et de transmission de données ; location de temps d'accès à un centre serveur de bases de données ; gestion et location de temps d'accès à un serveur informatique ; fourniture d'un accès sécurisé à des réseaux informatiques, à des serveurs et à Internet ; services de télécommunication pour le paiement et les transactions à distance sécurisés ; services de fourniture d'accès pour la gestion informatisée de systèmes pour le paiement et les transactions à distance sécurisés ; transmission électronique de données et d'informations relatives à des transactions effectuées par commerce électronique ; fourniture d'accès temporaire à des logiciels ; fourniture d'accès temporaire à des logiciels non téléchargeables en ligne ;</GoodsServicesDescription>
+        </ClassDescription>
+        <ClassDescription>
+          <ClassNumber>42</ClassNumber>
+          <GoodsServicesDescription languageCode="fr">Conception, développement, maintenance d'ordinateurs et périphériques d'ordinateurs, de logiciels ; location d'ordinateurs et périphériques d'ordinateurs et de logiciels ; programmation informatique, programmation de logiciels, intégration de systèmes informatiques et de réseaux ; les services précités étant rendus dans les domaines des technologies de l'information, de la télécommunication, des transactions de paiement et de l'info nuagique ; gestion de serveurs informatiques, infogérance, à savoir hébergement de serveurs informatiques ; services de programmation de logiciels pour la sécurisation des transactions financières ; consultation et information relatifs aux services précités ; services de conseils technologiques liés aux programmes informatiques.</GoodsServicesDescription>
+        </ClassDescription>
+      </ClassDescriptionDetails>
+    </GoodsServices>
+  </GoodsServicesDetails>
+  <ApplicantDetails>
+    <Applicant>
+      <ApplicantIdentifier identifierKindCode="FR">000007919</ApplicantIdentifier>
+      <ApplicantSequenceNumber>1</ApplicantSequenceNumber>
+      <ApplicantAddressBook>
+        <FormattedNameAddress>
+          <Name>
+            <FormattedName>
+              <LastName>SOCIETE EXEMPLE 1</LastName>
+              <OrganizationName>SOCIETE EXEMPLE 1</OrganizationName>
+            </FormattedName>
+          </Name>
+          <Address>
+            <AddressCountryCode>FR</AddressCountryCode>
+            <FormattedAddress>
+              <AddressStreet>1 rue de l'Exemple</AddressStreet>
+              <AddressCity>Villexemple-1</AddressCity>
+              <AddressPostcode>10101</AddressPostcode>
+            </FormattedAddress>
+          </Address>
+        </FormattedNameAddress>
+      </ApplicantAddressBook>
+    </Applicant>
+  </ApplicantDetails>
+  <RepresentativeDetails>
+    <Representative>
+      <RepresentativeIdentifier />
+      <RepresentativeSequenceNumber>1</RepresentativeSequenceNumber>
+      <RepresentativeAddressBook>
+        <FormattedNameAddress>
+          <Name>
+            <FormattedName>
+              <LastName>SOCIETE EXEMPLE 2</LastName>
+              <OrganizationName>SOCIETE EXEMPLE 2</OrganizationName>
+            </FormattedName>
+          </Name>
+          <Address>
+            <AddressCountryCode>FR</AddressCountryCode>
+            <FormattedAddress>
+              <AddressStreet>2 rue de l'Exemple</AddressStreet>
+              <AddressCity>Villexemple-2</AddressCity>
+              <AddressPostcode>10202</AddressPostcode>
+            </FormattedAddress>
+          </Address>
+        </FormattedNameAddress>
+      </RepresentativeAddressBook>
+    </Representative>
+  </RepresentativeDetails>
+  <MarkRecordDetails>
+    <MarkRecord>
+      <BasicRecord>
+        <RecordIdentifier>Changement de nom, de dénomination</RecordIdentifier>
+        <RecordFilingDate>2015-08-18</RecordFilingDate>
+        <BasicRecordKind>Inscription</BasicRecordKind>
+        <RecordReference>799819</RecordReference>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2015-38</PublicationIdentifier>
+            <PublicationDate>2015-09-18</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+        <ClaimantDetails>
+          <Claimant>
+            <ClaimantAddressBook>
+              <FormattedNameAddress>
+                <Name>
+                  <FormattedName>
+                    <LastName>NOM1</LastName>
+                    <OrganizationName>SOCIETE EXEMPLE 3</OrganizationName>
+                  </FormattedName>
+                </Name>
+              </FormattedNameAddress>
+            </ClaimantAddressBook>
+          </Claimant>
+        </ClaimantDetails>
+      </BasicRecord>
+    </MarkRecord>
+    <MarkRecord>
+      <BasicRecord>
+        <RecordIdentifier>Renonciation partielle</RecordIdentifier>
+        <RecordFilingDate>2017-07-06</RecordFilingDate>
+        <BasicRecordKind>Inscription</BasicRecordKind>
+        <RecordReference>807738</RecordReference>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2017-32</PublicationIdentifier>
+            <PublicationDate>2017-08-11</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+        <GoodsServicesLimitationDetails>
+          <GoodsServicesLimitation>
+            <LimitationClassDescriptionDetails>
+              <ClassDescription>
+                <ClassNumber>00</ClassNumber>
+                <GoodsServicesDescription languageCode="fr">Produits et/ou services et classes auxquels s’appliquera la marque après le retrait ou la renonciation : Classe 9 : Appareils, supports pour la production et la reproduction, l'enregistrement, le stockage, la manipulation, la transmission, le traitement de sons, d'images, d'informations et de toutes sortes de données ; appareils pour le traitement des données, systèmes de transmission de données, ordinateurs, logiciels, jeux de circuits imprimés ; périphériques d'ordinateur ; logiciels et applications logicielles pour dispositifs mobiles (téléphone, Smartphone) logiciels pour la sécurisation des transactions financières, terminaux de paiement. Classe 35 : Conseils en gestion, en matière administrative, commerciale, en management, en organisation, notamment dans le domaine des technologies de l'information, de la télécommunication et des transactions de paiement/financières ; saisie, traitement, archivage et compilation de données ; gestion de fichiers informatiques ; location de fichiers informatiques ; services d'externalisation du traitement des documents et des données d'une entreprise, à savoir services de recueil de données dans un fichier central, de saisie et de traitement de données, d'informations, d'images, de documents, de mise à jour de bases de données et d'image. Classe 36 : Services de paiement et de transactions financières électroniques ; services de paiement en ligne ; services financiers ; services de traitement de paiement effectués par carte bancaire, carte de paiement, chèque ; gestion des opérations de paiement (débit, crédit et annulation) ; services de cartes de crédit ; consultation et information relatifs aux services précités ; tous les services précités à l'exception des services de paiement transfrontaliers autres que les services passerelles de paiement Internet pour cartes de crédit, cartes de débit et paiements mobiles. Classe 38 : Services de télécommunication, communication par terminaux d'ordinateurs notamment par réseau de type Internet ; mise à disposition d'accès à des services en ligne ; services de messagerie électronique ; services de fourniture d'accès pour la gestion informatisée de systèmes pour la transmission de données et la télécommunication de traitement de données ; gestion de réseaux de télécommunication et de transmission de données ; location de temps d'accès à un centre serveur de bases de données ; gestion et location de temps d'accès à un serveur informatique ; fourniture d'un accès sécurisé à des réseaux informatiques, à des serveurs et à Internet ; services de télécommunication pour le paiement et les transactions à distance sécurisés ; services de fourniture d'accès pour la gestion informatisée de systèmes pour le paiement et les transactions à distance sécurisés ; transmission électronique de données et d'informations relatives à des transactions effectuées par commerce électronique ; fourniture d'accès temporaire à des logiciels ; fourniture d'accès temporaire à des logiciels non téléchargeables en ligne. Classe 42 : Conception, développement, maintenance d'ordinateurs et périphériques d'ordinateurs, de logiciels ; location d'ordinateurs et périphériques d'ordinateurs et de logiciels ; programmation informatique, programmation de logiciels, intégration de systèmes informatiques et de réseaux ; les services précités étant rendus dans les domaines des technologies de l'information, de la télécommunication, des transactions de paiement et de l'info nuagique ; gestion de serveurs informatiques, infogérance, à savoir hébergement de serveurs informatiques ; services de programmation de logiciels pour la sécurisation des transactions financières ; consultation et information relatifs aux services précités ; services de conseils technologiques liés aux programmes informatiques.</GoodsServicesDescription>
+              </ClassDescription>
+            </LimitationClassDescriptionDetails>
+          </GoodsServicesLimitation>
+        </GoodsServicesLimitationDetails>
+      </BasicRecord>
+    </MarkRecord>
+    <MarkRecord>
+      <BasicRecord>
+        <RecordIdentifier>Changement d'adresse</RecordIdentifier>
+        <RecordFilingDate>2018-04-12</RecordFilingDate>
+        <BasicRecordKind>Inscription</BasicRecordKind>
+        <RecordReference>815657</RecordReference>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2018-19</PublicationIdentifier>
+            <PublicationDate>2018-05-11</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+        <ClaimantDetails>
+          <Claimant>
+            <ClaimantAddressBook>
+              <FormattedNameAddress>
+                <Name>
+                  <FormattedName>
+                    <LastName>NOM1</LastName>
+                    <OrganizationName>SOCIETE EXEMPLE 3</OrganizationName>
+                  </FormattedName>
+                </Name>
+              </FormattedNameAddress>
+            </ClaimantAddressBook>
+          </Claimant>
+        </ClaimantDetails>
+      </BasicRecord>
+    </MarkRecord>
+    <MarkRecord>
+      <BasicRecord>
+        <RecordIdentifier>Changement d'adresse</RecordIdentifier>
+        <RecordFilingDate>2020-10-23</RecordFilingDate>
+        <BasicRecordKind>Inscription</BasicRecordKind>
+        <RecordReference>823576</RecordReference>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2020-48</PublicationIdentifier>
+            <PublicationDate>2020-11-27</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+        <ClaimantDetails>
+          <Claimant>
+            <ClaimantAddressBook>
+              <FormattedNameAddress>
+                <Name>
+                  <FormattedName>
+                    <OrganizationName>SOCIETE EXEMPLE 4</OrganizationName>
+                  </FormattedName>
+                </Name>
+                <Address>
+                  <FormattedAddress>
+                    <AddressStreet>3 rue de l'Exemple</AddressStreet>
+                    <AddressCity>Villexemple-3</AddressCity>
+                    <AddressPostcode>X-0000</AddressPostcode>
+                    <FormattedAddressCountryCode>LU</FormattedAddressCountryCode>
+                  </FormattedAddress>
+                </Address>
+              </FormattedNameAddress>
+            </ClaimantAddressBook>
+          </Claimant>
+        </ClaimantDetails>
+      </BasicRecord>
+    </MarkRecord>
+    <MarkRecord>
+      <BasicRecord>
+        <RecordIdentifier>Transmission totale de propriété</RecordIdentifier>
+        <RecordFilingDate>2021-05-21</RecordFilingDate>
+        <BasicRecordKind>Inscription</BasicRecordKind>
+        <RecordReference>831495</RecordReference>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2021-25</PublicationIdentifier>
+            <PublicationDate>2021-06-25</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+        <ClaimantDetails>
+          <Claimant>
+            <ClaimantIdentifier>000007919</ClaimantIdentifier>
+            <ClaimantAddressBook>
+              <FormattedNameAddress>
+                <Name>
+                  <FormattedName>
+                    <OrganizationName>SOCIETE EXEMPLE 5</OrganizationName>
+                  </FormattedName>
+                </Name>
+                <Address>
+                  <FormattedAddress>
+                    <AddressStreet>4 rue de l'Exemple</AddressStreet>
+                    <AddressCity>Villexemple-4</AddressCity>
+                    <AddressPostcode>10303</AddressPostcode>
+                    <FormattedAddressCountryCode>FR</FormattedAddressCountryCode>
+                  </FormattedAddress>
+                </Address>
+              </FormattedNameAddress>
+            </ClaimantAddressBook>
+          </Claimant>
+        </ClaimantDetails>
+      </BasicRecord>
+    </MarkRecord>
+    <MarkRecord>
+      <BasicRecord>
+        <BasicRecordKind>Publication</BasicRecordKind>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2013-32</PublicationIdentifier>
+            <PublicationDate>2013-08-09</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+      </BasicRecord>
+    </MarkRecord>
+    <MarkRecord>
+      <BasicRecord>
+        <BasicRecordKind>Enregistrement sans modification</BasicRecordKind>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2013-45</PublicationIdentifier>
+            <PublicationDate>2013-11-08</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+      </BasicRecord>
+    </MarkRecord>
+    <MarkRecord>
+      <BasicRecord>
+        <RecordFilingDate>2023-03-29</RecordFilingDate>
+        <BasicRecordKind>Renouvellement avec limitation</BasicRecordKind>
+        <RecordReference>0839414</RecordReference>
+        <RecordPublicationDetails>
+          <RecordPublication>
+            <PublicationIdentifier>2023-32</PublicationIdentifier>
+            <PublicationDate>2023-08-11</PublicationDate>
+          </RecordPublication>
+        </RecordPublicationDetails>
+      </BasicRecord>
+    </MarkRecord>
+  </MarkRecordDetails>
+</TradeMark>

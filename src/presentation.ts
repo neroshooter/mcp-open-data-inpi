@@ -47,7 +47,7 @@ export function dateFr(valeur: string | null | undefined): string | undefined {
 export function montant(valeur: number, devise = 'EUR'): string {
   return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: devise, maximumFractionDigits: 0 })
     .format(valeur)
-    .replace(/\u202f/g, ' ');
+    .replace(/[\u202f\u00a0]/g, ' ');
 }
 
 /** Ligne « **Libellé** : valeur », omise si la valeur est vide. */

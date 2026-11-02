@@ -1,0 +1,623 @@
+{
+  "updatedAt": "2026-10-21T19:02:42+02:00",
+  "nombreRepresentantsActifs": 4,
+  "nombreEtablissementsOuverts": 124,
+  "id": "aaaaaaaaaaaaaaaaaaaaaaa1",
+  "formality": {
+    "siren": "000007919",
+    "indicateurStructureEtablissement": false,
+    "content": {
+      "succursaleOuFiliale": "AVEC_ETABLISSEMENT",
+      "formeExerciceActivitePrincipale": "COMMERCIALE",
+      "natureCreation": {
+        "dateCreation": "1996-07-15",
+        "societeEtrangere": false,
+        "formeJuridique": "5710",
+        "formeJuridiqueInsee": "5710",
+        "microEntreprise": false,
+        "etablieEnFrance": true,
+        "salarieEnFrance": true,
+        "relieeEntrepriseAgricole": false,
+        "entrepriseAgricole": false,
+        "eirl": false
+      },
+      "personneMorale": {
+        "adresseEntreprise": {
+          "caracteristiques": {
+            "ambulant": false,
+            "domiciliataire": false
+          },
+          "adresse": {
+            "roleAdressePresent": false,
+            "codePostalPresent": true,
+            "communePresent": true,
+            "codeInseeCommunePresent": true,
+            "typeVoiePresent": true,
+            "voiePresent": true,
+            "voieCodifieePresent": false,
+            "numVoiePresent": true,
+            "indiceRepetitionPresent": false,
+            "distributionSpecialePresent": false,
+            "communeAnciennePresent": false,
+            "rgpdPresent": false,
+            "datePriseEffetAdressePresent": false,
+            "complementLocalisationPresent": false,
+            "communeDeRattachementPresent": false,
+            "caracteristiquesPresent": true,
+            "indicateurValidationBANPresent": true,
+            "cedexPresent": false,
+            "pays": "FRANCE",
+            "codePays": "FRA",
+            "codePostal": "10404",
+            "commune": "Villexemple-8",
+            "codeInseeCommune": "10101",
+            "typeVoie": "AV",
+            "voie": "DE L'EXEMPLE 1",
+            "numVoie": "1",
+            "caracteristiques": {
+              "ambulant": false,
+              "domiciliataire": false
+            }
+          }
+        },
+        "etablissementPrincipal": {
+          "descriptionEtablissement": {
+            "rolePourEntreprise": "2",
+            "pays": "FRANCE",
+            "siret": "00000791902616",
+            "activiteNonSedentaire": false,
+            "sansActiviteAutreActiviteSiege": false,
+            "indicateurEtablissementPrincipal": true,
+            "statutPourFormalite": "4",
+            "etablissementCorrected": true,
+            "codeApe": "7010Z",
+            "etablissementValidated": false,
+            "etablissementRdd": true
+          },
+          "adresse": {
+            "roleAdressePresent": false,
+            "codePostalPresent": true,
+            "communePresent": true,
+            "codeInseeCommunePresent": true,
+            "typeVoiePresent": true,
+            "voiePresent": true,
+            "voieCodifieePresent": false,
+            "numVoiePresent": true,
+            "indiceRepetitionPresent": false,
+            "distributionSpecialePresent": false,
+            "communeAnciennePresent": false,
+            "rgpdPresent": false,
+            "datePriseEffetAdressePresent": false,
+            "complementLocalisationPresent": false,
+            "communeDeRattachementPresent": false,
+            "caracteristiquesPresent": true,
+            "indicateurValidationBANPresent": true,
+            "cedexPresent": false,
+            "pays": "FRANCE",
+            "codePays": "FRA",
+            "codePostal": "10404",
+            "commune": "Villexemple-8",
+            "codeInseeCommune": "10101",
+            "typeVoie": "AV",
+            "voie": "DE L'EXEMPLE 1",
+            "numVoie": "1",
+            "caracteristiques": {
+              "ambulant": false,
+              "domiciliataire": false
+            }
+          },
+          "activites": [
+            {
+              "categoryCode": "07020301",
+              "activiteId": "00000000-0000-0000-0000-000000000001",
+              "indicateurPrincipal": true,
+              "indicateurProlongement": false,
+              "dateDebut": "1996-01-01",
+              "exerciceActivite": "P",
+              "indicateurNonSedentaire": false,
+              "formeExercice": "COMMERCIALE",
+              "categorisationActivite1": "07",
+              "categorisationActivite2": "02",
+              "categorisationActivite3": "03",
+              "categorisationActivite4": "01",
+              "descriptionDetaillee": "Activité de bureaux",
+              "indicateurActiviteeApe": false,
+              "precisionActivite": "99",
+              "precisionAutre": "Activité de services",
+              "indicateurArtisteAuteur": false,
+              "indicateurMarinProfessionnel": false,
+              "rolePrincipalPourEntreprise": true,
+              "codeApe": "7010Z",
+              "activiteRattacheeEirl": false,
+              "origine": {
+                "typeOrigine": "1",
+                "publication": {
+                  "datePublication": "2026-10-16",
+                  "journalPublication": "non renseigné"
+                }
+              },
+              "isLocationGeranceOrGeranceMandat": false,
+              "metierArt": false
+            }
+          ],
+          "isLocationGeranceOrGeranceMandat": false
+        },
+        "autresEtablissements": [
+          {
+            "descriptionEtablissement": {
+              "rolePourEntreprise": "14",
+              "siret": "00000791900016",
+              "indicateurEtablissementPrincipal": false,
+              "statutPourFormalite": "4",
+              "dateEffetFermeture": "2007-03-01",
+              "codeApe": "741J",
+              "etablissementValidated": false,
+              "etablissementRdd": true
+            },
+            "adresse": {
+              "roleAdressePresent": false,
+              "codePostalPresent": true,
+              "communePresent": true,
+              "codeInseeCommunePresent": true,
+              "typeVoiePresent": true,
+              "voiePresent": true,
+              "voieCodifieePresent": false,
+              "numVoiePresent": true,
+              "indiceRepetitionPresent": false,
+              "distributionSpecialePresent": false,
+              "communeAnciennePresent": false,
+              "rgpdPresent": false,
+              "datePriseEffetAdressePresent": false,
+              "complementLocalisationPresent": false,
+              "communeDeRattachementPresent": false,
+              "caracteristiquesPresent": false,
+              "indicateurValidationBANPresent": true,
+              "cedexPresent": false,
+              "pays": "FRANCE",
+              "codePays": "FRA",
+              "codePostal": "10606",
+              "commune": "Villexemple-9",
+              "codeInseeCommune": "10202",
+              "typeVoie": "PL",
+              "voie": "DE L'EXEMPLE 2",
+              "numVoie": "2"
+            },
+            "activites": [
+              {
+                "activiteId": "00000000-0000-0000-0000-000000000002",
+                "indicateurPrincipal": true,
+                "indicateurProlongement": false,
+                "dateDebut": "1995-12-07",
+                "dateFin": "2007-03-01",
+                "descriptionDetaillee": "Activité déduite de la reconstitution des données. Il vous est demandé de la reformuler.",
+                "indicateurActiviteeApe": true,
+                "indicateurArtisteAuteur": false,
+                "indicateurMarinProfessionnel": false,
+                "rolePrincipalPourEntreprise": false,
+                "codeApe": "741J",
+                "activiteRattacheeEirl": false
+              }
+            ]
+          },
+          {
+            "descriptionEtablissement": {
+              "rolePourEntreprise": "14",
+              "pays": "FRANCE",
+              "codePays": "FRA",
+              "siret": "00000791900024",
+              "activiteNonSedentaire": false,
+              "enseigne": "SOCIETE EXEMPLE 12",
+              "indicateurEtablissementPrincipal": false,
+              "statutPourFormalite": "4",
+              "dateEffetFermeture": "2012-01-08",
+              "codeApe": "5610C",
+              "etablissementValidated": false,
+              "etablissementRdd": true
+            },
+            "adresse": {
+              "roleAdressePresent": false,
+              "codePostalPresent": true,
+              "communePresent": true,
+              "codeInseeCommunePresent": true,
+              "typeVoiePresent": true,
+              "voiePresent": true,
+              "voieCodifieePresent": false,
+              "numVoiePresent": true,
+              "indiceRepetitionPresent": false,
+              "distributionSpecialePresent": false,
+              "communeAnciennePresent": false,
+              "rgpdPresent": false,
+              "datePriseEffetAdressePresent": false,
+              "complementLocalisationPresent": true,
+              "communeDeRattachementPresent": false,
+              "caracteristiquesPresent": true,
+              "indicateurValidationBANPresent": true,
+              "cedexPresent": false,
+              "pays": "FRANCE",
+              "codePays": "FRA",
+              "codePostal": "10707",
+              "commune": "Villexemple-10",
+              "codeInseeCommune": "10303",
+              "typeVoie": "AV",
+              "voie": "DE L'EXEMPLE 3",
+              "numVoie": "3",
+              "complementLocalisation": "BATIMENT EXEMPLE",
+              "caracteristiques": {
+                "ambulant": false
+              }
+            },
+            "activites": [
+              {
+                "categoryCode": "07020300",
+                "activiteId": "00000000-0000-0000-0000-000000000003",
+                "indicateurPrincipal": true,
+                "indicateurProlongement": false,
+                "dateDebut": "1996-01-31",
+                "dateFin": "2023-11-28",
+                "exerciceActivite": "P",
+                "indicateurNonSedentaire": false,
+                "formeExercice": "COMMERCIALE",
+                "categorisationActivite1": "07",
+                "categorisationActivite2": "02",
+                "categorisationActivite3": "03",
+                "descriptionDetaillee": "Café petite restauration confiserie glaces",
+                "indicateurActiviteeApe": false,
+                "indicateurArtisteAuteur": false,
+                "indicateurMarinProfessionnel": false,
+                "rolePrincipalPourEntreprise": false,
+                "codeApe": "5610C",
+                "activiteRattacheeEirl": false,
+                "origine": {
+                  "typeOrigine": "3",
+                  "autreOrigine": "Origine d'exemple"
+                }
+              }
+            ],
+            "registreAnterieur": {
+              "raa": {
+                "estPresent": false
+              },
+              "rnm": {
+                "estPresent": false
+              },
+              "rncs": {
+                "estPresent": true,
+                "dateDebut": "1996-01-31T00:00:00+01:00",
+                "dateFin": "2023-11-28T00:00:00+01:00"
+              }
+            }
+          }
+        ],
+        "composition": {
+          "pouvoirs": [
+            {
+              "roleEntreprise": "73",
+              "typeDePersonne": "INDIVIDU",
+              "indicateurSecondRoleEntreprise": false,
+              "indicateurActifAgricole": false,
+              "representantId": "00000000-0000-0000-0000-000000000328",
+              "individu": {
+                "descriptionPersonne": {
+                  "sirenPresent": false,
+                  "dateEffetRoleDeclarantPresent": false,
+                  "genrePresent": true,
+                  "titrePresent": false,
+                  "dateDeNaissance": "1970-01",
+                  "dateDeNaissancePresent": true,
+                  "paysNaissancePresent": true,
+                  "codePaysNaissancePresent": true,
+                  "lieuDeNaissancePresent": true,
+                  "codePostalNaissancePresent": true,
+                  "codeInseeGeographiquePresent": true,
+                  "situationMatrimonialePresent": true,
+                  "qualiteDeNonSedentaritePresent": false,
+                  "indicateurDeNonSedentaritePresent": false,
+                  "role": "73",
+                  "nom": "NOM4",
+                  "prenoms": [
+                    "Prenom2"
+                  ],
+                  "nomUsage": "NOM4"
+                },
+                "adresseDomicile": {
+                  "roleAdressePresent": false,
+                  "codePostalPresent": true,
+                  "communePresent": true,
+                  "codeInseeCommunePresent": true,
+                  "typeVoiePresent": false,
+                  "voiePresent": true,
+                  "voieCodifieePresent": false,
+                  "numVoiePresent": false,
+                  "indiceRepetitionPresent": false,
+                  "distributionSpecialePresent": false,
+                  "communeAnciennePresent": false,
+                  "rgpdPresent": false,
+                  "datePriseEffetAdressePresent": false,
+                  "complementLocalisationPresent": false,
+                  "communeDeRattachementPresent": false,
+                  "caracteristiquesPresent": false,
+                  "indicateurValidationBANPresent": true,
+                  "cedexPresent": false,
+                  "pays": "FRANCE",
+                  "codePays": "FRA",
+                  "codePostal": "27473",
+                  "commune": "Villexemple-158",
+                  "codeInseeCommune": "26362"
+                },
+                "metierArt": false
+              },
+              "qualiteArtisan": "ARTISAN",
+              "metierArt": false,
+              "actif": true,
+              "mentionDemissionOrdre": false
+            },
+            {
+              "roleEntreprise": "53",
+              "typeDePersonne": "INDIVIDU",
+              "indicateurSecondRoleEntreprise": false,
+              "indicateurActifAgricole": false,
+              "representantId": "00000000-0000-0000-0000-000000000329",
+              "individu": {
+                "descriptionPersonne": {
+                  "sirenPresent": false,
+                  "dateEffetRoleDeclarantPresent": false,
+                  "genrePresent": true,
+                  "titrePresent": false,
+                  "dateDeNaissance": "1970-01",
+                  "dateDeNaissancePresent": true,
+                  "paysNaissancePresent": true,
+                  "codePaysNaissancePresent": true,
+                  "lieuDeNaissancePresent": true,
+                  "codePostalNaissancePresent": true,
+                  "codeInseeGeographiquePresent": true,
+                  "situationMatrimonialePresent": true,
+                  "qualiteDeNonSedentaritePresent": false,
+                  "indicateurDeNonSedentaritePresent": false,
+                  "role": "53",
+                  "nom": "NOM4",
+                  "prenoms": [
+                    "Prenom3"
+                  ]
+                },
+                "adresseDomicile": {
+                  "roleAdressePresent": false,
+                  "codePostalPresent": true,
+                  "communePresent": true,
+                  "codeInseeCommunePresent": true,
+                  "typeVoiePresent": false,
+                  "voiePresent": true,
+                  "voieCodifieePresent": false,
+                  "numVoiePresent": false,
+                  "indiceRepetitionPresent": false,
+                  "distributionSpecialePresent": false,
+                  "communeAnciennePresent": false,
+                  "rgpdPresent": false,
+                  "datePriseEffetAdressePresent": false,
+                  "complementLocalisationPresent": false,
+                  "communeDeRattachementPresent": false,
+                  "caracteristiquesPresent": false,
+                  "indicateurValidationBANPresent": true,
+                  "cedexPresent": false,
+                  "pays": "BELGIQUE",
+                  "codePays": "BEL",
+                  "codePostal": "27574",
+                  "commune": "Villexemple-159",
+                  "codeInseeCommune": "26463"
+                },
+                "metierArt": false
+              },
+              "metierArt": false,
+              "actif": true,
+              "mentionDemissionOrdre": false
+            },
+            {
+              "roleEntreprise": "71",
+              "typeDePersonne": "ENTREPRISE",
+              "indicateurSecondRoleEntreprise": false,
+              "indicateurActifAgricole": false,
+              "representantId": "00000000-0000-0000-0000-000000000330",
+              "entreprise": {
+                "roleEntreprise": "71",
+                "pays": "FRA",
+                "siren": "000031676",
+                "denomination": "SOCIETE EXEMPLE 29",
+                "formeJuridique": "5699"
+              },
+              "adresseEntreprise": {
+                "roleAdressePresent": false,
+                "codePostalPresent": true,
+                "communePresent": true,
+                "codeInseeCommunePresent": true,
+                "typeVoiePresent": false,
+                "voiePresent": true,
+                "voieCodifieePresent": false,
+                "numVoiePresent": false,
+                "indiceRepetitionPresent": false,
+                "distributionSpecialePresent": false,
+                "communeAnciennePresent": false,
+                "rgpdPresent": false,
+                "datePriseEffetAdressePresent": false,
+                "complementLocalisationPresent": false,
+                "communeDeRattachementPresent": false,
+                "caracteristiquesPresent": false,
+                "indicateurValidationBANPresent": true,
+                "cedexPresent": false,
+                "pays": "FRANCE",
+                "codePays": "FRA",
+                "codePostal": "27675",
+                "commune": "Villexemple-160",
+                "codeInseeCommune": "26564",
+                "voie": "DE L'EXEMPLE 235"
+              },
+              "representant": {
+                "indicateurActifAgricole": false
+              },
+              "metierArt": false,
+              "actif": true,
+              "mentionDemissionOrdre": false
+            },
+            {
+              "roleEntreprise": "72",
+              "typeDePersonne": "ENTREPRISE",
+              "indicateurSecondRoleEntreprise": false,
+              "indicateurActifAgricole": false,
+              "representantId": "00000000-0000-0000-0000-000000000331",
+              "entreprise": {
+                "roleEntreprise": "72",
+                "pays": "FRA",
+                "siren": "000039595",
+                "denomination": "SOCIETE EXEMPLE 30",
+                "formeJuridique": "5599"
+              },
+              "adresseEntreprise": {
+                "roleAdressePresent": false,
+                "codePostalPresent": true,
+                "communePresent": true,
+                "codeInseeCommunePresent": true,
+                "typeVoiePresent": false,
+                "voiePresent": true,
+                "voieCodifieePresent": false,
+                "numVoiePresent": false,
+                "indiceRepetitionPresent": false,
+                "distributionSpecialePresent": false,
+                "communeAnciennePresent": false,
+                "rgpdPresent": false,
+                "datePriseEffetAdressePresent": false,
+                "complementLocalisationPresent": false,
+                "communeDeRattachementPresent": false,
+                "caracteristiquesPresent": false,
+                "indicateurValidationBANPresent": true,
+                "cedexPresent": false,
+                "pays": "FRANCE",
+                "codePays": "FRA",
+                "codePostal": "27675",
+                "commune": "Villexemple-160",
+                "codeInseeCommune": "26564",
+                "voie": "DE L'EXEMPLE 235"
+              },
+              "representant": {
+                "indicateurActifAgricole": false
+              },
+              "metierArt": false,
+              "actif": true,
+              "mentionDemissionOrdre": false
+            }
+          ]
+        },
+        "observations": {
+          "rcs": [
+            {
+              "numObservation": "1",
+              "dateAjout": "1995-12-08",
+              "texte": "Observation d'exemple.",
+              "dateGreffe": "2016-12-02",
+              "etatObs": "Ajout",
+              "dateDerModif": "2017-05-04"
+            }
+          ]
+        },
+        "identite": {
+          "entreprise": {
+            "siren": "000007919",
+            "denomination": "SOCIETE EXEMPLE 28",
+            "formeJuridique": "5710",
+            "nicSiege": "02616",
+            "codeApe": "1071A",
+            "codeApeNaf2025": "1071G",
+            "entrepriseCorrected": true,
+            "entrepriseValidated": false,
+            "entrepriseRdd": false,
+            "nombreSalarie": 1000
+          },
+          "description": {
+            "objet": "Objet social d'exemple : fabrication et vente de produits de démonstration.",
+            "duree": 49,
+            "dateClotureExerciceSocial": "3112",
+            "datePremiereCloture": "2007-12-31",
+            "ess": false,
+            "societeMission": false,
+            "capitalVariable": false,
+            "montantCapital": 3857804,
+            "deviseCapital": "EUR",
+            "indicateurOrigineFusionScission": false,
+            "indicateurAssocieUnique": false,
+            "depotDemandeAcre": false,
+            "indicateurAssocieUniqueDirigeant": false,
+            "prorogationDuree": false,
+            "continuationAvecActifNetInferieurMoitieCapital": false,
+            "reconstitutionCapitauxPropres": false,
+            "dateFinExistence": "2045-12-07"
+          },
+          "contratDAppui": {
+            "roleContrat": "APPUI",
+            "typePersonneContractante": "ENTREPRISE",
+            "resiliationContrat": false,
+            "adresse": {
+              "roleAdressePresent": false,
+              "codePostalPresent": false,
+              "communePresent": false,
+              "codeInseeCommunePresent": false,
+              "typeVoiePresent": false,
+              "voiePresent": false,
+              "voieCodifieePresent": false,
+              "numVoiePresent": false,
+              "indiceRepetitionPresent": false,
+              "distributionSpecialePresent": false,
+              "communeAnciennePresent": false,
+              "rgpdPresent": false,
+              "datePriseEffetAdressePresent": false,
+              "complementLocalisationPresent": false,
+              "communeDeRattachementPresent": false,
+              "caracteristiquesPresent": false,
+              "indicateurValidationBANPresent": true,
+              "cedexPresent": false
+            }
+          }
+        },
+        "structureEntreprise": {
+          "indicateurPrincipalIdemSiege": true,
+          "aucuneActivite": false
+        }
+      },
+      "registreAnterieur": {
+        "raa": {
+          "estPresent": false
+        },
+        "rnm": {
+          "estPresent": true,
+          "dateImmatriculation": "1996-10-21T00:00:00+02:00"
+        },
+        "rncs": {
+          "estPresent": true,
+          "dateImmatriculation": "1996-07-15T00:00:00+02:00"
+        }
+      }
+    },
+    "diffusionINSEE": "O",
+    "typePersonne": "M",
+    "codeApeNaf2025": "1071G",
+    "diffusionCommerciale": false,
+    "historique": [
+      {
+        "dateIntegration": "2024-06-24T13:51:09+02:00",
+        "codeEvenement": "01Y",
+        "numeroLiasse": "X00000007919"
+      },
+      {
+        "dateIntegration": "2024-07-04T09:04:44+02:00",
+        "codeEvenement": "54M",
+        "numeroLiasse": "X00000015838",
+        "dateEffet": "2024-07-15",
+        "cheminDateEffet": "content.personneMorale.autresEtablissements[1].dateEffetOuvertureEtablissement",
+        "cheminDateEffetId": "content.exemple"
+      },
+      {
+        "dateIntegration": "2024-07-08T20:43:52+02:00",
+        "codeEvenement": "01Y",
+        "numeroLiasse": "X00000007919"
+      }
+    ],
+    "formeJuridique": "5710"
+  },
+  "siren": "000007919"
+}

@@ -1,0 +1,2487 @@
+{
+  "actes": [
+    {
+      "updatedAt": "2026-08-21T11:38:40+02:00",
+      "siren": "000007919",
+      "dateDepot": "2026-07-02",
+      "nomDocument": "document_exemple_1",
+      "confidentiality": "Public",
+      "deleted": false,
+      "typeDocument": "PJ_52",
+      "libelle": "Décision de modification certifiée conforme par le représentant légal",
+      "numNat": "X00000007919",
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa2"
+    },
+    {
+      "updatedAt": "2025-09-26T11:16:53+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2025-09-25",
+      "nomDocument": "document_exemple_2",
+      "confidentiality": "Public",
+      "deleted": false,
+      "typeDocument": "PJ_52",
+      "libelle": "Décision de modification certifiée conforme par le représentant légal",
+      "numNat": "X00000015838",
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa3"
+    },
+    {
+      "updatedAt": "2023-10-28T01:21:08+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2023-09-14",
+      "numChrono": "1",
+      "nomDocument": "document_exemple_3",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa4",
+      "typeRdd": [
+        {
+          "typeActe": "Extrait de procès-verbal",
+          "decision": "Modification(s) statutaire(s) "
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        },
+        {
+          "typeActe": "Décision(s) du président",
+          "decision": "Nomination de directeur général "
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2019-10-15",
+      "numChrono": "2",
+      "nomDocument": "document_exemple_4",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa5",
+      "typeRdd": [
+        {
+          "typeActe": "Procès-verbal d'assemblée générale",
+          "decision": "Modification(s) statutaire(s) "
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2014-09-15",
+      "numChrono": "3",
+      "nomDocument": "document_exemple_5",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa6",
+      "typeRdd": [
+        {
+          "typeActe": "Procès-verbal d'assemblée générale",
+          "decision": "Changement de commissaire aux comptes suppléant "
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-09-20",
+      "numChrono": "4",
+      "nomDocument": "document_exemple_6",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa7",
+      "typeRdd": [
+        {
+          "typeActe": "Déclaration de conformité"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale extraordinaire"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-09-20",
+      "numChrono": "4",
+      "nomDocument": "document_exemple_7",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa8",
+      "typeRdd": [
+        {
+          "typeActe": "Déclaration de conformité"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale extraordinaire"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-09-20",
+      "numChrono": "4",
+      "nomDocument": "document_exemple_8",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaa9",
+      "typeRdd": [
+        {
+          "typeActe": "Déclaration de conformité"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale extraordinaire"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-09-20",
+      "numChrono": "4",
+      "nomDocument": "document_exemple_9",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaa",
+      "typeRdd": [
+        {
+          "typeActe": "Déclaration de conformité"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale extraordinaire"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-05-16",
+      "numChrono": "5",
+      "nomDocument": "document_exemple_10",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaab",
+      "typeRdd": [
+        {
+          "typeActe": "Projet de traité de fusion"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-01-19",
+      "numChrono": "6",
+      "nomDocument": "document_exemple_11",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaac",
+      "typeRdd": [
+        {
+          "typeActe": "Acte sous seing privé"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        },
+        {
+          "typeActe": "Déclaration de conformité"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-01-19",
+      "numChrono": "6",
+      "nomDocument": "document_exemple_12",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaad",
+      "typeRdd": [
+        {
+          "typeActe": "Acte sous seing privé"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        },
+        {
+          "typeActe": "Déclaration de conformité"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-01-19",
+      "numChrono": "6",
+      "nomDocument": "document_exemple_13",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaae",
+      "typeRdd": [
+        {
+          "typeActe": "Acte sous seing privé"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        },
+        {
+          "typeActe": "Déclaration de conformité"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2012-01-19",
+      "numChrono": "6",
+      "nomDocument": "document_exemple_14",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaaaf",
+      "typeRdd": [
+        {
+          "typeActe": "Acte sous seing privé"
+        },
+        {
+          "typeActe": "Procès-verbal d'assemblée générale"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        },
+        {
+          "typeActe": "Déclaration de conformité"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2011-11-03",
+      "numChrono": "7",
+      "nomDocument": "document_exemple_15",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa10",
+      "typeRdd": [
+        {
+          "typeActe": "Procès-verbal d'assemblée générale mixte",
+          "decision": "Changement de président "
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2011-09-29",
+      "numChrono": "8",
+      "nomDocument": "document_exemple_16",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa11",
+      "typeRdd": [
+        {
+          "typeActe": "Projet de traité de fusion"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2011-01-06",
+      "numChrono": "9",
+      "nomDocument": "document_exemple_17",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa12",
+      "typeRdd": [
+        {
+          "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+          "decision": "Modification(s) statutaire(s) "
+        },
+        {
+          "typeActe": "Déclaration de conformité"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2011-01-06",
+      "numChrono": "9",
+      "nomDocument": "document_exemple_18",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa13",
+      "typeRdd": [
+        {
+          "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+          "decision": "Modification(s) statutaire(s) "
+        },
+        {
+          "typeActe": "Déclaration de conformité"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2011-01-06",
+      "numChrono": "9",
+      "nomDocument": "document_exemple_19",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa14",
+      "typeRdd": [
+        {
+          "typeActe": "Procès-verbal d'assemblée générale extraordinaire",
+          "decision": "Modification(s) statutaire(s) "
+        },
+        {
+          "typeActe": "Déclaration de conformité"
+        },
+        {
+          "typeActe": "Statuts mis à jour"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2010-10-27",
+      "numChrono": "10",
+      "nomDocument": "document_exemple_20",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa15",
+      "typeRdd": [
+        {
+          "typeActe": "Projet de traité de fusion"
+        }
+      ]
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2009-02-11",
+      "numChrono": "11",
+      "nomDocument": "document_exemple_21",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa16"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2008-02-04",
+      "numChrono": "12",
+      "nomDocument": "document_exemple_22",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa17"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2007-11-14",
+      "numChrono": "13",
+      "nomDocument": "document_exemple_23",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa18"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2007-10-23",
+      "numChrono": "14",
+      "nomDocument": "document_exemple_24",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa19"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2007-04-27",
+      "numChrono": "15",
+      "nomDocument": "document_exemple_25",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa1a"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2006-11-15",
+      "numChrono": "16",
+      "nomDocument": "document_exemple_26",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa1b"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2006-10-04",
+      "numChrono": "17",
+      "nomDocument": "document_exemple_27",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa1c"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2006-06-26",
+      "numChrono": "18",
+      "nomDocument": "document_exemple_28",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa1d"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2006-05-09",
+      "numChrono": "19",
+      "nomDocument": "document_exemple_29",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa1e"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2006-05-09",
+      "numChrono": "20",
+      "nomDocument": "document_exemple_30",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa1f"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2005-12-21",
+      "numChrono": "21",
+      "nomDocument": "document_exemple_31",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa20"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2005-12-21",
+      "numChrono": "22",
+      "nomDocument": "document_exemple_32",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa21"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2005-11-07",
+      "numChrono": "23",
+      "nomDocument": "document_exemple_33",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa22"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2005-11-07",
+      "numChrono": "24",
+      "nomDocument": "document_exemple_34",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa23"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2005-03-01",
+      "numChrono": "25",
+      "nomDocument": "document_exemple_35",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa24"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2004-11-22",
+      "numChrono": "26",
+      "nomDocument": "document_exemple_36",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa25"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2004-10-20",
+      "numChrono": "27",
+      "nomDocument": "document_exemple_37",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa26"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2003-04-11",
+      "numChrono": "28",
+      "nomDocument": "document_exemple_38",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa27"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2002-12-19",
+      "numChrono": "29",
+      "nomDocument": "document_exemple_39",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa28"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2002-12-19",
+      "numChrono": "30",
+      "nomDocument": "document_exemple_40",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa29"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2002-12-19",
+      "numChrono": "31",
+      "nomDocument": "document_exemple_41",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa2a"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2002-10-21",
+      "numChrono": "32",
+      "nomDocument": "document_exemple_42",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa2b"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2002-10-21",
+      "numChrono": "33",
+      "nomDocument": "document_exemple_43",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa2c"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2002-10-21",
+      "numChrono": "34",
+      "nomDocument": "document_exemple_44",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa2d"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2001-12-21",
+      "numChrono": "35",
+      "nomDocument": "document_exemple_45",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa2e"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2001-11-07",
+      "numChrono": "36",
+      "nomDocument": "document_exemple_46",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa2f"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2001-11-07",
+      "numChrono": "37",
+      "nomDocument": "document_exemple_47",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa30"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2001-02-26",
+      "numChrono": "38",
+      "nomDocument": "document_exemple_48",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa31"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-12-27",
+      "numChrono": "39",
+      "nomDocument": "document_exemple_49",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa32"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-10-24",
+      "numChrono": "40",
+      "nomDocument": "document_exemple_50",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa33"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-07-11",
+      "numChrono": "41",
+      "nomDocument": "document_exemple_51",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa34"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-07-11",
+      "numChrono": "42",
+      "nomDocument": "document_exemple_52",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa35"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-07-11",
+      "numChrono": "43",
+      "nomDocument": "document_exemple_53",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa36"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-07-11",
+      "numChrono": "44",
+      "nomDocument": "document_exemple_54",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa37"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-07-11",
+      "numChrono": "45",
+      "nomDocument": "document_exemple_55",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa38"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-07-11",
+      "numChrono": "46",
+      "nomDocument": "document_exemple_56",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa39"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2000-07-11",
+      "numChrono": "47",
+      "nomDocument": "document_exemple_57",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa3a"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:18+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "1999-11-10",
+      "numChrono": "48",
+      "nomDocument": "document_exemple_58",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa3b"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "1999-08-19",
+      "numChrono": "49",
+      "nomDocument": "document_exemple_59",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa3c"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "1999-03-12",
+      "numChrono": "50",
+      "nomDocument": "document_exemple_60",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa3d"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:19+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "1998-08-12",
+      "numChrono": "51",
+      "nomDocument": "document_exemple_61",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa3e"
+    },
+    {
+      "updatedAt": "2023-10-17T14:31:20+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "1995-12-07",
+      "numChrono": "52",
+      "nomDocument": "document_exemple_62",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa3f"
+    },
+    {
+      "updatedAt": "2024-06-24T13:51:14+02:00",
+      "siren": "000007919",
+      "nomDocument": "document_exemple_63",
+      "confidentiality": "Public",
+      "deleted": false,
+      "typeDocument": "PJ_02",
+      "libelle": "Copie des statuts mis à jour",
+      "id": "aaaaaaaaaaaaaaaaaaaaaa40"
+    },
+    {
+      "updatedAt": "2024-07-08T20:43:57+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "nomDocument": "document_exemple_63",
+      "confidentiality": "Public",
+      "deleted": false,
+      "typeDocument": "PJ_02",
+      "libelle": "Copie des statuts mis à jour",
+      "numNat": "X00000023757",
+      "id": "aaaaaaaaaaaaaaaaaaaaaa41"
+    }
+  ],
+  "bilans": [
+    {
+      "updatedAt": "2026-08-07T16:42:31+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2026-06-15",
+      "nomDocument": "document_exemple_64",
+      "confidentiality": "Public",
+      "deleted": false,
+      "numNat": "X00000031676",
+      "id": "aaaaaaaaaaaaaaaaaaaaaa42",
+      "dateCloture": "2024-12-31",
+      "typeBilan": "C",
+      "version": "2.0"
+    },
+    {
+      "updatedAt": "2025-08-20T16:01:07+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2025-07-31",
+      "nomDocument": "document_exemple_65",
+      "confidentiality": "Public",
+      "deleted": false,
+      "numNat": "X00000039595",
+      "id": "aaaaaaaaaaaaaaaaaaaaaa43",
+      "dateCloture": "2023-12-31",
+      "typeBilan": "C",
+      "version": "2.0"
+    }
+  ],
+  "bilansSaisis": [
+    {
+      "updatedAt": "2026-08-07T16:42:31+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2026-06-15",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa44",
+      "bilanSaisi": {
+        "bilan": {
+          "identite": {
+            "siren": "000007919",
+            "dateClotureExercice": "2024-12-31",
+            "codeActivite": "1071A",
+            "codeValideur": "5910",
+            "dateClotureExerciceNMoins1": "2023-12-31",
+            "dureeExerciceN": "12",
+            "dureeExerciceNMoins1": "12",
+            "dateDepot": "2026-06-15",
+            "codeSaisie": "00",
+            "codeTypeBilan": "C",
+            "codeDevise": "EUR",
+            "codeOrigineDevise": "O",
+            "codeConfidentialite": "0",
+            "infoTraitement": "",
+            "denomination": "SOCIETE EXEMPLE 28",
+            "adresse": "10000 VILLEXEMPLE"
+          },
+          "detail": {
+            "pages": [
+              {
+                "numero": 1,
+                "liasses": [
+                  {
+                    "code": "AF",
+                    "m1": "000000000250576",
+                    "m2": "000000000213524",
+                    "m3": "000000000037052",
+                    "m4": "000000000058278"
+                  },
+                  {
+                    "code": "AH",
+                    "m1": "000000005713294",
+                    "m2": "000000000775326",
+                    "m3": "000000004937968",
+                    "m4": "000000005149727"
+                  },
+                  {
+                    "code": "AJ",
+                    "m1": "000000000138625",
+                    "m2": "000000000138625",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "AP",
+                    "m1": "000000009428925",
+                    "m2": "000000006711897",
+                    "m3": "000000002717028",
+                    "m4": "000000002662440"
+                  },
+                  {
+                    "code": "AR",
+                    "m1": "000000008614908",
+                    "m2": "000000006760898",
+                    "m3": "000000001854010",
+                    "m4": "000000002032154"
+                  },
+                  {
+                    "code": "AT",
+                    "m1": "000000005599220",
+                    "m2": "000000005444714",
+                    "m3": "000000000154506",
+                    "m4": "000000000127125"
+                  },
+                  {
+                    "code": "AV",
+                    "m1": "000000000087403",
+                    "m2": "000000000000000",
+                    "m3": "000000000087403",
+                    "m4": "000000000063489"
+                  },
+                  {
+                    "code": "CU",
+                    "m1": "000000000399486",
+                    "m2": "000000000322085",
+                    "m3": "000000000077401",
+                    "m4": "000000000077401"
+                  },
+                  {
+                    "code": "BD",
+                    "m1": "000000000000107",
+                    "m2": "000000000000000",
+                    "m3": "000000000000107",
+                    "m4": "000000000000107"
+                  },
+                  {
+                    "code": "BH",
+                    "m1": "000000000833414",
+                    "m2": "000000000000000",
+                    "m3": "000000000833414",
+                    "m4": "000000000820510"
+                  },
+                  {
+                    "code": "BJ",
+                    "m1": "000000031065960",
+                    "m2": "000000020367068",
+                    "m3": "000000010698891",
+                    "m4": "000000010991233"
+                  },
+                  {
+                    "code": "BL",
+                    "m1": "000000000312206",
+                    "m2": "000000000000000",
+                    "m3": "000000000312206",
+                    "m4": "000000000319780"
+                  },
+                  {
+                    "code": "BX",
+                    "m1": "000000000792343",
+                    "m2": "000000000182683",
+                    "m3": "000000000609659",
+                    "m4": "000000000525004"
+                  },
+                  {
+                    "code": "BZ",
+                    "m1": "000000001091480",
+                    "m2": "000000000330299",
+                    "m3": "000000000761181",
+                    "m4": "000000001817710"
+                  },
+                  {
+                    "code": "CF",
+                    "m1": "000000000601004",
+                    "m2": "000000000000000",
+                    "m3": "000000000601004",
+                    "m4": "000000000632045"
+                  },
+                  {
+                    "code": "CH",
+                    "m1": "000000000757872",
+                    "m2": "000000000000000",
+                    "m3": "000000000757872",
+                    "m4": "000000000999165"
+                  },
+                  {
+                    "code": "CJ",
+                    "m1": "000000003554905",
+                    "m2": "000000000512982",
+                    "m3": "000000003041922",
+                    "m4": "000000004293705"
+                  },
+                  {
+                    "code": "CO",
+                    "m1": "000000034620865",
+                    "m2": "000000020880051",
+                    "m3": "000000013740814",
+                    "m4": "000000015284938"
+                  }
+                ]
+              },
+              {
+                "numero": 2,
+                "liasses": [
+                  {
+                    "code": "DA",
+                    "m1": "000000003857804",
+                    "m2": "000000003857804"
+                  },
+                  {
+                    "code": "DB",
+                    "m1": "000000001311245",
+                    "m2": "000000001311245"
+                  },
+                  {
+                    "code": "DD",
+                    "m1": "000000000385781",
+                    "m2": "000000000385781"
+                  },
+                  {
+                    "code": "DG",
+                    "m1": "000000000353376",
+                    "m2": "000000000353376"
+                  },
+                  {
+                    "code": "DH",
+                    "m1": "-000000001063196",
+                    "m2": "000000000795219"
+                  },
+                  {
+                    "code": "DI",
+                    "m1": "-000000000813020",
+                    "m2": "-000000001858416"
+                  },
+                  {
+                    "code": "DJ",
+                    "m1": "000000000033148",
+                    "m2": "000000000063913"
+                  },
+                  {
+                    "code": "DK",
+                    "m1": "000000001432498",
+                    "m2": "000000001642000"
+                  },
+                  {
+                    "code": "DL",
+                    "m1": "000000005497634",
+                    "m2": "000000006550921"
+                  },
+                  {
+                    "code": "DP",
+                    "m1": "000000000115807",
+                    "m2": "000000000122076"
+                  },
+                  {
+                    "code": "DR",
+                    "m1": "000000000115807",
+                    "m2": "000000000122076"
+                  },
+                  {
+                    "code": "DU",
+                    "m1": "000000000020315",
+                    "m2": "000000000012142"
+                  },
+                  {
+                    "code": "DV",
+                    "m1": "000000000258591",
+                    "m2": "000000000325139"
+                  },
+                  {
+                    "code": "DX",
+                    "m1": "000000003263372",
+                    "m2": "000000004033063"
+                  },
+                  {
+                    "code": "DY",
+                    "m1": "000000003313750",
+                    "m2": "000000003518572"
+                  },
+                  {
+                    "code": "DZ",
+                    "m1": "000000000028155",
+                    "m2": "000000000028452"
+                  },
+                  {
+                    "code": "EA",
+                    "m1": "000000001243189",
+                    "m2": "000000000694573"
+                  },
+                  {
+                    "code": "EC",
+                    "m1": "000000008127372",
+                    "m2": "000000008611941"
+                  },
+                  {
+                    "code": "EE",
+                    "m1": "000000013740814",
+                    "m2": "000000015284938"
+                  },
+                  {
+                    "code": "EG",
+                    "m1": "000000008057812",
+                    "m2": "000000008472821"
+                  },
+                  {
+                    "code": "EH",
+                    "m1": "000000000000000",
+                    "m2": "000000000007480"
+                  }
+                ]
+              },
+              {
+                "numero": 3,
+                "liasses": [
+                  {
+                    "code": "FD",
+                    "m1": "000000025919929",
+                    "m2": "000000000000000",
+                    "m3": "000000025919929",
+                    "m4": "000000026449191"
+                  },
+                  {
+                    "code": "FG",
+                    "m1": "000000001316451",
+                    "m2": "000000000000000",
+                    "m3": "000000001316451",
+                    "m4": "000000001622391"
+                  },
+                  {
+                    "code": "FJ",
+                    "m1": "000000027236380",
+                    "m2": "000000000000000",
+                    "m3": "000000027236380",
+                    "m4": "000000028071582"
+                  },
+                  {
+                    "code": "FP",
+                    "m3": "000000000662144",
+                    "m4": "000000000491283"
+                  },
+                  {
+                    "code": "FQ",
+                    "m3": "000000000158511",
+                    "m4": "000000000014033"
+                  },
+                  {
+                    "code": "FR",
+                    "m3": "000000028057035",
+                    "m4": "000000028576898"
+                  },
+                  {
+                    "code": "FU",
+                    "m3": "000000006964302",
+                    "m4": "000000007385191"
+                  },
+                  {
+                    "code": "FV",
+                    "m3": "000000000007574",
+                    "m4": "000000000006525"
+                  },
+                  {
+                    "code": "FW",
+                    "m3": "000000009015888",
+                    "m4": "000000009319308"
+                  },
+                  {
+                    "code": "FX",
+                    "m3": "000000000611964",
+                    "m4": "000000000756872"
+                  },
+                  {
+                    "code": "FY",
+                    "m3": "000000008930743",
+                    "m4": "000000009215288"
+                  },
+                  {
+                    "code": "FZ",
+                    "m3": "000000002740444",
+                    "m4": "000000002789050"
+                  },
+                  {
+                    "code": "GA",
+                    "m3": "000000001028675",
+                    "m4": "000000001046876"
+                  },
+                  {
+                    "code": "GB",
+                    "m3": "000000000431929",
+                    "m4": "000000000475934"
+                  },
+                  {
+                    "code": "GC",
+                    "m3": "000000000032798",
+                    "m4": "000000000102257"
+                  },
+                  {
+                    "code": "GD",
+                    "m3": "000000000034431",
+                    "m4": "000000000076220"
+                  },
+                  {
+                    "code": "GE",
+                    "m3": "000000000828752",
+                    "m4": "000000000986585"
+                  },
+                  {
+                    "code": "GF",
+                    "m3": "000000030627500",
+                    "m4": "000000032160107"
+                  },
+                  {
+                    "code": "GG",
+                    "m3": "-000000002570465",
+                    "m4": "-000000003583210"
+                  },
+                  {
+                    "code": "GJ",
+                    "m3": "000000002036591",
+                    "m4": "000000002036422"
+                  },
+                  {
+                    "code": "GK",
+                    "m3": "000000000015694",
+                    "m4": "000000000029736"
+                  },
+                  {
+                    "code": "GL",
+                    "m3": "000000000000133",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "GP",
+                    "m3": "000000002052419",
+                    "m4": "000000002066158"
+                  },
+                  {
+                    "code": "GQ",
+                    "m3": "000000000330299",
+                    "m4": "000000000040885"
+                  },
+                  {
+                    "code": "GR",
+                    "m3": "000000000062620",
+                    "m4": "000000000042215"
+                  },
+                  {
+                    "code": "GS",
+                    "m3": "000000000000013",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "GU",
+                    "m3": "000000000392932",
+                    "m4": "000000000083100"
+                  },
+                  {
+                    "code": "GV",
+                    "m3": "000000001659487",
+                    "m4": "000000001983058"
+                  },
+                  {
+                    "code": "GW",
+                    "m3": "-000000000910977",
+                    "m4": "-000000001600151"
+                  }
+                ]
+              },
+              {
+                "numero": 4,
+                "liasses": [
+                  {
+                    "code": "HA",
+                    "m1": "000000000023847",
+                    "m2": "000000000024097"
+                  },
+                  {
+                    "code": "HB",
+                    "m1": "000000000505968",
+                    "m2": "000000000039543"
+                  },
+                  {
+                    "code": "HC",
+                    "m1": "000000000348543",
+                    "m2": "000000000367799"
+                  },
+                  {
+                    "code": "HD",
+                    "m1": "000000000878357",
+                    "m2": "000000000431440"
+                  },
+                  {
+                    "code": "HE",
+                    "m1": "000000000121132",
+                    "m2": "000000000243926"
+                  },
+                  {
+                    "code": "HF",
+                    "m1": "000000000390513",
+                    "m2": "000000000097005"
+                  },
+                  {
+                    "code": "HG",
+                    "m1": "000000000283982",
+                    "m2": "000000000366901"
+                  },
+                  {
+                    "code": "HH",
+                    "m1": "000000000795627",
+                    "m2": "000000000707833"
+                  },
+                  {
+                    "code": "HI",
+                    "m1": "000000000082730",
+                    "m2": "-000000000276393"
+                  },
+                  {
+                    "code": "HK",
+                    "m1": "-000000000015228",
+                    "m2": "-000000000018129"
+                  },
+                  {
+                    "code": "HL",
+                    "m1": "000000030987812",
+                    "m2": "000000031074496"
+                  },
+                  {
+                    "code": "HM",
+                    "m1": "000000031800831",
+                    "m2": "000000032932912"
+                  },
+                  {
+                    "code": "HN",
+                    "m1": "-000000000813020",
+                    "m2": "-000000001858416"
+                  },
+                  {
+                    "code": "A1",
+                    "m1": "000000000127846",
+                    "m2": "000000000181249"
+                  },
+                  {
+                    "code": "A4",
+                    "m1": "000000000775756",
+                    "m2": "000000000793239"
+                  }
+                ]
+              },
+              {
+                "numero": 5,
+                "liasses": [
+                  {
+                    "code": "KD",
+                    "m1": "000000006344987",
+                    "m2": "000000000000000",
+                    "m3": "000000000000510"
+                  },
+                  {
+                    "code": "LN",
+                    "m1": "000000024477030",
+                    "m2": "000000000000000",
+                    "m3": "000000001235128"
+                  },
+                  {
+                    "code": "LQ",
+                    "m1": "000000001220104",
+                    "m2": "000000000000000",
+                    "m3": "000000000066317"
+                  },
+                  {
+                    "code": "0G",
+                    "m1": "000000032042121",
+                    "m2": "000000000000000",
+                    "m3": "000000001301956"
+                  },
+                  {
+                    "code": "IO",
+                    "m1": "000000000000000",
+                    "m2": "000000000243001",
+                    "m3": "000000006102496"
+                  },
+                  {
+                    "code": "IY",
+                    "m1": "000000000000000",
+                    "m2": "000000001981702",
+                    "m3": "000000023730457"
+                  },
+                  {
+                    "code": "I3",
+                    "m1": "000000000000000",
+                    "m2": "000000000053413",
+                    "m3": "000000001233007"
+                  },
+                  {
+                    "code": "I4",
+                    "m1": "000000000000000",
+                    "m2": "000000002278117",
+                    "m3": "000000031065960"
+                  }
+                ]
+              },
+              {
+                "numero": 6,
+                "liasses": [
+                  {
+                    "code": "PE",
+                    "m1": "000000000317896",
+                    "m2": "000000000021567",
+                    "m3": "000000000004236",
+                    "m4": "000000000335228"
+                  },
+                  {
+                    "code": "QU",
+                    "m1": "000000018939007",
+                    "m2": "000000001152050",
+                    "m3": "000000001791532",
+                    "m4": "000000018299525"
+                  },
+                  {
+                    "code": "0N",
+                    "m1": "000000019256903",
+                    "m2": "000000001173617",
+                    "m3": "000000001795768",
+                    "m4": "000000018634753"
+                  }
+                ]
+              },
+              {
+                "numero": 7,
+                "liasses": [
+                  {
+                    "code": "3X",
+                    "m4": "000000001432498"
+                  },
+                  {
+                    "code": "3Z",
+                    "m1": "000000001642000",
+                    "m2": "000000000139040",
+                    "m3": "000000000348543",
+                    "m4": "000000001432498"
+                  },
+                  {
+                    "code": "4A",
+                    "m4": "000000000115807"
+                  },
+                  {
+                    "code": "5Z",
+                    "m1": "000000000122076",
+                    "m2": "000000000034431",
+                    "m3": "000000000040700",
+                    "m4": "000000000115807"
+                  },
+                  {
+                    "code": "6A",
+                    "m1": "000000000819086",
+                    "m2": "000000000161000",
+                    "m3": "000000000187839",
+                    "m4": "000000000792247"
+                  },
+                  {
+                    "code": "6E",
+                    "m1": "000000000652813",
+                    "m2": "000000000270929",
+                    "m3": "000000000305759",
+                    "m4": "000000000617983"
+                  },
+                  {
+                    "code": "06",
+                    "m1": "000000000322085",
+                    "m2": "000000000000000",
+                    "m3": "000000000000000",
+                    "m4": "000000000322085"
+                  },
+                  {
+                    "code": "6T",
+                    "m1": "000000000149885",
+                    "m2": "000000000032798",
+                    "m3": "000000000000000",
+                    "m4": "000000000182683"
+                  },
+                  {
+                    "code": "6X",
+                    "m1": "000000000000000",
+                    "m2": "000000000330299",
+                    "m3": "000000000000000",
+                    "m4": "000000000330299"
+                  },
+                  {
+                    "code": "7B",
+                    "m1": "000000001943869",
+                    "m2": "000000000795026",
+                    "m3": "000000000493598",
+                    "m4": "000000002245297"
+                  },
+                  {
+                    "code": "7C",
+                    "m1": "000000003707945",
+                    "m2": "000000000968497",
+                    "m3": "000000000882841",
+                    "m4": "000000003793601"
+                  }
+                ]
+              },
+              {
+                "numero": 8,
+                "liasses": [
+                  {
+                    "code": "UT",
+                    "m1": "000000000833414",
+                    "m2": "000000000000000",
+                    "m3": "000000000833414"
+                  },
+                  {
+                    "code": "VA",
+                    "m1": "000000000212462",
+                    "m2": "000000000212462",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "UX",
+                    "m1": "000000000579881",
+                    "m2": "000000000579881",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "UY",
+                    "m1": "000000000014579",
+                    "m2": "000000000014579",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VM",
+                    "m1": "000000000406734",
+                    "m2": "000000000406734",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VB",
+                    "m1": "000000000013089",
+                    "m2": "000000000013089",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VC",
+                    "m1": "000000000386960",
+                    "m2": "000000000386960",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VR",
+                    "m1": "000000000270118",
+                    "m2": "000000000270118",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VS",
+                    "m1": "000000000757872",
+                    "m2": "000000000757872",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VT",
+                    "m1": "000000003475109",
+                    "m2": "000000002641695",
+                    "m3": "000000000833414"
+                  },
+                  {
+                    "code": "VG",
+                    "m1": "000000000020315",
+                    "m2": "000000000020315",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "8A",
+                    "m1": "000000000258591",
+                    "m2": "000000000189031",
+                    "m3": "000000000069560",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "8B",
+                    "m1": "000000003263372",
+                    "m2": "000000003263372",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "8C",
+                    "m1": "000000001912020",
+                    "m2": "000000001912020",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "8D",
+                    "m1": "000000001313767",
+                    "m2": "000000001313767",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "8E",
+                    "m1": "000000000027295",
+                    "m2": "000000000027295",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "VQ",
+                    "m1": "000000000060669",
+                    "m2": "000000000060669",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "8J",
+                    "m1": "000000000028155",
+                    "m2": "000000000028155",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "VI",
+                    "m1": "000000000000743",
+                    "m2": "000000000000743",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "8K",
+                    "m1": "000000001242446",
+                    "m2": "000000001242446",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "VY",
+                    "m1": "000000008127373",
+                    "m2": "000000008057813",
+                    "m3": "000000000069560",
+                    "m4": "000000000000000"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "version": "1.0"
+      },
+      "dateCloture": "2024-12-31",
+      "typeBilan": "C",
+      "numNat": "X00000031676"
+    },
+    {
+      "updatedAt": "2025-08-20T16:01:07+02:00",
+      "siren": "000007919",
+      "denomination": "SOCIETE EXEMPLE 28",
+      "dateDepot": "2025-07-31",
+      "confidentiality": "Public",
+      "deleted": false,
+      "id": "aaaaaaaaaaaaaaaaaaaaaa45",
+      "bilanSaisi": {
+        "bilan": {
+          "identite": {
+            "siren": "000007919",
+            "dateClotureExercice": "2023-12-31",
+            "codeActivite": "1071A",
+            "codeValideur": "5910",
+            "dateClotureExerciceNMoins1": "2022-12-31",
+            "dureeExerciceN": "12",
+            "dureeExerciceNMoins1": "12",
+            "dateDepot": "2025-07-31",
+            "codeSaisie": "00",
+            "codeTypeBilan": "C",
+            "codeDevise": "EUR",
+            "codeOrigineDevise": "O",
+            "codeConfidentialite": "0",
+            "infoTraitement": "",
+            "denomination": "SOCIETE EXEMPLE 28",
+            "adresse": "10000 VILLEXEMPLE"
+          },
+          "detail": {
+            "pages": [
+              {
+                "numero": 1,
+                "liasses": [
+                  {
+                    "code": "AF",
+                    "m1": "000000000254470",
+                    "m2": "000000000196192",
+                    "m3": "000000000058278",
+                    "m4": "000000000058185"
+                  },
+                  {
+                    "code": "AH",
+                    "m1": "000000005951892",
+                    "m2": "000000000802164",
+                    "m3": "000000005149727",
+                    "m4": "000000005305136"
+                  },
+                  {
+                    "code": "AJ",
+                    "m1": "000000000138625",
+                    "m2": "000000000138625",
+                    "m3": "000000000000000",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "AP",
+                    "m1": "000000009484355",
+                    "m2": "000000006821915",
+                    "m3": "000000002662440",
+                    "m4": "000000003028441"
+                  },
+                  {
+                    "code": "AR",
+                    "m1": "000000008880936",
+                    "m2": "000000006848782",
+                    "m3": "000000002032154",
+                    "m4": "000000002165832"
+                  },
+                  {
+                    "code": "AT",
+                    "m1": "000000006048248",
+                    "m2": "000000005921123",
+                    "m3": "000000000127125",
+                    "m4": "000000000130454"
+                  },
+                  {
+                    "code": "AV",
+                    "m1": "000000000063489",
+                    "m2": "000000000000000",
+                    "m3": "000000000063489",
+                    "m4": "000000000066108"
+                  },
+                  {
+                    "code": "CU",
+                    "m1": "000000000399486",
+                    "m2": "000000000322085",
+                    "m3": "000000000077401",
+                    "m4": "000000000118286"
+                  },
+                  {
+                    "code": "BD",
+                    "m1": "000000000000107",
+                    "m2": "000000000000000",
+                    "m3": "000000000000107",
+                    "m4": "000000000000107"
+                  },
+                  {
+                    "code": "BH",
+                    "m1": "000000000820510",
+                    "m2": "000000000000000",
+                    "m3": "000000000820510",
+                    "m4": "000000000800472"
+                  },
+                  {
+                    "code": "BJ",
+                    "m1": "000000032042121",
+                    "m2": "000000021050888",
+                    "m3": "000000010991233",
+                    "m4": "000000011673023"
+                  },
+                  {
+                    "code": "BL",
+                    "m1": "000000000319780",
+                    "m2": "000000000000000",
+                    "m3": "000000000319780",
+                    "m4": "000000000326305"
+                  },
+                  {
+                    "code": "BX",
+                    "m1": "000000000674890",
+                    "m2": "000000000149885",
+                    "m3": "000000000525004",
+                    "m4": "000000000694241"
+                  },
+                  {
+                    "code": "BZ",
+                    "m1": "000000001817710",
+                    "m2": "000000000000000",
+                    "m3": "000000001817710",
+                    "m4": "000000003607503"
+                  },
+                  {
+                    "code": "CF",
+                    "m1": "000000000632045",
+                    "m2": "000000000000000",
+                    "m3": "000000000632045",
+                    "m4": "000000001546500"
+                  },
+                  {
+                    "code": "CH",
+                    "m1": "000000000999165",
+                    "m2": "000000000000000",
+                    "m3": "000000000999165",
+                    "m4": "000000000987308"
+                  },
+                  {
+                    "code": "CJ",
+                    "m1": "000000004443590",
+                    "m2": "000000000149885",
+                    "m3": "000000004293705",
+                    "m4": "000000007161857"
+                  },
+                  {
+                    "code": "CO",
+                    "m1": "000000036485711",
+                    "m2": "000000021200773",
+                    "m3": "000000015284938",
+                    "m4": "000000018834880"
+                  }
+                ]
+              },
+              {
+                "numero": 2,
+                "liasses": [
+                  {
+                    "code": "DA",
+                    "m1": "000000003857804",
+                    "m2": "000000003857804"
+                  },
+                  {
+                    "code": "DB",
+                    "m1": "000000001311245",
+                    "m2": "000000001311245"
+                  },
+                  {
+                    "code": "DD",
+                    "m1": "000000000385781",
+                    "m2": "000000000385781"
+                  },
+                  {
+                    "code": "DG",
+                    "m1": "000000000353376",
+                    "m2": "000000000353376"
+                  },
+                  {
+                    "code": "DH",
+                    "m1": "000000000795219",
+                    "m2": "000000001054509"
+                  },
+                  {
+                    "code": "DI",
+                    "m1": "-000000001858416",
+                    "m2": "-000000000259289"
+                  },
+                  {
+                    "code": "DJ",
+                    "m1": "000000000063913",
+                    "m2": "000000000089208"
+                  },
+                  {
+                    "code": "DK",
+                    "m1": "000000001642000",
+                    "m2": "000000001858874"
+                  },
+                  {
+                    "code": "DL",
+                    "m1": "000000006550921",
+                    "m2": "000000008651506"
+                  },
+                  {
+                    "code": "DP",
+                    "m1": "000000000122076",
+                    "m2": "000000000080636"
+                  },
+                  {
+                    "code": "DR",
+                    "m1": "000000000122076",
+                    "m2": "000000000080636"
+                  },
+                  {
+                    "code": "DU",
+                    "m1": "000000000012142",
+                    "m2": "000000000015939"
+                  },
+                  {
+                    "code": "DV",
+                    "m1": "000000000325139",
+                    "m2": "000000000394942"
+                  },
+                  {
+                    "code": "DX",
+                    "m1": "000000004033063",
+                    "m2": "000000004383183"
+                  },
+                  {
+                    "code": "DY",
+                    "m1": "000000003518572",
+                    "m2": "000000003357235"
+                  },
+                  {
+                    "code": "DZ",
+                    "m1": "000000000028452",
+                    "m2": "000000000010989"
+                  },
+                  {
+                    "code": "EA",
+                    "m1": "000000000694573",
+                    "m2": "000000001940449"
+                  },
+                  {
+                    "code": "EC",
+                    "m1": "000000008611941",
+                    "m2": "000000010102738"
+                  },
+                  {
+                    "code": "EE",
+                    "m1": "000000015284938",
+                    "m2": "000000018834880"
+                  },
+                  {
+                    "code": "EG",
+                    "m1": "000000008472821",
+                    "m2": "000000009894058"
+                  },
+                  {
+                    "code": "EH",
+                    "m1": "000000000007480",
+                    "m2": "000000000015939"
+                  }
+                ]
+              },
+              {
+                "numero": 3,
+                "liasses": [
+                  {
+                    "code": "FD",
+                    "m1": "000000026449191",
+                    "m2": "000000000000000",
+                    "m3": "000000026449191",
+                    "m4": "000000026094826"
+                  },
+                  {
+                    "code": "FG",
+                    "m1": "000000001622391",
+                    "m2": "000000000000000",
+                    "m3": "000000001622391",
+                    "m4": "000000001519651"
+                  },
+                  {
+                    "code": "FJ",
+                    "m1": "000000028071582",
+                    "m2": "000000000000000",
+                    "m3": "000000028071582",
+                    "m4": "000000027614478"
+                  },
+                  {
+                    "code": "FP",
+                    "m3": "000000000491283",
+                    "m4": "000000000599209"
+                  },
+                  {
+                    "code": "FQ",
+                    "m3": "000000000014033",
+                    "m4": "000000000265297"
+                  },
+                  {
+                    "code": "FR",
+                    "m3": "000000028576898",
+                    "m4": "000000028478984"
+                  },
+                  {
+                    "code": "FU",
+                    "m3": "000000007385191",
+                    "m4": "000000007134606"
+                  },
+                  {
+                    "code": "FV",
+                    "m3": "000000000006525",
+                    "m4": "-000000000037909"
+                  },
+                  {
+                    "code": "FW",
+                    "m3": "000000009319308",
+                    "m4": "000000008669967"
+                  },
+                  {
+                    "code": "FX",
+                    "m3": "000000000756872",
+                    "m4": "000000000628136"
+                  },
+                  {
+                    "code": "FY",
+                    "m3": "000000009215288",
+                    "m4": "000000008865598"
+                  },
+                  {
+                    "code": "FZ",
+                    "m3": "000000002789050",
+                    "m4": "000000002739988"
+                  },
+                  {
+                    "code": "GA",
+                    "m3": "000000001046876",
+                    "m4": "000000001091328"
+                  },
+                  {
+                    "code": "GB",
+                    "m3": "000000000475934",
+                    "m4": "000000000467991"
+                  },
+                  {
+                    "code": "GC",
+                    "m3": "000000000102257",
+                    "m4": "000000000060668"
+                  },
+                  {
+                    "code": "GD",
+                    "m3": "000000000076220",
+                    "m4": "000000000000370"
+                  },
+                  {
+                    "code": "GE",
+                    "m3": "000000000986585",
+                    "m4": "000000000892342"
+                  },
+                  {
+                    "code": "GF",
+                    "m3": "000000032160107",
+                    "m4": "000000030513085"
+                  },
+                  {
+                    "code": "GG",
+                    "m3": "-000000003583210",
+                    "m4": "-000000002034101"
+                  },
+                  {
+                    "code": "GJ",
+                    "m3": "000000002036422",
+                    "m4": "000000001853377"
+                  },
+                  {
+                    "code": "GK",
+                    "m3": "000000000029736",
+                    "m4": "000000000065142"
+                  },
+                  {
+                    "code": "GL",
+                    "m3": "000000000000000",
+                    "m4": "000000000000098"
+                  },
+                  {
+                    "code": "GM",
+                    "m3": "000000000000000",
+                    "m4": "000000000195659"
+                  },
+                  {
+                    "code": "GP",
+                    "m3": "000000002066158",
+                    "m4": "000000002114275"
+                  },
+                  {
+                    "code": "GQ",
+                    "m3": "000000000040885",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "GR",
+                    "m3": "000000000042215",
+                    "m4": "000000000302279"
+                  },
+                  {
+                    "code": "GU",
+                    "m3": "000000000083100",
+                    "m4": "000000000302279"
+                  },
+                  {
+                    "code": "GV",
+                    "m3": "000000001983058",
+                    "m4": "000000001811995"
+                  },
+                  {
+                    "code": "GW",
+                    "m3": "-000000001600151",
+                    "m4": "-000000000222105"
+                  }
+                ]
+              },
+              {
+                "numero": 4,
+                "liasses": [
+                  {
+                    "code": "HA",
+                    "m1": "000000000024097",
+                    "m2": "000000000021026"
+                  },
+                  {
+                    "code": "HB",
+                    "m1": "000000000039543",
+                    "m2": "000000000229932"
+                  },
+                  {
+                    "code": "HC",
+                    "m1": "000000000367799",
+                    "m2": "000000000283406"
+                  },
+                  {
+                    "code": "HD",
+                    "m1": "000000000431440",
+                    "m2": "000000000534364"
+                  },
+                  {
+                    "code": "HE",
+                    "m1": "000000000243926",
+                    "m2": "000000000139786"
+                  },
+                  {
+                    "code": "HF",
+                    "m1": "000000000097005",
+                    "m2": "000000000219354"
+                  },
+                  {
+                    "code": "HG",
+                    "m1": "000000000366901",
+                    "m2": "000000000221756"
+                  },
+                  {
+                    "code": "HH",
+                    "m1": "000000000707833",
+                    "m2": "000000000580896"
+                  },
+                  {
+                    "code": "HI",
+                    "m1": "-000000000276393",
+                    "m2": "-000000000046532"
+                  },
+                  {
+                    "code": "HK",
+                    "m1": "-000000000018129",
+                    "m2": "-000000000009348"
+                  },
+                  {
+                    "code": "HL",
+                    "m1": "000000031074496",
+                    "m2": "000000031127623"
+                  },
+                  {
+                    "code": "HM",
+                    "m1": "000000032932912",
+                    "m2": "000000031386912"
+                  },
+                  {
+                    "code": "HN",
+                    "m1": "-000000001858416",
+                    "m2": "-000000000259289"
+                  },
+                  {
+                    "code": "A1",
+                    "m1": "000000000181249",
+                    "m2": "000000000186725"
+                  },
+                  {
+                    "code": "A4",
+                    "m1": "000000000793239",
+                    "m2": "000000000776538"
+                  }
+                ]
+              },
+              {
+                "numero": 5,
+                "liasses": [
+                  {
+                    "code": "KD",
+                    "m1": "000000006426338",
+                    "m2": "000000000000000",
+                    "m3": "000000000025507"
+                  },
+                  {
+                    "code": "LN",
+                    "m1": "000000025358845",
+                    "m2": "000000000000000",
+                    "m3": "000000001014398"
+                  },
+                  {
+                    "code": "LQ",
+                    "m1": "000000001200065",
+                    "m2": "000000000000000",
+                    "m3": "000000000043856"
+                  },
+                  {
+                    "code": "0G",
+                    "m1": "000000032985248",
+                    "m2": "000000000000000",
+                    "m3": "000000001083762"
+                  },
+                  {
+                    "code": "IO",
+                    "m1": "000000000000000",
+                    "m2": "000000000106858",
+                    "m3": "000000006344987"
+                  },
+                  {
+                    "code": "IY",
+                    "m1": "000000000000000",
+                    "m2": "000000001896212",
+                    "m3": "000000024477030"
+                  },
+                  {
+                    "code": "I3",
+                    "m1": "000000000000000",
+                    "m2": "000000000023818",
+                    "m3": "000000001220104"
+                  },
+                  {
+                    "code": "I4",
+                    "m1": "000000000000000",
+                    "m2": "000000002026888",
+                    "m3": "000000032042121"
+                  }
+                ]
+              },
+              {
+                "numero": 6,
+                "liasses": [
+                  {
+                    "code": "PE",
+                    "m1": "000000000309089",
+                    "m2": "000000000025415",
+                    "m3": "000000000016608",
+                    "m4": "000000000317896"
+                  },
+                  {
+                    "code": "QU",
+                    "m1": "000000019524919",
+                    "m2": "000000001237438",
+                    "m3": "000000001823349",
+                    "m4": "000000018939008"
+                  },
+                  {
+                    "code": "0N",
+                    "m1": "000000019834008",
+                    "m2": "000000001262853",
+                    "m3": "000000001839957",
+                    "m4": "000000019256903"
+                  }
+                ]
+              },
+              {
+                "numero": 7,
+                "liasses": [
+                  {
+                    "code": "3X",
+                    "m4": "000000001642000"
+                  },
+                  {
+                    "code": "3Z",
+                    "m1": "000000001858874",
+                    "m2": "000000000150925",
+                    "m3": "000000000367799",
+                    "m4": "000000001642000"
+                  },
+                  {
+                    "code": "4A",
+                    "m4": "000000000122076"
+                  },
+                  {
+                    "code": "5Z",
+                    "m1": "000000000080636",
+                    "m2": "000000000076220",
+                    "m3": "000000000034780",
+                    "m4": "000000000122076"
+                  },
+                  {
+                    "code": "6A",
+                    "m1": "000000000753927",
+                    "m2": "000000000123768",
+                    "m3": "000000000058609",
+                    "m4": "000000000819086"
+                  },
+                  {
+                    "code": "6E",
+                    "m1": "000000000443090",
+                    "m2": "000000000352166",
+                    "m3": "000000000142443",
+                    "m4": "000000000652813"
+                  },
+                  {
+                    "code": "06",
+                    "m1": "000000000281200",
+                    "m2": "000000000040885",
+                    "m3": "000000000000000",
+                    "m4": "000000000322085"
+                  },
+                  {
+                    "code": "6T",
+                    "m1": "000000000115354",
+                    "m2": "000000000102257",
+                    "m3": "000000000067726",
+                    "m4": "000000000149885"
+                  },
+                  {
+                    "code": "6X",
+                    "m1": "000000000006475",
+                    "m2": "000000000000000",
+                    "m3": "000000000006475",
+                    "m4": "000000000000000"
+                  },
+                  {
+                    "code": "7B",
+                    "m1": "000000001600047",
+                    "m2": "000000000619076",
+                    "m3": "000000000275253",
+                    "m4": "000000001943869"
+                  },
+                  {
+                    "code": "7C",
+                    "m1": "000000003539557",
+                    "m2": "000000000846221",
+                    "m3": "000000000677833",
+                    "m4": "000000003707945"
+                  }
+                ]
+              },
+              {
+                "numero": 8,
+                "liasses": [
+                  {
+                    "code": "UT",
+                    "m1": "000000000820510",
+                    "m2": "000000000000000",
+                    "m3": "000000000820510"
+                  },
+                  {
+                    "code": "VA",
+                    "m1": "000000000179713",
+                    "m2": "000000000179713",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "UX",
+                    "m1": "000000000495177",
+                    "m2": "000000000495177",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "UY",
+                    "m1": "000000000029760",
+                    "m2": "000000000029760",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VB",
+                    "m1": "000000000532584",
+                    "m2": "000000000532584",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VN",
+                    "m1": "000000000012132",
+                    "m2": "000000000012132",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VC",
+                    "m1": "000000001170992",
+                    "m2": "000000001170992",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VR",
+                    "m1": "000000000072242",
+                    "m2": "000000000072242",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VS",
+                    "m1": "000000000999165",
+                    "m2": "000000000999165",
+                    "m3": "000000000000000"
+                  },
+                  {
+                    "code": "VT",
+                    "m1": "000000004312276",
+                    "m2": "000000003491765",
+                    "m3": "000000000820510"
+                  }
+                ]
+              },
+              {
+                "numero": 16,
+                "liasses": [
+                  {
+                    "code": "YP",
+                    "m1": "000000000000338",
+                    "m2": "000000000000351"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "version": "1.0"
+      },
+      "dateCloture": "2023-12-31",
+      "typeBilan": "C",
+      "numNat": "X00000039595"
+    }
+  ]
+}
