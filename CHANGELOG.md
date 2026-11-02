@@ -15,6 +15,11 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
   du mot de passe de l'API Propriété industrielle laissé vide, dossier de téléchargement `${DOWNLOADS}`) ne sont
   plus pris pour des valeurs. Ils empêchaient la connexion à l'API Propriété industrielle et le téléchargement
   des PDF.
+- Les échanges avec l'INPI passent par le module `https` de Node plutôt que par `fetch`, pour ne pas dépendre du
+  moteur d'exécution (celui de Claude Desktop notamment) pour la transmission du cookie de session XSRF exigé
+  par l'API Propriété industrielle.
+- Un refus de connexion distingue désormais les identifiants invalides (HTTP 401) d'un refus de session XSRF
+  (HTTP 403), avec le code HTTP dans le message.
 - Un échec d'écriture du PDF sur le disque produit désormais un message clair indiquant le dossier en cause.
 - La recherche d'entreprises retire les accents, que le RNE ne reconnaît pas (« français » → « francais »).
 - Les natures et décisions répétées d'un même acte ne sont plus affichées en double.

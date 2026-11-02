@@ -33,7 +33,7 @@ export class ClientRNE {
 
   constructor(
     private readonly config: Configuration,
-    fetchImpl: typeof fetch = fetch,
+    fetchImpl?: typeof fetch,
   ) {
     // Le quota de l'INPI est de 10 000 appels par jour : on reste prudent.
     this.#http = new ClientHTTP({ nom: 'API RNE', intervalleMs: 500 }, fetchImpl);
@@ -104,7 +104,7 @@ export class ClientRNE {
       entetes: { 'Content-Type': 'application/json', Accept: 'application/json' },
       corps: JSON.stringify({ username: email, password: motDePasse }),
     });
-    if (r.statut === 400 || r.statut === 401 || r.statut === 403) throw new IdentifiantsInvalides('rne');
+    if (r.statut === 400 || r.statut === 401 || r.statut === 403) throw new IdentifiantsInvalides('rne', r.statut);
     if (r.statut < 200 || r.statut >= 300) throw new IndisponibiliteINPI('API RNE', `connexion, erreur HTTP ${r.statut}`);
     let jeton: string | undefined;
     try {

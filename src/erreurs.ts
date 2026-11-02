@@ -38,15 +38,19 @@ export class IdentifiantsManquants extends ErreurINPI {
 
 /** L'INPI refuse l'adresse ou le mot de passe. */
 export class IdentifiantsInvalides extends ErreurINPI {
-  constructor(public readonly service: 'pi' | 'rne') {
+  constructor(
+    public readonly service: 'pi' | 'rne',
+    statut?: number,
+  ) {
     super(
-      service === 'pi'
+      (statut ? `[HTTP ${statut}] ` : '') +
+      (service === 'pi'
         ? "L'API Propriété industrielle refuse l'adresse ou le mot de passe. Vérifiez " +
             "INPI_EMAIL et INPI_MOT_DE_PASSE. Si vous avez défini un mot de passe distinct " +
             "pour l'API PI sur api-gateway.inpi.fr, renseignez-le dans INPI_PI_MOT_DE_PASSE."
         : "L'API RNE refuse l'adresse ou le mot de passe. Vérifiez INPI_EMAIL et " +
             'INPI_MOT_DE_PASSE, et que l\'accès « API RNE » est bien activé dans votre ' +
-            `espace personnel (${PAGE_ACCES}).`,
+            `espace personnel (${PAGE_ACCES}).`),
     );
   }
 }

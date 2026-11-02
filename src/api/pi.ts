@@ -16,7 +16,7 @@ import {
   ParametreInvalide,
 } from '../erreurs.js';
 import { CacheMemoire } from '../http/cache.js';
-import { ClientHTTP, lireJWT, type Reponse } from '../http/client.js';
+import { ClientHTTP, lireJWT, type EntetesHTTP, type Reponse } from '../http/client.js';
 import { journal } from '../journal.js';
 
 export const BASE_PI = 'https://api-gateway.inpi.fr';
@@ -66,7 +66,7 @@ export class ClientPI {
 
   constructor(
     private readonly config: Configuration,
-    fetchImpl: typeof fetch = fetch,
+    fetchImpl?: typeof fetch,
   ) {
     this.#http = new ClientHTTP({ nom: 'API Propriété industrielle', intervalleMs: 250 }, fetchImpl);
   }
@@ -177,7 +177,14 @@ export class ClientPI {
       },
       corps: JSON.stringify({ username: email, password: motDePasse, rememberMe: true }),
     });
-    if (r2.statut === 400 || r2.statut === 401 || r2.statut === 403) throw new IdentifiantsInvalides('pi');
+    if (r2.statut === 400 || r2.statut === 401) throw new IdentifiantsInvalides('pi', r2.statut);
+    if (r2.statut === 403) {
+      // L'INPI n'a pas reconnu la session : cookie XSRF non transmis ou refusé.
+      throw new IndisponibiliteINPI(
+        'API Propriété industrielle',
+        `connexion refusée par le contrôle de session XSRF (HTTP 403 : ${messageProbleme(r2.texte())})`,
+      );
+    }
     if (r2.statut < 200 || r2.statut >= 300) {
       throw new IndisponibiliteINPI('API Propriété industrielle', `connexion, erreur HTTP ${r2.statut}`);
     }
@@ -199,7 +206,7 @@ export class ClientPI {
   }
 }
 
-function lireCookies(entetes: Headers, cookies: Map<string, string>): void {
+function lireCookies(entetes: EntetesHTTP, cookies: Map<string, string>): void {
   for (const ligne of entetes.getSetCookie()) {
     const [paire] = ligne.split(';');
     const i = paire?.indexOf('=') ?? -1;
