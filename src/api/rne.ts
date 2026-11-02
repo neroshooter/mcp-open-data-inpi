@@ -18,6 +18,9 @@ import { journal } from '../journal.js';
 
 export const BASE_RNE = 'https://registre-national-entreprises.inpi.fr';
 
+/** Délai avant une nouvelle tentative de connexion après un refus d'identifiants. */
+const DELAI_APRES_REFUS_MS = 60_000;
+
 const MARGE_EXPIRATION_MS = 60_000;
 
 interface Session {
@@ -29,6 +32,8 @@ export class ClientRNE {
   readonly #http: ClientHTTP;
   #session: Session | undefined;
   #connexionEnCours: Promise<Session> | undefined;
+  /** Dernier refus d'identifiants : on ne retente pas avant un délai, pour ne pas faire bloquer le compte. */
+  #refus: { erreur: IdentifiantsInvalides; jusqua: number } | undefined;
   readonly #cache = new CacheMemoire<unknown>(10 * 60_000, 50);
 
   constructor(
@@ -90,9 +95,15 @@ export class ClientRNE {
 
   async #obtenirSession(): Promise<Session> {
     if (this.#session && this.#session.expireA - MARGE_EXPIRATION_MS > Date.now()) return this.#session;
-    this.#connexionEnCours ??= this.#seConnecter().finally(() => {
-      this.#connexionEnCours = undefined;
-    });
+    if (this.#refus && this.#refus.jusqua > Date.now()) throw this.#refus.erreur;
+    this.#connexionEnCours ??= this.#seConnecter()
+      .catch((e: unknown) => {
+        if (e instanceof IdentifiantsInvalides) this.#refus = { erreur: e, jusqua: Date.now() + DELAI_APRES_REFUS_MS };
+        throw e;
+      })
+      .finally(() => {
+        this.#connexionEnCours = undefined;
+      });
     this.#session = await this.#connexionEnCours;
     return this.#session;
   }

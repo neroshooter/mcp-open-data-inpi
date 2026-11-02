@@ -146,15 +146,18 @@ describe('API Propriété industrielle (simulée)', () => {
     expect((erreur as Error).message).toContain('Brevets');
   });
 
-  it('signale des identifiants refusés', async () => {
+  it('signale des identifiants refusés et ne retente pas aussitôt la connexion', async () => {
     const fetchFactice = vi.fn(async (url: string | URL | Request) =>
       String(url).endsWith('/authenticate')
         ? reponseFactice(401, '', { 'set-cookie': 'XSRF-TOKEN=x; Path=/' })
         : reponseFactice(401),
     );
-    await expect(
-      new ClientPI(config, fetchFactice).rechercher('marques', { collections: ['FR'], query: '[Mark=X]' }),
-    ).rejects.toBeInstanceOf(IdentifiantsInvalides);
+    const client = new ClientPI(config, fetchFactice);
+    for (const famille of ['marques', 'brevets', 'modeles'] as const) {
+      await expect(client.rechercher(famille, { collections: ['FR'], query: '[X=Y]' })).rejects.toBeInstanceOf(IdentifiantsInvalides);
+    }
+    const connexions = fetchFactice.mock.calls.filter(([url]) => String(url).endsWith('/auth/login'));
+    expect(connexions).toHaveLength(1);
   });
 });
 

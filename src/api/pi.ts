@@ -56,12 +56,17 @@ interface Session {
 }
 
 /** Marge de sécurité avant l'expiration du jeton, en millisecondes. */
+/** Délai avant une nouvelle tentative de connexion après un refus d'identifiants. */
+const DELAI_APRES_REFUS_MS = 60_000;
+
 const MARGE_EXPIRATION_MS = 30_000;
 
 export class ClientPI {
   readonly #http: ClientHTTP;
   #session: Session | undefined;
   #connexionEnCours: Promise<Session> | undefined;
+  /** Dernier refus d'identifiants : on ne retente pas avant un délai, pour ne pas faire bloquer le compte. */
+  #refus: { erreur: IdentifiantsInvalides; jusqua: number } | undefined;
   readonly #cache = new CacheMemoire<string>(10 * 60_000);
 
   constructor(
@@ -149,9 +154,15 @@ export class ClientPI {
   async #obtenirSession(): Promise<Session> {
     if (this.#session && this.#session.expireA - MARGE_EXPIRATION_MS > Date.now()) return this.#session;
     // Une seule connexion à la fois, même si plusieurs outils sont appelés en parallèle.
-    this.#connexionEnCours ??= this.#seConnecter().finally(() => {
-      this.#connexionEnCours = undefined;
-    });
+    if (this.#refus && this.#refus.jusqua > Date.now()) throw this.#refus.erreur;
+    this.#connexionEnCours ??= this.#seConnecter()
+      .catch((e: unknown) => {
+        if (e instanceof IdentifiantsInvalides) this.#refus = { erreur: e, jusqua: Date.now() + DELAI_APRES_REFUS_MS };
+        throw e;
+      })
+      .finally(() => {
+        this.#connexionEnCours = undefined;
+      });
     this.#session = await this.#connexionEnCours;
     return this.#session;
   }

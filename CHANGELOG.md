@@ -20,6 +20,8 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
   par l'API Propriété industrielle.
 - Un refus de connexion distingue désormais les identifiants invalides (HTTP 401) d'un refus de session XSRF
   (HTTP 403), avec le code HTTP dans le message.
+- Après un refus d'identifiants, le serveur attend une minute avant de retenter une connexion, pour ne pas
+  multiplier les échecs (risque de blocage du compte).
 - Un échec d'écriture du PDF sur le disque produit désormais un message clair indiquant le dossier en cause.
 - La recherche d'entreprises retire les accents, que le RNE ne reconnaît pas (« français » → « francais »).
 - Les natures et décisions répétées d'un même acte ne sont plus affichées en double.
