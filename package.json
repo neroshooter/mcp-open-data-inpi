@@ -1,6 +1,6 @@
 {
   "name": "mcp-open-data-inpi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Serveur MCP non officiel de consultation des données publiques de l'INPI (marques, brevets, dessins et modèles, Registre national des entreprises) avec un seul compte data.inpi.fr.",
   "keywords": [
     "mcp",

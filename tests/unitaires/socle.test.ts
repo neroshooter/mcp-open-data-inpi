@@ -1,4 +1,6 @@
 import { readFileSync } from 'node:fs';
+import { homedir } from 'node:os';
+import { join } from 'node:path';
 import { describe, expect, it, vi } from 'vitest';
 import { ClientPI } from '../../src/api/pi.js';
 import { decoderEntites, lirePageResultats } from '../../src/analyseurs/recherche.js';
@@ -170,6 +172,19 @@ describe('protection des identifiants', () => {
       'login secret2@exemple.invalid / AutreSecret123 Bearer abc.def.ghi Cookie: access_token=xyz; XSRF-TOKEN=abc {"password":"p"}',
     );
     expect(message).not.toMatch(/secret2@|AutreSecret123|abc\.def\.ghi|xyz|"p"/);
+  });
+
+  it('ignore un champ facultatif transmis sous forme de modèle non remplacé', () => {
+    const config = new Configuration({
+      INPI_EMAIL: 'a@b.invalid',
+      INPI_MOT_DE_PASSE: 'commun',
+      INPI_PI_MOT_DE_PASSE: '${user_config.mot_de_passe_pi}',
+      INPI_DOSSIER_TELECHARGEMENTS: '${DOWNLOADS}',
+    });
+    expect(config.identifiantsPI().motDePasse).toBe('commun');
+    expect(config.dossierTelechargements).toBe(join(homedir(), 'Downloads'));
+    const autre = new Configuration({ INPI_DOSSIER_TELECHARGEMENTS: '${INCONNU}/pdf' });
+    expect(autre.dossierTelechargements).toBe(join(homedir(), 'Downloads', 'mcp-open-data-inpi'));
   });
 
   it('utilise le mot de passe propre à l’API PI s’il est fourni', () => {

@@ -7,6 +7,18 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 
 ## [Non publié]
 
+## [0.1.1] - 2026-11-02
+
+### Corrigé
+
+- Extension Claude Desktop : les modèles `${…}` transmis sans remplacement par Claude Desktop (champ facultatif
+  du mot de passe de l'API Propriété industrielle laissé vide, dossier de téléchargement `${DOWNLOADS}`) ne sont
+  plus pris pour des valeurs. Ils empêchaient la connexion à l'API Propriété industrielle et le téléchargement
+  des PDF.
+- Un échec d'écriture du PDF sur le disque produit désormais un message clair indiquant le dossier en cause.
+- La recherche d'entreprises retire les accents, que le RNE ne reconnaît pas (« français » → « francais »).
+- Les natures et décisions répétées d'un même acte ne sont plus affichées en double.
+
 ## [0.1.0] - 2026-11-02
 
 ### Ajouté
@@ -22,5 +34,6 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
   limite de débit et cache mémoire de 10 minutes.
 - Extension Claude Desktop (`.mcpb`) avec formulaire de saisie des identifiants.
 
-[Non publié]: https://github.com/neroshooter/mcp-open-data-inpi/compare/v0.1.0...HEAD
+[Non publié]: https://github.com/neroshooter/mcp-open-data-inpi/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/neroshooter/mcp-open-data-inpi/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/neroshooter/mcp-open-data-inpi/releases/tag/v0.1.0

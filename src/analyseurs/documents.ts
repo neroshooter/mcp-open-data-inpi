@@ -71,8 +71,9 @@ export function analyserDocuments(donnees: unknown): Documents {
 
 function lireActe(a: Objet): Acte {
   const rdd = tableau(a.typeRdd);
-  const types = rdd.map((r) => texte(r.typeActe)).filter((t): t is string => Boolean(t));
-  const decisions = rdd.map((r) => texte(r.decision)).filter((t): t is string => Boolean(t));
+  // Un même acte peut déclarer plusieurs fois la même nature ou la même décision.
+  const types = [...new Set(rdd.map((r) => texte(r.typeActe)).filter((t): t is string => Boolean(t)))];
+  const decisions = [...new Set(rdd.map((r) => texte(r.decision)).filter((t): t is string => Boolean(t)))];
   const codeDocument = texte(a.typeDocument);
   const libelle = texte(a.libelle) ?? (codeDocument ? TYPES_DOCUMENT[codeDocument] : undefined);
   if (libelle && !types.includes(libelle)) types.push(libelle);

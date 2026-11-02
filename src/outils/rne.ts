@@ -63,7 +63,9 @@ export function enregistrerOutilsRNE(serveur: McpServer, ctx: Contexte): void {
       executer({ nom: NOM_SOURCE, lien: 'https://data.inpi.fr' }, async () => {
         const page = args.page ?? 1;
         const taille = args.taille ?? 10;
-        const params = new URLSearchParams({ companyName: args.denomination, page: String(page), pageSize: String(taille) });
+        // Le RNE ne trouve pas les dénominations saisies avec des accents (« français ») : on les retire.
+        const denomination = args.denomination.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const params = new URLSearchParams({ companyName: denomination, page: String(page), pageSize: String(taille) });
         if (args.code_postal) params.append('zipCodes[]', args.code_postal);
         const { donnees, entetes } = await ctx.rne.json<unknown[]>(`/api/companies?${params}`, 'La recherche');
         const fiches = (Array.isArray(donnees) ? donnees : []).map(analyserEntreprise);
@@ -144,10 +146,18 @@ export function enregistrerOutilsRNE(serveur: McpServer, ctx: Contexte): void {
           );
         }
         const dossier = ctx.config.dossierTelechargements;
-        await mkdir(dossier, { recursive: true });
         const nom = `${[siren, args.type === 'acte' ? 'acte' : 'comptes', id].filter(Boolean).join('_')}.pdf`;
         const fichier = join(dossier, nom);
-        await writeFile(fichier, contenu);
+        try {
+          await mkdir(dossier, { recursive: true });
+          await writeFile(fichier, contenu);
+        } catch (e) {
+          const code = (e as NodeJS.ErrnoException).code ?? 'erreur inconnue';
+          throw new ErreurINPI(
+            `Le document a bien été obtenu auprès de l'INPI, mais il n'a pas pu être enregistré dans le dossier ` +
+              `« ${dossier} » (${code}). Vérifiez le dossier de téléchargement indiqué dans la configuration.`,
+          );
+        }
         const taille = (contenu.length / 1024).toFixed(0);
         return reponse(
           `# Document enregistré\n\n- **Fichier** : ${fichier}\n- **Taille** : ${taille} Ko\n- **Type** : ${args.type === 'acte' ? 'acte' : 'comptes annuels'}`,

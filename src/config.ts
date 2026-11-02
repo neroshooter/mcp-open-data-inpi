@@ -24,7 +24,7 @@ export class Configuration {
     for (const secret of [this.#email, this.#motDePasse, this.#motDePassePI]) {
       if (secret) enregistrerSecret(secret);
     }
-    const dossier = nettoyer(env.INPI_DOSSIER_TELECHARGEMENTS);
+    const dossier = nettoyer(developperChemin(env.INPI_DOSSIER_TELECHARGEMENTS));
     this.dossierTelechargements = dossier
       ? resolve(dossier.replace(/^~(?=$|[/\\])/, homedir()))
       : join(homedir(), 'Downloads', 'mcp-open-data-inpi');
@@ -52,7 +52,29 @@ export class Configuration {
   }
 }
 
+/** Dossiers usuels que le manifeste de l'extension peut désigner par un modèle. */
+const DOSSIERS_USUELS: Record<string, () => string> = {
+  HOME: () => homedir(),
+  DOWNLOADS: () => join(homedir(), 'Downloads'),
+  DOCUMENTS: () => join(homedir(), 'Documents'),
+  DESKTOP: () => join(homedir(), 'Desktop'),
+};
+
+/**
+ * Remplace ${HOME}, ${DOWNLOADS}, ${DOCUMENTS} et ${DESKTOP} : Claude Desktop
+ * peut transmettre ces modèles sans les avoir remplacés.
+ */
+function developperChemin(valeur: string | undefined): string | undefined {
+  return valeur?.replace(/\$\{(HOME|DOWNLOADS|DOCUMENTS|DESKTOP)\}/g, (_tout, nom: string) => DOSSIERS_USUELS[nom]?.() ?? '');
+}
+
+/**
+ * Normalise une variable d'environnement. Une valeur restée sous la forme
+ * « ${…} » est ignorée : certains clients (extension Claude Desktop) peuvent
+ * transmettre tel quel le modèle d'un champ facultatif laissé vide.
+ */
 function nettoyer(valeur: string | undefined): string | undefined {
   const v = valeur?.trim();
-  return v ? v : undefined;
+  if (!v || /\$\{[^}]*\}/.test(v)) return undefined;
+  return v;
 }
