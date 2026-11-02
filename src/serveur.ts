@@ -21,7 +21,7 @@ export const CONSIGNES =
 export function creerServeur(config = new Configuration()): McpServer {
   const ctx: Contexte = { config, pi: new ClientPI(config), rne: new ClientRNE(config) };
   const serveur = new McpServer(
-    { name: 'mcp-open-data-inpi', title: 'MCP Data INPI', version: VERSION },
+    { name: 'mcp-open-data-inpi', title: 'OpenDataINPI', version: VERSION },
     { instructions: CONSIGNES },
   );
   enregistrerOutilAcces(serveur, ctx);

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/mcpb/main/dist/mcpb-manifest-v0.3.schema.json",
   "manifest_version": "0.3",
   "name": "mcp-open-data-inpi",
-  "display_name": "MCP Data INPI",
+  "display_name": "OpenDataINPI",
   "version": "0.0.0",
   "description": "Consultez marques, brevets, dessins et modèles et le Registre national des entreprises de l'INPI avec votre compte data.inpi.fr.",
   "long_description": "Serveur MCP open source et non officiel de pure consultation des données publiques de l'INPI : recherche et fiches complètes des marques françaises, de l'Union européenne et internationales, des brevets et des dessins et modèles ; fiche, actes, comptes annuels et chiffres clés des entreprises inscrites au Registre national des entreprises. Un seul identifiant : l'adresse et le mot de passe de votre compte data.inpi.fr, enregistrés dans le trousseau de votre système. Ce projet n'est ni affilié à l'INPI ni approuvé par lui ; seuls les documents officiels font foi.",

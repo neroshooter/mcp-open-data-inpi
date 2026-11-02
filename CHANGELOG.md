@@ -29,7 +29,7 @@ Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le pr
 
 ### Modifié
 
-- L'extension s'affiche dans Claude Desktop sous le nom « MCP Data INPI ».
+- L'extension s'affiche dans Claude Desktop sous le nom « OpenDataINPI ».
 
 ### Ajouté
 
