@@ -1,0 +1,20 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Identifiants : ne jamais publier
+.env
+.env.*
+!.env.exemple
+
+# Réponses brutes des API : jamais publiées telles quelles
+raw/
+brut/
+*.raw.xml
+*.raw.json
+
+# Extension Claude Desktop construite
+mcpb/build/
+*.mcpb

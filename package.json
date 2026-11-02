@@ -1,0 +1,62 @@
+{
+  "name": "mcp-open-data-inpi",
+  "version": "0.1.0",
+  "description": "Serveur MCP non officiel de consultation des données publiques de l'INPI (marques, brevets, dessins et modèles, Registre national des entreprises) avec un seul compte data.inpi.fr.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "inpi",
+    "propriete-industrielle",
+    "marques",
+    "brevets",
+    "dessins-et-modeles",
+    "rne",
+    "registre-national-des-entreprises",
+    "claude"
+  ],
+  "author": "Noam Fitoussi",
+  "license": "MIT",
+  "homepage": "https://github.com/neroshooter/mcp-open-data-inpi#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neroshooter/mcp-open-data-inpi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neroshooter/mcp-open-data-inpi/issues"
+  },
+  "type": "module",
+  "bin": {
+    "mcp-open-data-inpi": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "fast-xml-parser": "^5.11.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.5",
+    "eslint": "^10.14.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5"
+  }
+}
